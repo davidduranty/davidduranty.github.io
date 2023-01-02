@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.menu {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    background: white;
+}
+.logo {
+    width: 132px;
+    height: 50px;
+    margin: 14px;
+}
+.logo img {
+    width: 117px;
+    height: 49px;
+}
+.main {
+    width: 941px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main a, i {
+    text-decoration: none;
+    font-size: 12px;
+    color: #6a6a6a;
+    padding-left: 10px;
+}
+.reseau {
+    width: 585px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.reseau i {
+    font-size: 10px;
+    color: white;
+    padding: 13px;
+}
+.twitter {
+    background: rgb(45, 175, 218);
+}
+.linkedin {
+    background: rgb(21, 119, 169);
+}
+.mail {
+    background: rgb(97, 159, 195);
+}
+.twitter, .linkedin, .mail {
+    border-radius: 30px;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+}
+.titre {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 100;
+    font-family : 'Arima', cursive ;
+}
+.abonnement {
+    margin-left: 245px;
+    margin-right: 245px;
+    margin-top: 20px;
+}
+.abonnement img {
+    width: 1200px;
+    height: 570px;
+}
+.text {
+    margin: 40px 245px 0 245px;
+}
+.text .p {
+    color: #cc002a;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.text .p-fin {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.conditions {
+    display: flex;
+    margin-left: 245px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.conditions p {
+    color: #339966;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.conditions a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #339966;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+span {
+    height: 200px;
+    margin-left: 245px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.label {
+    margin-left: 245px;
+    padding-left: 40px;
+}
+.formulaire {
+    margin-top: 20px;
+    margin-left: 245px;
+    margin-right: 245px;
+    margin-bottom: 20px;
+}
+.formulaire form {
+    display: grid;
+    grid-template-rows: repeat(8, 70px);
+    flex-wrap: wrap;
+}
+.send button {
+    padding: 14px 20px;
+    border: none;
+}
+.text-facture {
+    margin-top: 20px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+}
+.sidebar {
+    width: 1215px;
+    height: 347px;
+    margin: 0 245px 0 245px;
+}
+.icon-tableau {
+    display: grid;
+    grid-template-columns: repeat(3, 405px);
+    grid-template-rows: repeat(2, 174px);
+    grid-template-areas: 
+    "reforme marche pedagogique"
+    "appel-offre juridique opco";
+}
+.icon-tableau  p {
+    letter-spacing: 1px;
+}
+.reforme {
+    grid-area: "reforme";
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: center;
+}
+.reforme p {
+    width: 120px;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+.marche {
+    grid-area: "marche";
+    grid-column: 2 / 3;
+    grid-row: 1;
+    text-align: center;
+}
+.marche p {
+    width: 191px;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+.pedagogique {
+    grid-area: "pedagogique";
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+}
+.pedagogique p {
+    width: 245px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.appel-offre {
+    grid-area: "appel-offre";
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+.appel-offre p {
+    width: 215px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.juridique {
+    grid-area: "juridique";
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+.juridique p {
+    margin-top: 20px;
+}
+.opco {
+    grid-area: "opco";
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+.opco p {
+    margin-top: 20px;
+}
+.content {
+    margin: 10px 245px 0 245px;;
+}
+.content  p, li {
+    width: 1170px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: #918787;
+}
+.footer {
+    display: flex;
+    width: auto;
+    height: 380px;
+    margin-top: 30px;
+    background: #5bb99e;
+}
+.etat-de-connexion {
+    display: grid;
+    padding-top: 30px;
+    margin-left: 228px;
+    grid-template-columns: 380px;
+    grid-template-rows: 30px 20px 40px 16px 40px;
+}
+.etat-de-connexion input {
+    border: 1px solid white;
+}
+.etat-de-connexion input:hover {
+    border: 1px solid red;
+}
+.etat-de-connexion h3 {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.connect {
+    
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.connect a {
+    color: white;
+    text-decoration: none;   
+}
+.connect .se-connect {
+    margin-right: 20px;
+}
+.contacter-info {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 85px 30px 25px 30px;
+    padding-left: 100px;
+    align-items: center;
+}
+.contacter-info h3 {
+    color: white;
+    font-weight: 100;
+}
+.suggestions {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 260px;
+    grid-template-rows: 120px 3.8em 47px 44px 25px;
+}
+.suggestions img {
+    align-items: flex-end;
+}
+.suggestions .atheme-sugg {
+    font-size: 3.8em;
+    align-items: flex-start;
+    padding-top: 0;
+    color: rgb(254,205,165);
+}
+.suggestions h3 {
+    display: flex;
+    color: white;
+    font-weight: 100;
+    align-items: center;
+}
+.suggestions .suggestion {
+    display: flex;
+    align-items: center;
+}
+.atheme-hebdo {
+    display: flex;
+    align-items: center;
+}
+.atheme-hebdo a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.hover:hover {
+    color: transparent;
+}
+.oublie:hover {
+    color: transparent;
+}
+.footer-last {
+    width: 640px;
+}
+.footer-last-left {
+    display: flex;
+    margin-left: 228px;
+    
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 200;
+} 
+.footer-last-left a {
+    text-decoration: none;
+    
+}
+.footer-white {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    padding-left: 245px;
+    
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: repeat(3, 12px);
+    grid-template-areas: 
+    "footer-grid";
+}
+.footer-grid p {
+    letter-spacing: 1px;
+}
+.footer-grid a {
+    text-decoration: none;
+    color: #339966;
+}
+.footer-grid-right {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(3, 12px);
+    grid-template-areas: 
+    "bienvenue-pod"
+    "kit"
+    "docs";
+}
+.footer-grid-right a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    color: transparent;
+}
+.footer-grid-right a:hover {
+    color: #339966;
+}

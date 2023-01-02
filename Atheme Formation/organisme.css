@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.cadre-photo {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/notebook-gd5bade7dc_1920.jpg");
+}
+
+.cadre-text {
+    padding-top: 50px;
+    margin: 0 350px 30px 350px;
+    height: 670px;
+}
+hr {
+    
+}
+.back-accueil {
+    padding-top: 100px;
+}
+.back-accueil a {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    background: #BBA991;
+    color: white;
+    font-weight: bold;   
+}
+.logo-atheme {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.cadre-h {
+    margin-top: 20px;
+}
+.cadre-h  h1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 46px;
+    padding-left: 435px;
+    font-weight: 300;
+    color:#B22222;
+}
+.free-atheme {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+.free-atheme a {
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    border: 1px solid #5BB99E;
+    border-radius: 38px;
+    background: #5BB99E;
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    display: flex;
+    margin: 0 350px 30px 350px;
+    margin-top: 100px;
+}
+.text-left {
+    width: 462px;
+}
+.text-right {
+    margin-left: 100px;
+    width: 462px;
+}
+
+.text-right, .text-left {
+    font-family: Raleway;
+    line-height: 150%;
+    font-size: 18px;
+}
+.text-right span {
+    color: red;
+}
+.sidebar {
+    display: flex;
+    margin: 60px 350px 30px 350px;
+}
+.sommaire {
+    width: 50%;
+}
+.send {
+    display: flex;
+    justify-content: center;
+}
+.send button {
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 6px 6px 39px 0 rgba(0, 0, 0, 0.37);
+    border: none;
+}
+.contact {
+    margin-left: 85px; 
+}
+.contact .form h2 {
+    text-align: center;
+}
+.contact .form h2 span {
+    color: red;
+}
+
+.label1, .label2, .label3, .label4, .label5 {
+    margin-top: 30px;
+}
+.send1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.send1 button {
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 6px 6px 39px 0 rgba(0, 0, 0, 0.37);
+    border: none;
+}
+.comment {
+    margin: 80px 350px 30px 350px;
+}
+.comment .title h1 span {
+    color: red;
+    
+}
+.comment .title h1 {
+    font-weight: bold;
+    font-size: 37px;
+}
+.commentaires {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 247px);
+    grid-template-rows: repeat(3, 288px);
+    grid-template-areas: 
+    "comment-first text-dario"
+    "text-julie comment-two"
+    "comment-three text-marc";
+}
+.comment-first {
+    grid-area: comment-first;
+    grid-column: 1;
+    grid-row: 1;
+}
+.text-dario {
+    grid-area: text-dario;
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+.text-julie {
+    grid-area: text-julie;
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+.comment-two {
+    grid-area: comment-two;
+    grid-column: 4;
+    grid-row: 2;
+}
+.comment-three {
+    grid-area: comment-three;
+    grid-column: 1;
+    grid-row: 3;
+}
+.text-marc {
+    grid-area: text-marc;
+    grid-column: 2 / 5;
+    grid-row: 3;
+}
+.commentaires .text-dario p {
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+.commentaires .text-dario span {
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.commentaires .text-julie p {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 1.4em;
+}
+.commentaires .text-julie span {
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.commentaires .text-marc span {
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.commentaires .text-marc p {
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+.barre-blanc {
+    height: 75px;
+}
+.description p {
+    font-size: 26px;
+}
+.tarif-jaune {
+    display: flex;
+}
+.tarif-jaune .description p {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.tarif-jaune .description span {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.tarif-jaune .description li {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.tarif-jaune .description li, span {
+    color: #8d8686;
+}
+.decouverte {
+    width: 960px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decouverte a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    background: #5BB99E;
+    color: white;
+    border-radius: 38px;
+    padding: 15px;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#zero {
+    height: 302px;
+}
+.i, .twitter, .chaine, .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.i, .twitter, .chaine, .mail i {
+    color: #fff; 
+    font-size: 25px; 
+}
+.barre-blanc-reseau i {
+    background: black;
+    border-radius: 35px;
+    padding: 20px;   
+}
+.barre-blanc {
+    display: flex;
+    justify-content: flex-end;
+}
+.back-accueil-fin a {
+    
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px;
+    background: #BBA991;
+    color: white;
+    font-weight: bold;   
+}
+.footer {
+    margin-top: 100px;
+    display: flex;
+}
+.footer-left {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer-end-left a {
+    text-decoration: none;
+    color: black;
+}
+.footer-right {
+    width: 495px;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-end-right {
+    display: flex;
+    align-items: center;
+}
+.footer-end-right p {
+    margin-right: 5px;
+}
