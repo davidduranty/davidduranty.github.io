@@ -1,13 +1,11 @@
 // const { default: Swiper } = require("swiper");
 
 const questionContainer = document.querySelector(".nav-links");
-
 const response = document.querySelector(".container");
 const invisible = document.querySelector(".header");
 const box2 = document.querySelector(".box-2");
-// const swiper = new Swiper();
 const click = document.querySelector(".click");
-//const picture = document.getElementById("picture");
+
 
 console.log(click);
 
@@ -16,15 +14,6 @@ menu1.addEventListener("click", (e) => {
   console.log("test");
   invisible.classList.toggle("click");
 });
-// menu.addEventListener("click", (e) => {
-//   e.preventDefault;
-//   response.classList("show-response");
-//   invisible.classList.remove("show-hidden");
-// });
-
-//picture.addEventListener("click", () => {
-//    picture.style.width = "auto|length|%|initial|inherit";
-//})
 function zoomin() {
   let GFG = document.getElementById("picture");
   let currWidth = GFG.clientWidth;
@@ -39,6 +28,17 @@ function zoomout() {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 2500) {
     box2.style.opacity = "1";
-    //box2.style.transition = "2s";
+    
   }
 });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    fete.style.opacity = 0
+    fete.style.transition = "0.3s"
+  } else if (window.scrollY < 400) {
+    fete.style.opacity = 1
+    fete.style.transition = "0.9s"
+  } else {
+    fete.style.position = "fixed"
+  }
+})

@@ -6,10 +6,19 @@
     list-style: none;
     
 }
+::-webkit-scrollbar {
+    width: 20px;
+    background: #666;
+    scroll-margin-bottom: none;
+}
+::-webkit-scrollbar-thumb {
+    background: red;
+}
 body {
     width: 100%;
     height: 100vh;
-    background: rgb(227, 224, 224);  
+    background: rgb(227, 224, 224); 
+    overflow-x: hidden; 
 }
 .header {
     position: relative;
@@ -81,12 +90,8 @@ nav img {
     font-size: 2em; 
     left: 0; 
 }
-.nav-search  {
-    
-}
 .nav-main {
     width: 100%;
-
 }
 #nav {
     display: flex;
@@ -119,26 +124,27 @@ nav img {
 }
 .fete-container {
     position: absolute;
-    bottom: 30px;
+    bottom: 5px;
     width: 100%;
-    height: 175px;
+    height: 200px;
     background: rgba(255, 255, 255, 0.538);
 }
 .img-fete {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 70%;
+    height: 200px;
     margin: 0 auto 0 300px;
-    bottom: -10px; 
+    z-index: 100; 
     align-items: center;
-}
+}    
 .img-text {
     width: 58%;
     margin-left: 20px; 
     letter-spacing: 0.5px; 
 }
 .img-text h2 {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     font-weight: 600;
 }
 .nav-top {
@@ -217,6 +223,7 @@ nav img {
     font-size: 3em;
 }
 .container {
+    width: 100%;
     position: absolute;
     top: 0;
     z-index: -30;
@@ -260,7 +267,6 @@ nav img {
 .premier, .second, .third, .four {
     display: block;
     text-align: center;
-
 }
 .premier-icon {
     width: 100px;
@@ -627,6 +633,57 @@ nav img {
 }
 .vide {
     height: 100px;
+    background: #222831;
+}
+.map {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.map img {
+    width: 833px;
+    height: 594px;
+    top: 0;
+}
+.text-carrefour {
+    position: relative;
+    padding: 40px 80px 40px;
+    background: #1f8389;
+    color: white;
+    display: grid;
+    grid-template-columns: 694px;
+    grid-template-rows: 140px 120px 50px;
+    grid-template-areas: 
+    "h2"
+    "p"
+    "button";
+}
+
+.text-carrefour h2 {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-carrefour p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#btn1 {
+    
+    border: 1px solid white;
+    background: none;
+    position: absolute;
+    padding: 10px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
 }
 @media screen and (max-width: 900px) {
     body {
