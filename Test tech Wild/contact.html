@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4edd50952d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Section-->
+    <section class="navbar">
+      <ul>
+        <li><a class="about" href="">About</a></li>
+        <li><a class="royal" href="">Royal Family</a></li>
+        <li><a class="assets" href="">Royal Assets</a></li>
+        <li><a class="contact" href="">Contact Us</a></li>
+      </ul>
+    </section>
+    <h1>Contact the Royal Kingdom</h1>
+    <!-- Form Section -->
+    <section class="form">
+      <div class="formulaire1">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Name" />
+      </div>
+      <div class="formulaire2">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Email" />
+      </div>
+      <div class="textarea">
+        <label for="message">Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Zone de textes"
+        ></textarea>
+      </div>
+      <button id="submit">Envoyer</button>
+    </section>
+    <!-- Pop-up section -->
+    <section class="pop-up" id="popup">
+      <div class="pop-up-container">
+        <h3>N'oubliez pas !<br />S'inscrire à la Wild</h3>
+        <div class="button-container">
+          <input
+            id="popupMail"
+            type="email"
+            placeholder="Please enter you email"
+          />
+          <button id="btn">Envoyer</button>
+        </div>
+        <i class="far fa-times-circle" id="closeBtn"></i>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <section class="footer">
+      <h3>Footer</h3>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

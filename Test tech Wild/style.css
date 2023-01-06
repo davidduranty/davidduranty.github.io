@@ -1,0 +1,206 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; 
+    
+  }
+  /* navbar */
+  .navbar {
+    width: 100%;
+    height: 50px;
+    background: lightgoldenrodyellow;
+  }
+  .navbar ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: teal;
+  }
+  .navbar ul li a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    margin: auto; 
+    background: teal;
+    transition: 0.6s;
+  }
+  .navbar ul li a:hover::after {
+    width: 100%;
+  }
+  .heros {
+    background: lightgoldenrodyellow;
+  }
+  h1 {
+    text-align: center;
+  }
+  .ares, .artemis, .hercules {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .kingdom {
+    padding: 20px 40px;
+  }
+  /* footer */
+  .footer {
+    position: absolute;
+    background: lightgrey;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+  }
+  h3 {
+    padding-top: 30px;
+    text-align: center;
+  }
+  /* royal-family */
+
+  .the-royal {
+    color: red;
+    margin-left: 30px;
+  }
+  .families {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  img {
+    width: 200px;
+    height: 300px;
+  }
+  p {
+    text-align: center;
+  }
+  /* tableau */
+  .tableau-style {
+    border-collapse: collapse;
+    min-width: 600px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    margin: 100px auto;
+    border: 1px solid #ddd;
+  }
+  thead tr {
+    background-color: midnightblue;
+    color: #fff;
+    text-align: center;
+  }
+  tbody {
+    text-align: center;
+  }
+  th, td {
+    padding: 15px 20px;
+  }
+  tbody tr, td, th {
+    border: 1px solid #ddd;
+  }
+  tbody :nth-child(2){
+    background-color: #f3f3f3;
+  }
+  tbody, tr:last-of-type{
+    border-bottom: 2px solid midnightblue;
+  }
+  /* contact */
+  .form {
+    
+    width: 60%;
+    margin: 40px auto;
+    height: 500px;
+  }
+  .formulaire1, .formulaire2, .textarea {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    padding: 20px 60px;
+    color: red;
+  }
+  #name {
+    width: 400px;
+    margin-left: 60px;
+    background-color: #f3f3f3;
+  }
+  #email {
+    width: 400px;
+    margin-left: 60px;
+    background-color: #f3f3f3;
+  }
+  #message {
+    width: 400px;
+    margin-left: 60px;
+    background-color: #f3f3f3;
+  }
+  #submit {
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px ;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    color: red;
+  }
+  button:hover {
+    background: midnightblue;
+    color: #fff;
+  }
+  .pop-up {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    height: 250px;
+    width: 520px;
+    text-align: center;
+    background: lightblue;
+    border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+    box-shadow: 0 5px 10px black;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: 1s ease-out;
+    z-index: 3;
+  }
+  .pop-up-container {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+  }
+  i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .pop-up p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #popupMail {
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    border-radius: 20px;
+    width: 300px;
+  }
+  #btn {
+    position: absolute;
+    right: 40px;
+    bottom: -52px;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+  }
+ 
