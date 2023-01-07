@@ -685,6 +685,86 @@ nav img {
     cursor: pointer;
     border-radius: 10px;
 }
+.agenda {
+    width: 100%;
+    height: 700px;
+    padding: 100px 250px;
+    background: lightslategrey;
+}
+.agenda h2 {
+    font-size: 2em;
+}
+.container-date {
+    background-collapse: ;
+    background: whitesmoke;
+    margin: 40px 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 400px 330px ; 
+    grid-template-rows: 35px 5px 30px;
+    grid-template-areas: 
+    "date date engage include"
+    "em em em em"
+    "titleh3 titleh3 titleh3 titleh3";
+    cursor: pointer;
+}
+.date {
+    grid-area: date;
+    justify-self: flex-start;
+    align-self: center;
+}
+.engage {
+    grid-area: engage;
+    align-self: center;
+    justify-self: end;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.include {
+    grid-area: include;
+    align-self: center;
+    font-weight: bold;
+    justify-self: end;
+}
+em {
+    grid-area: em;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    
+}
+.titleh3 {
+    grid-area: titleh3;
+    padding-top: 10px;
+    align-self: center;
+}
+.next h2 {
+    width: 20%;
+    
+    height: 200px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.see-agenda {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+}
+.see-agenda a {
+    color: black;
+    cursor: pointer;
+}
+.see-agenda i {
+    padding: 5px 0 0 5px;
+    font-weight: bold;
+}
+.see-agenda:hover {
+    padding-left: 10px;
+    transition: 0.3s;
+}
 @media screen and (max-width: 900px) {
     body {
         width: auto;
