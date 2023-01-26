@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+::-webkit-scrollbar {
+    width: 20px;
+    background: #666;
+    scroll-margin-bottom: none;
+}
+::-webkit-scrollbar-thumb {
+    background: blue;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(227, 224, 224); 
+    overflow-x: hidden; 
+}
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(215, 219, 231, 0.84),rgba(221, 224, 236, 0.851)),url(img/students-g8190b5d41_1280.jpg);
+}
+.container-central {
+    position: relative;
+}
+.container-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -10px;
+    left: 615px;
+    
+}
+.container-center a {
+    font-weight: bold;
+    border-bottom: 1px dashed black;
+}
+.container-center i, a, p {
+    padding-left: 5px;
+    color: black;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 15px;
+}
+.click {
+    opacity: 0;
+}
+.containerv{
+    opacity: 1;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+    height: 100px;
+}
+.nav-links ul  {
+    display: flex;
+}
+.nav-links ul li {
+    border: 1px solid black;
+    padding: 40px;
+}
+.nav-links ul li a {
+    color: white;
+}
+#roue {
+    background: rgba(172, 164, 164, 0.218);
+}
+#menu {
+    background: rgba(115, 111, 111, 0.218);
+}
+.nav-top {
+    display: flex;
+    border-bottom: 1px solid dashed;
+    width: 100%;
+    height: 100px;
+    align-items: flex-end;
+    align-items: center; 
+    position: relative;
+    border-bottom: 1px dotted white;
+}
+.nav-top img {
+    width: 10%;
+    padding: 0 0 0 20px;
+}
+.nav-links2 {
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-links2 ul li {
+    display: inline;
+    padding-left: 30px;
+    font-size: 1.2em;  
+}
+
+.nav-links2 ul li a {
+    color: rgb(116, 111, 111); 
+}
+
+.nav-links2 ul li a:hover {
+    color: teal;
+}
+.nav-left {
+    width: 390px;
+    height: auto;
+}
+.nav-left ol {
+    display: grid;
+    grid-template-rows: repeat(6, 120px);
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.nav-bottom {
+    height: 70px;
+    width: 100%;
+    border-top: 1px dotted white;
+    
+}
+.nav-bottom ul  {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-bottom ul i {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+.nav-bottom ul  a {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;  
+}
+.nav-right {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-right a {
+    font-size: 3em;
+}
+.container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -30;
+}
+.nav-bar {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+    background: white;
+    display: flex;
+}
+.formation {
+    position: relative;
+    
+    margin-left: 200px;
+    padding-top: 132px;
+    width: 58px;
+    height: 590px;
+    z-index: 60;
+    background: white;
+    
+}
+.nav-bar p {
+    transform: rotate(-90deg);
+    font-size: 1.5em;
+   /* color: rgb(133, 126, 126);*/
+   color: grey;
+}
+.nav-bar-column {
+    width: 330px;
+    height: 1100px;
+    
+}
+.nav-bar-column ul {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(9, 40px);
+    grid-template-areas: 
+    "trouver"
+    "candidater"
+    "informer"
+    "preparer"
+    "former"
+    "venir"
+    "amenager"
+    "partir";
+    align-items: center;
+    border-bottom: 3px solid green;
+    border-collapse: collapse;
+}
+.nav-bar-column ul li {
+    padding-left: 10px;
+    justify-self: left;
+    
+    
+}
+.nav-bar-column ul li i {
+   position: absolute;
+   right: 0;
+   cursor: pointer;
+   font-size: 20px;
+}
+.nav-bar-column ul li i:hover {
+    transform: rotate(-90deg);
+}

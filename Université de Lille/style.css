@@ -24,7 +24,6 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    position: relative;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/university-library-4825366_1920\ \(1\)\ 1.jpg);
@@ -49,7 +48,7 @@ nav img {
     display: flex;
 }
 .nav-links ul li {
-    margin-right: 10px;
+    margin-right: 0px;
     border: 1px solid black;
     padding: 40px;
 }

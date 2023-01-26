@@ -42,3 +42,6 @@ window.addEventListener("scroll", () => {
     fete.style.position = "fixed"
   }
 })
+
+zoomin()
+zoomout()
