@@ -61,11 +61,12 @@ button {
     top: 60%;
 }
 .forget {
-    
+    cursor: pointer;
     margin-top: 10px;
 }
 .new {
     margin-top: 70px;
+    cursor: pointer;
 }
 button:hover {
     background: teal;
