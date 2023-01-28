@@ -304,3 +304,17 @@ hr {
 .footer-end-right p {
     margin-right: 5px;
 }
+.popup {
+    position: fixed;
+    bottom: 2rem;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50px;
+    transform: translateX(400px);
+    right: 1rem;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    box-shadow: 0 10px 10px black;
+}
+
