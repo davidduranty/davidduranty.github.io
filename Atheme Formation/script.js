@@ -12,6 +12,8 @@ function getColor() {
     if (scrollValue > 80) {
       popup.style.opacity = 1;
       popup.style.transform = "none";
+    } else if (scrollValue < 60) {
+      popup.style.opacity = 0
     }
   });
 

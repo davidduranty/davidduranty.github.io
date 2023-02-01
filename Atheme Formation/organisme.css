@@ -249,21 +249,22 @@ hr {
 #zero {
     height: 302px;
 }
-.i, .twitter, .chaine, .mail {
+.i, .twitter, .chaine, .mail  {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 30px;
 }
 
-.i, .twitter, .chaine, .mail i {
+.i, .twitter, .mail  {
     color: #fff; 
-    font-size: 25px; 
+    font-size: 35px; 
 }
 .barre-blanc-reseau i {
     background: black;
-    border-radius: 35px;
-    padding: 20px;   
+    border-radius: 50px;
+    padding: 20px; 
+    cursor: pointer;  
 }
 .barre-blanc {
     display: flex;
@@ -287,6 +288,9 @@ hr {
     width: 50%;
     justify-content: flex-start;
     align-items: flex-end;
+}
+.footer-end-left {
+    height: 100px;
 }
 .footer-end-left a {
     text-decoration: none;
