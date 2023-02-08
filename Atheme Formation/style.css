@@ -81,19 +81,13 @@
     justify-content: end;
     margin-right: 25px;
 }
-.twitter, .linkedin, .mail {
+.linkedin, .mail {
     padding: 10px;
     border: 2px solid;
     border-radius: 25px;
     margin: 5px;
     font-size: 10px;
     color: white;
-}
-.twitter  {
-    background: rgb(45, 175, 218); 
-}
-.twitter i {
-    color: #fff;
 }
 .linkedin {
     background: rgb(21, 119, 169);
@@ -108,36 +102,38 @@
     color: #fff;
 }
 .content {
-    background-image: url("img/109171_zelenyj_perexod_zheltyj_zastavka_2560x1600_www.Gde-Fon.com.jpg");
-    height: 916px;
+   background: #E7E3E2;
+   display: flex;
 }
-.logo-big {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 270px 50px 100px 200px;
-     
+.content img {
+    width: 706px;
+    height: 562px;
+    margin-left: 200px;
 }
-.logo-big img {
-    width: 350px;
+.text-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 503px;
+    height: 135px;
+    margin: 12% 0;
+    padding-right: 50px;
+    line-height: 45px;
+    letter-spacing: 3px;
 }
-.logo-big .img {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1;   
-    align-items: flex-end;
-    justify-content: center; 
-    
+.text-content p {
+    font-size: 45px;
 }
-.logo-big .atheme {
-    display: flex;
-    grid-column: 2;
-    grid-row: 2;
-    justify-content: center;
-    font-size: 2.5rem;
+.title-text {
+    height: 100px;
+    padding-top: 50px;
 }
+
 h1 {
-    
-    color: rgb(254,205,165);
+    color: teal;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
 }
 .logo-big, .presentation {
     display: grid;
@@ -175,79 +171,21 @@ button {
     border: transparent solid lightgrey;
     
 }
-.savoir-plus {
-    color: rgb(114, 108, 108);
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid white;
-    background: lightgrey;
-    margin-top: 20px;
-}
-.savoir-plus:hover {
-    background: rgb(116, 106, 106);
-    color: #fff;
-}
-.titre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-.titre h1 {
-    font-size: 4em;
-    color: black;
-    font-weight: 100;
-}
 .sidebar {
+    width: 935px;
+    height: 470px;
+    margin: 0 25%;
     display: grid;
-    grid-template-columns:  50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "menu menu" 
-    " sidebar1 sidebar2 ";
-    background: rgb(245, 245, 245);
+    grid-template-rows: 40px 63px 93px 30px 70px 42px;
+    font-size: 1.2em;
 }
-.menu {
-    height: 100px;
-}
-
-.sidebar1 {
-    grid-area: sidebar1;
-    height: 1056px;
-    margin-left: 228px;
-    padding: 20px;
-}
-.atheme-hebdo-cadre {
-    display: flex;
-    justify-content: center;
-    
-}
-.sidebar2 {
-    grid-area: sidebar2;
-    height: 1056px;
-    margin-right: 228px;
-    padding: 20px;
-}
-.livre-blanc-cadre {
-    display: flex;
-    justify-content: center;
-}
-.sidebar p {
-    font-size: 1.1em;
-    margin: 0 0 20px;
-    letter-spacing: 1.1px;
+.sidebar span:hover {
+    color: teal;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .sidebar ul {
-    font-size: 1.1em;
-    margin: 0 0 20px;
-    letter-spacing: 1.1px;
-}
-.sidebar .p1 {
-    margin-top: 20px;
-}
-.span1 {
-    color: #359292;
+    padding-left: 17px;
 }
 .bouton {
     text-align: center;
