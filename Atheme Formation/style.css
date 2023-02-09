@@ -16,11 +16,16 @@
     transition: 0.5s;
 }
 .logo {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 25px 0 25px;
+}
+.logo:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    transition: 0.7s ease-in-out;
 }
 .logo img{
     grid-area: logo;
@@ -179,6 +184,10 @@ button {
     grid-template-rows: 40px 63px 93px 30px 70px 42px;
     font-size: 1.2em;
 }
+.sidebar p, li{
+    color: #735959;
+    letter-spacing: 0.4px;
+}
 .sidebar span:hover {
     color: teal;
     cursor: pointer;
@@ -186,6 +195,46 @@ button {
 }
 .sidebar ul {
     padding-left: 17px;
+}
+.title-four-points {
+    margin: 5% 25% 0 25%;
+    height: 100px;
+    
+}
+.title-four-points h1 {
+    font-size: 3em;
+}
+.four-img-text {
+    display: flex;
+    margin: 0 25%;
+}
+.four-img-text h2 {
+    padding: 20px 0;
+}
+#img {
+    text-align: center;
+    padding: 10px;
+}
+.big-button {
+    display: flex;
+    justify-content: center;
+    margin: 50px 25%;
+}
+
+.button-test  button {
+    padding: 10px;
+    text-align: center;
+    width: 355px;
+    height: 105px;
+    border-radius: 20px;
+    background: teal;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-test  button:hover {
+    background: #ff6900;
 }
 .bouton {
     text-align: center;
