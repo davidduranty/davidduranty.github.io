@@ -302,14 +302,18 @@ button {
 }
 .cadre {
     display: flex;
-    height: 600px;
-    background: rgb(245, 245, 245);
+    justify-content: center;
+    align-items: center;
+    margin: 90px 35%;
+    height: 700px;
+    background: #fff;
+    flex-direction: column;
 }
 .asidebar {
     margin-left: 228px;
     display: grid;
     grid-template-columns: 376px;
-    grid-template-rows:  270px 175px 300px;   
+    grid-template-rows:  270px 275px 300px;   
 }
 .asidebar-img {
     grid-row: 1;
@@ -317,38 +321,21 @@ button {
     align-items: center;
 }
 .asidebar-text  {
+    text-align: center;
     grid-row: 2;
+    padding: 20px;
     display: flex;
     padding-top: 10px;
-    font-size: 27px;
-    color: #359292;  
+    font-size: 1.3em;
+    color: #919090;  
 }
-.formulaire {
-    padding-left: 20px;
+#label {
+    padding-top: 20px;
 }
-.formulaire form {
-    display: grid;
-    padding-right: 240px;
-    grid-template-rows: repeat(5, 90px);
-    flex-wrap: wrap;
+.send {
+    margin: 0 35%;
 }
-.formulaire form .label1 {
-    grid-row: 1;
-    padding: 10px 0 10px 0;
-}
-.formulaire form .label2 {
-    grid-row: 2;
-    align-items: center;
-}
-.formulaire form .label3 {
-    grid-row: 3;
-}
-.formulaire form .label4 {
-    grid-row: 4;
-}
-.formulaire form .label5 {
-    grid-row: 5;
-}
+
 .content-bis {
     margin: 0 228px 0 228px;
     display: grid;
