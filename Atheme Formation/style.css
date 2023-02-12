@@ -335,40 +335,58 @@ button {
 .send {
     margin: 0 35%;
 }
-
-.content-bis {
-    margin: 0 228px 0 228px;
-    display: grid;
-    grid-template-columns: 592px 592px;
-    grid-template-rows: repeat(4, 295px);
-    grid-template-areas: 
-    "un acb"
-    "savoie deux"
-    "trois web"
-    "rainbow quatre";
+.temoignages {
+    height: 100px;
 }
-.h2-acb {
-    padding-top: 40px;
+.temoignages h1 {
+    color: black;
+}
+.swiper {
+    background: #e7e3e24d;
+}
+.content-bis {
+    margin: 0 34%;
     
 }
-.h2-acb h2 {
-    font-weight: 200;
+.acb {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
 }
-.un .text-acb {
-    grid-area: un;
-    padding-top: 20px;
-    font-size: 16px;
-    color: rgb(143, 132, 132);
+.nigel {
+    width: 87px;
+    height: 87px;
 }
-.un .text-acb .p-atheme {
-    padding-top: 20px;
+.nigel-name {
+    padding-left: 20px;
+}
+.nigel-name h4 {
+    color: #867878;
 }
 .acb {
-    grid-area: acb;
+    padding: 20px;
     display: flex;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
 }
+.acb img {
+    width: 87px;
+    height: 87px;
+    border-radius: 1000px;
+}
+.acb p {
+    font-size: 1em;
+    color: #ee916eb8;
+}
+.text-acb {
+    background: #fff;
+}
+.un .text-acb {
+    line-height: 25px;
+    text-align: center;
+    color: rgb(143, 132, 132);
+}
+
 .savoie {
     grid-area: savoie;
     display: flex;
