@@ -336,108 +336,114 @@ button {
     margin: 0 35%;
 }
 .temoignages {
-    height: 100px;
+    height: 60px;
 }
 .temoignages h1 {
     color: black;
 }
 .swiper {
     background: #e7e3e24d;
+    width: 100%;
+    height: 650px;
 }
 .content-bis {
-    margin: 0 34%;
-    
+   width: 700px; 
+   height: 387px;
+   margin: 100px auto;
+   overflow: hidden; 
 }
-.acb {
-    padding-top: 40px;
+.slider-container {
+    margin: 0 12%;
+    display: flex;
+    animation: slide 12s infinite ease-in-out;  
+}
+.text-p-slider {
+    width: 500px;
+    height: 155px;
+    text-align: center;
+    padding-top: 20px;   
+}
+.text-p-slider-1 {
+    width: 500px;
+    height: 155px;
+    text-align: center;   
+}
+.acb, .savoie, .web, .unknown {
+    height: 10px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.nigel {
+@keyframes  slide{
+    0%, 
+    20% {
+        transform: translateX(0);
+    }
+    25%, 
+    45% {
+        transform: translateX(-625px);
+    }
+    50%, 
+    70% {
+        transform: translateX(-1260px);
+    }
+    75%, 
+    95% {
+        transform: translateX(-1890px);
+    }
+    100% {
+        transform: translateX(-2500px);
+    }
+}
+.nigel, .stephanie, .julie, .chrystele {
     width: 87px;
     height: 87px;
+    
 }
-.nigel-name {
+.nigel-name, .stephanie-name, .julie-name, .chrystele-name {
     padding-left: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.285) ;
 }
-.nigel-name h4 {
+.nigel-name h4, .stephanie-name h4, .julie-name h4, .chrystele-name h4 {
     color: #867878;
 }
-.acb {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.acb img {
+
+.acb img,.julie img, .stephanie img, .chrystele img {
     width: 87px;
     height: 87px;
     border-radius: 1000px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.285) ;
 }
-.acb p {
+.acb p, .savoie p, .web p, .unknown p {
+    display: flex;
     font-size: 1em;
     color: #ee916eb8;
 }
-.text-acb {
+.cadre-un, .cadre-deux, .cadre-trois, .cadre-quatre {
+    width: 100%; 
+   height: 287px;
+   flex-shrink: 0;
+   text-align: center;
+   margin-right: 100px;
+}
+.text-acb, .text-savoie, .text-web, .text-unknown {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    line-height: 20px;
+    color: rgb(143, 132, 132);
     background: #fff;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.285) ;
 }
-.un .text-acb {
-    line-height: 25px;
-    text-align: center;
-    color: rgb(143, 132, 132);
-}
-
-.savoie {
-    grid-area: savoie;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.deux {
-    grid-area: deux;
-    padding-top: 40px;
-}
-.deux h2 {
-    font-weight: 200;
-}
-.deux p {
+.text-web p {
     padding-top: 30px;
-    color: rgb(143, 132, 132);
-}
-.trois {
-    grid-area: trois;
-    padding-top: 60px;
-}
-.trois .h2-web h2 {
     
-    font-weight: 200;
 }
-.trois p {
-    padding-top: 50px;
-    color: rgb(143, 132, 132);
-}
-.web {
-    grid-area: web;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rainbow {
-    grid-area: rainbow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.quatre {
-    grid-area: quatre;
-    padding-top: 60px;
-}
-.quatre .h2-unknown h2 {
-    font-weight: 200;
-}
-.quatre p {
-    padding-top: 40px;
-    color: rgb(143, 132, 132);
+.text-p-slider {
+    font-size: 1.2em;
 }
 .blog-content {
     display: flex;
