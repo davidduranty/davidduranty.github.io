@@ -16,8 +16,20 @@
 const menu = document.querySelectorAll("#a, #b, #c, #d, #e, #f, #g, #h");
 const buttons = document.querySelectorAll("button");
 const nav = document.querySelector(".container");
+const icon = document.querySelector(".icon");
+const search = document.querySelector(".search");
+const veille = document.querySelector(".veille-nav");
+const theme = document.querySelector(".theme");
 
-console.log(nav);
+console.log(veille);
+icon.addEventListener("click", (e) => {
+  e.preventDefault();
+  search.classList.toggle("show-response");
+});
+veille.addEventListener("mouseover", () => {
+  theme.classList.toggle("theme-visible");
+});
+
 menu.forEach((clicked) => {
   clicked.addEventListener("click", () => {
     clicked.classList.toggle("menu-js");
