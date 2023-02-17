@@ -79,7 +79,7 @@
     left: 735px;
     list-style: none;
     height: 540px;
-    background: #fff;
+    background: #ffffffba;
     opacity: 0;
 }
 .theme li {
@@ -90,6 +90,7 @@
     align-items: center;
     font-size: 1.2em;
     color: black;
+    cursor: pointer;
 }
 .theme-visible {
     opacity: 1;
