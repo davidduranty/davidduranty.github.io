@@ -25,7 +25,6 @@ icon.addEventListener("click", (e) => {
   e.preventDefault();
   search.classList.toggle("show-response");
 });
-
 veille.addEventListener("mouseover", () => {
   theme.classList.toggle("theme-visible");
 });

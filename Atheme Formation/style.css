@@ -484,6 +484,7 @@ button {
     gap: 5%;
     margin-left: 228px;
     margin-right: 228px;
+    height: 400px;
 }
 .comptes-france  {
     display: flex;
@@ -497,10 +498,30 @@ button {
 .comptes-france h3 {
     font-weight: 100;
 }
-.comptes-france-bis h2 {
-    font-size: 2em;
-    font-weight: 100;
-    padding-top: 20px;
+.titre {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.titre h1 {
+    color: black;
+}
+.div-three, .div-two, .div-one {
+    position: relative;
+}
+.digitalisation {
+    display: flex;
+}
+.span-rose {
+    background: rgb(238,44,130);
+    padding: 8px 10px;
+}
+.digitalisation h2 {
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
     padding-bottom: 20px;
 }
 .blog-content .comptes-france-text {
@@ -508,39 +529,32 @@ button {
     font-size: 1.1em;
 }
 .lire-article {
-    background: #00C1CF;
+    position: absolute;
+    background:rgb(238,44,130);
     color: white;
-    font-size: 1.1em;
+    font-size: 0.75em;
+    left: 0;
+    top: 330px;
 }
-.modulo {
+.modulo-bis {
     display: flex;
-    width: 380px;
-    height: 152px;
-    align-items: center;
-    text-align: center;
-    background-color: #3b5987;
-    color: white;
-}
-.modulo h3 {
-    font-weight: 100;
 }
 .modulo-bis h2 {
-    font-size: 1.8em;
-    font-weight: 100;
-    padding-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
     padding-bottom: 20px;
 }
-.bouton-more {
+.comptes-france-bis {
     display: flex;
-    justify-content: center;
-    height: 100px;
-    align-items: center;
-    padding-left: 30px;
-    border-radius: 5px;
-    margin-top: 20px;
+    height: 80px;
 }
-.load-more {
-    font-size: 14px;
+.span-rose-last {
+    background: rgb(238,44,130);
+    padding: 8px 10px;
+}
+.comptes-france-bis h2 {
+    font-size: 1.2em;
+    padding-right: 84px;
 }
 .slider {
     position: relative;
@@ -619,54 +633,13 @@ button {
         transform: translateX(-3500px);
     }   
 }
-.cadre-contact {
-    display: flex;
-}
-.card-visit {
-    padding-left: 228px;
-    display: grid;
-    height: 586px;
-    width: 50%;
-    grid-template-rows: repeat(10, auto);
-    justify-content: center;
-    align-items: center;
-}
-.mailto-cadre {
-    display: flex;
-    background:  #1d9bf0;
-    width: 210px;
-    height: 22px;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 25px;  
-}
-.mailto-cadre a {
-    color: white;
-    text-decoration: none;
-}
-.card-visit h3 {
-    padding-top: 20px;
-}
-.formulaire-bis {
-    display: grid;
-    margin-right: 228px;
-}
-.cadre-message {
-    margin-top: 10px;  
-}
-.cadre-message textarea {
-    height: 250px;
-    width: 790px;  
-}
-.send {
-    margin-top: 20px;
-}
+
 .footer {
     display: flex;
     width: auto;
     height: 380px;
     margin-top: 30px;
-    background: #5bb99e;
+    background: #edeaeaaa;
 }
 .etat-de-connexion {
     display: grid;
@@ -682,7 +655,7 @@ button {
     border: 1px solid red;
 }
 .etat-de-connexion h3 {
-    color: white;
+    color: rgb(170, 167, 167);
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -692,7 +665,7 @@ button {
     margin-right: 10px;
 }
 .connect a {
-    color: white;
+    color: rgb(170, 167, 167);
     text-decoration: none;   
 }
 .connect .se-connect {
@@ -706,7 +679,7 @@ button {
     align-items: center;
 }
 .contacter-info h3 {
-    color: white;
+    color: rgb(170, 167, 167);
     font-weight: 100;
 }
 .suggestions {
@@ -726,7 +699,7 @@ button {
 }
 .suggestions h3 {
     display: flex;
-    color: white;
+    color: rgb(170, 167, 167);
     font-weight: 100;
     align-items: center;
 }
