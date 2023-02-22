@@ -80,11 +80,11 @@ menu.forEach((clicked) => {
   });
 });
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.style.transform = "rotate(-10deg)";
-  });
-});
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     button.style.transform = "rotate(-10deg)";
+//   });
+// });
 
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);

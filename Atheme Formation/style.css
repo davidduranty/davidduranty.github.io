@@ -753,5 +753,85 @@ button {
     color: #5bb99e;
     letter-spacing: 0.8px;
 }
+.popup {
+    
+    position: relative;
+    width: 420px;
+    height: 300px;
+    margin-left: 20px;
+    box-shadow: 4px 3px 3px 3px #00000014;
+    border-radius: 10px;
+}
+.popup img {
+    position: absolute;
+    width: 140pw;
+    height: 70px;
+    right: 20px;
+    top: 30px;
+}
+.popup-sousTitre {
+    position: absolute;
+    font-size: 1.2em;
+    left: 10px;
+    top: 45px;
+}
+.popup h2 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+.color-yellow {
+    position: absolute;
+    width: 135px;
+    height: 80px;
+    background: yellow;
+    right: 0;
+    border-radius: 0 0 15px 50px;
+}
+.consentement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 402%);
+    display: flex;
+    width: 240px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+.consentement:hover {
+    background-color: grey;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
 
+}
+.boxes-buttons {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    width: 420px;
+}
+.btn-merci, .btn-choisis, .btn-ok {
+    background: #fff;
+    cursor: pointer;
+    border: 0.5px solid grey;
+}
+.btn-ok {
+    color: #d9a314;
+    font-weight: bold;
+}
+.popup-text {
+    position: absolute;
+    width: 420px;
+    height: 92px;
+    top: 120px;
+    left: 0;
+    padding: 10px;
+    line-height: 21px;
+}
+.ok-for-you {
+    position: absolute;
+    top: 195px;
+    padding-left: 10px;
+}
 
