@@ -1,25 +1,12 @@
-// const menu = document.querySelector(".menu");
-// const rotate = document.getElementById("menu");
-
-// menu.addEventListener("mousemove", () => {
-
-//     menu.style.background = "lightgrey"
-//     menu.style.borderRadius = "30px"
-//     menu.style.transition = "2s"
-// })
-
-// rotate.addEventListener("mousemove", () => {
-//     console.log(rotate)
-//     rotate.style.transform = "rotate(5deg)";
-// })
-
-const menu = document.querySelectorAll("#a, #b, #c, #d, #e, #f, #g, #h");
 const buttons = document.querySelectorAll("button");
 const nav = document.querySelector(".container");
 const icon = document.querySelector(".icon");
 const search = document.querySelector(".search");
 const veille = document.querySelector(".veille-nav");
 const theme = document.querySelector(".theme");
+const closePop = document.querySelector(".buttonPopup");
+const popup = document.querySelector(".popup");
+console.log(closePop);
 
 icon.addEventListener("click", (e) => {
   e.preventDefault();
@@ -73,12 +60,22 @@ theme.addEventListener("click", (e) => {
       null;
   }
 });
-
-menu.forEach((clicked) => {
-  clicked.addEventListener("click", () => {
-    clicked.classList.toggle("menu-js");
-  });
+closePop.addEventListener("click", () => {
+  popup.classList.toggle("popupMove");
+  popup.style.transform = "translateX(.500px)"
+  // if (getComputedStyle(popup).display != "none") {
+  //   popup.style.display = "none";
+  // } else {
+  //   popup.style.display = "block";
+  // }
 });
+
+// let menuJs = document.querySelector(".menu-js")
+// menu.forEach((clicked) => {
+//   clicked.addEventListener("click", () => {
+//     // clicked.classList.toggle("menu-js");
+//   });
+// });
 
 // buttons.forEach((button) => {
 //   button.addEventListener("click", () => {
@@ -86,10 +83,4 @@ menu.forEach((clicked) => {
 //   });
 // });
 
-window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
-  if (window.scrollY > 400) {
-    nav.style.top = "500px";
-    console.log(nav);
-  }
-});
+

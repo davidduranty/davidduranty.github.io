@@ -754,13 +754,24 @@ button {
     letter-spacing: 0.8px;
 }
 .popup {
-    
-    position: relative;
-    width: 420px;
+    background: #fff;
+    position: fixed;
     height: 300px;
-    margin-left: 20px;
-    box-shadow: 4px 3px 3px 3px #00000014;
+    width: 420px;
+    left: 70px;
+    bottom: 100px;
+    transform: translateX(-20px);
+    transition: 1s ease-out;
+    z-index: 10000;
     border-radius: 10px;
+}
+.color-yellow {
+    position: absolute;
+    width: 135px;
+    height: 80px;
+    background: yellow;
+    right: 0;
+    border-radius: 0 10px 15px 50px;
 }
 .popup img {
     position: absolute;
@@ -780,13 +791,25 @@ button {
     top: 70px;
     left: 10px;
 }
-.color-yellow {
+.popup-text {
     position: absolute;
-    width: 135px;
-    height: 80px;
-    background: yellow;
-    right: 0;
-    border-radius: 0 0 15px 50px;
+    width: 420px;
+    height: 92px;
+    top: 120px;
+    left: 0;
+    padding: 10px;
+    line-height: 21px;
+}
+.ok-for-you {
+    position: absolute;
+    top: 195px;
+    padding-left: 10px;
+}
+.boxes-buttons {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    width: 420px;
 }
 .consentement {
     position: absolute;
@@ -805,12 +828,6 @@ button {
     border-radius: 10px 10px 0 0;
 
 }
-.boxes-buttons {
-    bottom: 0;
-    position: absolute;
-    display: flex;
-    width: 420px;
-}
 .btn-merci, .btn-choisis, .btn-ok {
     background: #fff;
     cursor: pointer;
@@ -820,18 +837,9 @@ button {
     color: #d9a314;
     font-weight: bold;
 }
-.popup-text {
-    position: absolute;
-    width: 420px;
-    height: 92px;
-    top: 120px;
-    left: 0;
-    padding: 10px;
-    line-height: 21px;
-}
-.ok-for-you {
-    position: absolute;
-    top: 195px;
-    padding-left: 10px;
+.popupMove {
+    display: block;
+    transform: translateX(-500px);
+    animation: 0.2s;
 }
 
