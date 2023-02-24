@@ -760,7 +760,7 @@ button {
     width: 420px;
     left: 70px;
     bottom: 100px;
-    transform: translateX(-20px);
+    transform: translateX(0px);
     transition: 1s ease-out;
     z-index: 10000;
     border-radius: 10px;
@@ -837,9 +837,19 @@ button {
     color: #d9a314;
     font-weight: bold;
 }
-.popupMove {
-    display: block;
-    transform: translateX(-500px);
-    animation: 0.2s;
+.buttonPopup {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 70px;
+    top: 850px;
+    border: 1px solid black;
+    background: yellow;
+    border-radius: 60% 100% 60% 100%;
+}
+.buttonPopup i {
+    font-size: 2em;
+    padding: 20px;
+    cursor: pointer;
 }
 

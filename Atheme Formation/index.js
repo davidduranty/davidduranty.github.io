@@ -61,13 +61,11 @@ theme.addEventListener("click", (e) => {
   }
 });
 closePop.addEventListener("click", () => {
-  popup.classList.toggle("popupMove");
-  popup.style.transform = "translateX(.500px)"
-  // if (getComputedStyle(popup).display != "none") {
-  //   popup.style.display = "none";
-  // } else {
-  //   popup.style.display = "block";
-  // }
+  if (popup.style.opacity != 0) {
+    popup.style.opacity = 0;
+  } else {
+    popup.style.opacity = 1;
+  }
 });
 
 // let menuJs = document.querySelector(".menu-js")
@@ -82,5 +80,3 @@ closePop.addEventListener("click", () => {
 //     button.style.transform = "rotate(-10deg)";
 //   });
 // });
-
-
