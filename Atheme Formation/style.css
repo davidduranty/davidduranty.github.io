@@ -753,85 +753,109 @@ button {
     color: #5bb99e;
     letter-spacing: 0.8px;
 }
-.popup {
+.container-popup {
     background: #fff;
     position: fixed;
-    height: 300px;
-    width: 420px;
-    left: 70px;
-    bottom: 100px;
-    transform: translateX(0px);
-    transition: 1s ease-out;
-    z-index: 10000;
+    width: 440px;
+    height: 220px;
+    top: 350px;
+    left: 60px;
+    padding: 20px;
+    z-index: 200000;
     border-radius: 10px;
+}
+.popup-haut {
+    display: flex;
+    justify-content: space-between;
+}
+.titres-popup h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.titres-popup h1 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+.img-double-face {
+    position: relative;
 }
 .color-yellow {
     position: absolute;
-    width: 135px;
-    height: 80px;
     background: yellow;
+    width: 133px;
+    height: 60px;
+    z-index: -3;
     right: 0;
-    border-radius: 0 10px 15px 50px;
+    border-radius: 0px 0 14px 49px;
 }
-.popup img {
-    position: absolute;
-    width: 140pw;
+.img-double-face img {
+    width: 140px;
     height: 70px;
-    right: 20px;
-    top: 30px;
 }
-.popup-sousTitre {
-    position: absolute;
-    font-size: 1.2em;
-    left: 10px;
-    top: 45px;
-}
-.popup h2 {
-    position: absolute;
-    top: 70px;
-    left: 10px;
-}
-.popup-text {
-    position: absolute;
-    width: 420px;
-    height: 92px;
-    top: 120px;
-    left: 0;
-    padding: 10px;
-    line-height: 21px;
-}
-.ok-for-you {
-    position: absolute;
-    top: 195px;
-    padding-left: 10px;
-}
-.boxes-buttons {
-    bottom: 0;
-    position: absolute;
+.consent {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
     display: flex;
-    width: 420px;
+    justify-content: center;
+    align-items: end;
+    height: 20px;
+    margin-top: 25px;
+    border-radius: 10px 10px 0  0;
+}
+.consent:hover {
+    background: #919090;
+    cursor: pointer;
 }
 .consentement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 402%);
+    font-size: 12px;
+    
+}
+.container-hide {
+    margin-left: -21px;
+    width: 440px;
+    height: 190px;
+    padding: 20px 20px 0px 20px;
+    display: none;
+}
+.container-hide-box {
     display: flex;
-    width: 240px;
-    height: 20px;
-    background: #fff;
+    background-color: #fff;
+}
+.text-axeptio {
+    display: flex;
+    align-items: center;
+}
+.text-axeptio p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.container-img-popup img {
+    width: 150px;
+    height: 100px;
+}
+.container-text-hide {
+    margin-top: 10px;
+    display: flex;
+    background-color: #fff;
+}
+.container-text-hide a {
+    font-size: 10px;
+}
+.boxes-buttons {
+    display: flex;
+    width: 440px;
+    margin-left: -21px;
+}
+.boxes-buttons button {
+    padding: 10px;
+    width: 146.7px;
     cursor: pointer;
 }
-.consentement:hover {
-    background-color: grey;
-    color: #fff;
-    border-radius: 10px 10px 0 0;
-
-}
-.btn-merci, .btn-choisis, .btn-ok {
-    background: #fff;
-    cursor: pointer;
-    border: 0.5px solid grey;
+.hauteur {
+    display: unset;
+    width: 120px;
 }
 .btn-ok {
     color: #d9a314;
@@ -843,13 +867,16 @@ button {
     height: 70px;
     left: 70px;
     top: 850px;
-    border: 1px solid black;
     background: yellow;
     border-radius: 60% 100% 60% 100%;
+    box-shadow: 3px 3px 3px #8b8282a6;
+    z-index: 1000000;
 }
+
 .buttonPopup i {
     font-size: 2em;
     padding: 20px;
     cursor: pointer;
 }
+
 

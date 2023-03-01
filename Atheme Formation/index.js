@@ -6,7 +6,11 @@ const veille = document.querySelector(".veille-nav");
 const theme = document.querySelector(".theme");
 const closePop = document.querySelector(".buttonPopup");
 const popup = document.querySelector(".popup");
-console.log(closePop);
+const boxHidden = document.querySelector(".consentement");
+const container = document.querySelector(".container-popup");
+const cache = document.querySelector(".container-hide");
+const btnCadre = document.querySelector(".button-Ppopup");
+console.log(boxHidden);
 
 icon.addEventListener("click", (e) => {
   e.preventDefault();
@@ -60,11 +64,15 @@ theme.addEventListener("click", (e) => {
       null;
   }
 });
+window.addEventListener("load", () => {
+  container.style.opacity = 0;
+});
 closePop.addEventListener("click", () => {
-  if (popup.style.opacity != 0) {
-    popup.style.opacity = 0;
+  if (container.style.opacity != 0) {
+    container.style.opacity = 0;
   } else {
-    popup.style.opacity = 1;
+    container.style.opacity = 1;
+    container.style.top = "250px";
   }
 });
 
@@ -80,3 +88,11 @@ closePop.addEventListener("click", () => {
 //     button.style.transform = "rotate(-10deg)";
 //   });
 // });
+boxHidden.addEventListener("click", () => {
+  if (cache.style.display != 0) {
+    btnCadre.style.top = "550px";
+  } else {
+    btnCadre.style.top = "800px";
+  }
+  cache.classList.toggle("hauteur");
+});
