@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4edd50952d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="navbar">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <li>SHOP</li>
+          <li>COLLECTION</li>
+          <li>ABOUT</li>
+          <li>CONTACTS</li>
+        </ul>
+      </nav>
+
+      <div class="logo">
+        <img src="logo/th (1).jpg" alt="" />
+      </div>
+      <nav class="nav-icon">
+        <form action="text">
+          <input
+            class="search"
+            type="search"
+            placeholder="Rechercher"
+            maxlength="15"
+          />
+        </form>
+        <ul class="ul-icon">
+          <li class="loupe"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="login"><i class="fa-solid fa-user"></i></li>
+          <li><i class="fa-regular fa-heart"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="title">
+      <h1>Identifiez-vous ou créez un compte</h1>
+    </section>
+    <section class="container">
+      <div class="container-left">
+        <div class="content-left">
+          <div>
+            <h2>Nouveaux clients</h2>
+          </div>
+          <div>
+            <p>
+              Cet enregistrement vous permettra de réaliser des achats plus
+              rapidement, de mémoriser plusieurs adresses de livraison, de
+              suivre vos achats en temps réel et d'exécuter beaucoup d'autres
+              fonctions.
+            </p>
+          </div>
+          <div>
+            <a href=""><button class="compte">Créer votre compte</button></a>
+          </div>
+          <div>
+            <p>
+              Si vous possédez un compte Facebook, vous pouvez utiliser les
+              données de votre profil pour vous abonner.
+            </p>
+          </div>
+          <div>
+            <a href=""
+              ><button class="facebook">
+                <i class="fa-brands fa-facebook"></i>Connexion avec Facebook
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="content-right">
+          <div class="clients">
+            <h2>Clients enregistrés</h2>
+          </div>
+          <div class="form">
+            <form class="formulaire" action="">
+              <div class="email-container">
+                <label for="email">ADRESSE EMAIL *</label>
+                <input class="input" type="text" autocomplete="off" id="email"/>
+                <span class="span"></span>
+              </div>
+              <br /><br />
+              <div class="mdp-container">
+                <label for="password">MOT DE PASSE *</label>
+                <input class="inputs" type="password" autocomplete="off" id="password"/>
+                <span class="spanMdp"></span>
+              </div>
+            </form>
+          </div>
+          <div class="mdp">
+            <a href="">Mot de passe oublié</a>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="cgv" />
+            <label for="cgv">Se souvenir de moi</label>
+          </div>
+          <div class="btn">
+            <button>Se connecter</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -50,6 +50,27 @@ ul {
     align-items: center;
     margin-right: 30px;  
 }
+.search {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    top: 60px;
+    right: 130px;
+    transition: 0.5s;
+    opacity: 0;
+    font-weight: 100;
+    border: none;
+    color: white;
+}
+a {
+    color: white;
+}
+.show {
+    opacity: 1;
+}
 .ul-icon li {
     padding-left: 20px;
     cursor: pointer;
