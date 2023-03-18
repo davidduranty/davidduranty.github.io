@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    position: relative;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -180,6 +183,68 @@ ul {
 .btn  button{
     width: 100%;
     height: 50px;
+    background: black;
+    color: white;
+}
+.mdp-oublie {
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px 50px 100px 70px;
+    grid-template-areas: 
+    "tone"
+    "ttwo"
+    "tthree"
+    "tfour"
+    "tfive";
+    background: #fff;
+    z-index: 100000;
+}
+.croix {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+.croix i {
+    padding: 5px;
+    width: 17px;
+    height: 17px;
+}
+.mdp-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mdp-text {
+    text-align: center;
+}
+.mdp-oublie form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 10px;
+}
+.mdp-oublie form label {
+    margin-bottom: 10px;
+}
+.mdp-oublie form input {
+    height: 50px;
+    padding-left: 10px;
+}
+.mdp-oublie button{
+    display: flex;
+    padding: 20px;
+    grid-area: "tfive";
+    justify-content: center;
+    align-items: center;
+    margin: 20px 150px;
     background: black;
     color: white;
 }

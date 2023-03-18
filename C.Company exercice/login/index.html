@@ -86,13 +86,23 @@
             <form class="formulaire" action="">
               <div class="email-container">
                 <label for="email">ADRESSE EMAIL *</label>
-                <input class="input" type="text" autocomplete="off" id="email"/>
+                <input
+                  class="input"
+                  type="text"
+                  autocomplete="off"
+                  id="email"
+                />
                 <span class="span"></span>
               </div>
               <br /><br />
               <div class="mdp-container">
                 <label for="password">MOT DE PASSE *</label>
-                <input class="inputs" type="password" autocomplete="off" id="password"/>
+                <input
+                  class="inputs"
+                  type="password"
+                  autocomplete="off"
+                  id="password"
+                />
                 <span class="spanMdp"></span>
               </div>
             </form>
@@ -110,7 +120,25 @@
         </div>
       </div>
     </section>
-
+    <section class="mdp-oublie">
+      <div class="croix">
+        <i class="fa-solid fa-xmark" style="font-size: 35px"></i>
+      </div>
+      <div class="mdp-titre">
+        <h3>Mot de passe oublié?</h3>
+      </div>
+      <div class="mdp-text">
+        <p>
+          Saisissez votre adresse e-mail ci-dessous. Vous recevrez le lien pour
+          réinitialiser votre mot de passe.
+        </p>
+      </div>
+        <form action="">
+          <label for="email">ADRESSE EMAIL *</label>
+          <input type="email" placeholder="Adresse email" />
+        </form>
+        <button class="valider">Valider</button>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
