@@ -206,6 +206,15 @@ ul {
     "tfive";
     background: #fff;
     z-index: 100000;
+     opacity: 0; 
+}
+.conatinerClose {
+    opacity: 0;
+    transition: 0.8s;
+}
+.containerOpen {
+    opacity: 1;
+    transition: 0.9s
 }
 .croix {
     display: flex;
@@ -247,4 +256,7 @@ ul {
     margin: 20px 150px;
     background: black;
     color: white;
+}
+.validation {
+    cursor: pointer;
 }

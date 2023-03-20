@@ -5,6 +5,10 @@ const inputs = document.querySelectorAll(
   'input[type="text"], input[type="password"]'
 );
 const input = document.querySelector(".input");
+const mdpContainer = document.querySelector(".mdp-oublie");
+const croix = document.querySelector(".croix");
+const mdpForget = document.querySelector(".mdp");
+const btnValide = document.querySelector(".validation");
 let email, password;
 
 const emailChecker = (value) => {
@@ -47,6 +51,20 @@ inputs.forEach((input) => {
         null;
     }
   });
+});
+
+mdpForget.addEventListener("click", (e) => {
+  e.preventDefault();
+  mdpContainer.classList.add("containerOpen");
+});
+croix.addEventListener("click", (e) => {
+  e.preventDefault();
+  mdpContainer.style.opacity = 0;
+  window.location.reload();
+});
+btnValide.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.reload();
 });
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
