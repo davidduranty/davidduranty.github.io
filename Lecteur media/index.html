@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4edd50952d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="menu">
+        <h1>Lecteur Média</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            Artistes Audio<i class="fa-solid fa-caret-down" id="artistes"></i>
+          </li>
+          <li>Clip Vidéos<i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="navbar-services">
+      <ul>
+        <li id="bob1">Is this love</li>
+        <li id="bob2">Jammin</li>
+        <li id="bob3">One love</li>
+        <li id="bob4">Could you be loved</li>
+      </ul>
+    </section>
+    <section class="container">
+      <div class="lecteur1">
+        <img
+          src="img/abstract-69124_1280.jpg"
+          style="width: 300px; height: 100%"
+          alt=""
+        />
+        <div class="controls1">
+          <div class="backward1">
+            <button><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="circle1">
+            <i class="fa-solid fa-play" id="control1"></i>
+          </div>
+          <div class="forward1">
+            <button><i class="fa-solid fa-forward"></i></button>
+          </div>
+          <div class="range1">
+            <input type="range" value="0" id="progress1" />
+          </div>
+        </div>
+      </div>
+      <div class="textLove">
+        <p>" Is This Love " est une chanson de Bob Marley and the Wailers , sortie sur leur album de 1978 Kaya . La chanson est devenue l'une des chansons les plus connues de Marley et faisait partie de la compilation Legend . Il a culminé au numéro 9 des charts britanniques lors de sa sortie en 1978. Une interprétation live de la chanson peut être trouvée sur l' album live Babylon by Bus de Paris en 1978.</p>
+      </div>
+      <div class="lecteur2">
+        <img
+        src="img/abstract-69124_1280.jpg"
+        style="width: 300px; height: 100%"
+        alt=""
+      />
+        <div class="controls2">
+          <div class="backward2">
+            <button><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="circle2">
+            <i class="fa-solid fa-play" id="control2"></i>
+          </div>
+          <div class="forward2">
+            <button><i class="fa-solid fa-forward"></i></button>
+          </div>
+          <div class="range2>
+            <input type="range" value="0" id="progress2" />
+          </div>
+        </div>
+      </div>
+      <div class="lecteur3">
+        <img
+          src="img/abstract-69124_1280.jpg"
+          style="width: 300px; height: 100%"
+          alt=""
+        />
+        <div class="controls">
+          <div class="backward">
+            <button><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-play" id="control"></i>
+          </div>
+          <div class="forward">
+            <button><i class="fa-solid fa-forward"></i></button>
+          </div>
+          <div class="range">
+            <input type="range" value="0" id="progress" />
+          </div>
+        </div>
+      </div>
+      <div class="lecteur4">
+        <!-- <img
+          src="img/abstract-69124_1280.jpg"
+          style="width: 300px; height: 100%"
+          alt=""
+        /> -->
+        <div class="controls">
+          <div class="backward">
+            <button><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-play" id="control"></i>
+          </div>
+          <div class="forward">
+            <button><i class="fa-solid fa-forward"></i></button>
+          </div>
+          <div class="range">
+            <input type="range" value="0" id="progress" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <audio class="audio" src="./audio/bob-marley-is-this-love.mp3"></audio>
+    <audio class="audio1" src="./audio/bob-marley-one-love.mp3"></audio>
+    <audio class="audio2" src="./audio/bob-marley-jammin.mp3"></audio>
+    <audio class="audio3" src="./audio/could-you-be-loved.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
