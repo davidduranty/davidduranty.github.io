@@ -13,13 +13,16 @@
 
 // 7 - Gérer les 3 boutons pour trier (méthode sort()) les pays
 const countriesContainer = document.querySelector(".countries-container");
+const btnSort = document.querySelectorAll(".btnSort")
+console.log(btnSort);
 let response = [];
+let sortMethod = "maxToMin";
 
 const countriesApp = async () => {
   await fetch("https://restcountries.com/v3.1/all")
     .then((res) => res.json())
     .then((data) => (response = data));
-  console.log(response);
+
   countriesDisplay();
 };
 
@@ -28,18 +31,30 @@ window.addEventListener("load", countriesApp);
 const countriesDisplay = () => {
   countriesContainer.innerHTML = response
     .filter((countries) =>
-      countries.translations.fra.common.includes(inputSearch.value)
+      countries.translations.fra.common
+        .toLowerCase()
+        .includes(inputSearch.value.toLowerCase())
     )
+    .slice(0, inputRange.value)
+    .sort((a, b) => {
+      if (sortMethod === "maxToMin") {
+        return b.population - a.population;
+      } else if (sortMethod === "minToMax") {
+        return a.population - b.population;
+      } else if (sortMethod === "alpha") {
+        return a.translations.fra.common.localeCompare(b.translations.fra.common)
+      }
+    })
     .map(
       (countries) =>
         `
       <div class="card">
-        <img src = ${countries.flags.png} alt= "drapeau ${
+        <img src = ${countries.flags.svg} alt= "drapeau ${
           countries.translations.fra.common
         }">
         <h1> ${countries.translations.fra.common}</h1>
         <h3>Capitale: ${countries.capital}</h3>
-        <p> Population: ${countries.population}</p>
+        <p> Population: ${countries.population.toLocaleString()}</p>
       </div>
 
       `
@@ -47,3 +62,23 @@ const countriesDisplay = () => {
     .join("");
 };
 countriesDisplay();
+const countriesSearch = () => {
+  inputSearch.addEventListener("input", countriesDisplay);
+};
+
+countriesSearch();
+const countriesRange = () => {
+  inputRange.addEventListener("input", () => {
+    countriesDisplay();
+    rangeValue.textContent = inputRange.value;
+  });
+};
+countriesRange();
+
+btnSort.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    sortMethod = e.target.id;
+    countriesDisplay()
+  })
+  
+})
