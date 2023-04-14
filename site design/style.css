@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Arima:wght@100;400&family=Cardo:ital,wght@0,700;1,400&family=Ms+Madi&family=Oregano:ital@1&family=Poppins&family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(55, 50, 50);
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+.menu {
+    width: 100%;
+    height: 80px;
+
+}
+main {
+    display: flex;
+}
+.logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(69, 206, 206, 0.759);
+    letter-spacing: 1px;
+    animation: logo 0.9s ease forwards;
+    opacity: 0;
+    font-weight: bold;
+}
+nav {
+    margin: 0 0 0 40px;
+    width: 80%;
+    height: 80px;
+}
+ul {
+    height: 80px;
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    justify-content: end;
+    align-items: center;
+}
+li {
+    margin-right: 50px;
+    margin-left: 60px;
+    animation: menu 2s;
+    animation-delay: calc(.5s * var(--i));
+    /* transform: translate(600px); */
+    
+}
+ul li a {
+    display: inline-block;
+    color: rgba(69, 206, 206, 0.759);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    animation: nav 0.9s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+}
+.container {
+    display: flex;
+    max-width: 100%;
+    height: 700px;
+    margin: 50px;
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    height: 500px;
+    margin-top: 200px;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-weight: bold;
+    opacity: 0;
+    animation: h1 3s ease forwards;
+}
+h3 {
+    margin: 10px;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: h3 4s ease forwards;
+}
+span {
+    color: rgba(69, 206, 206, 0.759);
+    font-size: 3rem;
+    font-weight: bold;
+}
+p {
+    margin: 10px;
+    color: white;
+    padding-top: 30px;
+    scale: 0;
+    animation: p 5s ease forwards;
+}
+.img-content {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.img-content img {
+    max-width: 500px;
+    margin-right: -20px;
+    opacity: 0;
+    animation: zoomIn 1 ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+.icon-reseau {
+    display: flex;
+    margin-top: 30px;
+    /* width: 50px; */
+    /* height: 50px; */
+    
+    
+}
+.icon-reseau a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    background: transparent;
+    border: 2px solid rgba(69, 206, 206, 0.759);
+    font-size: 36px;
+    border-radius: 50%;
+    color: rgba(69, 206, 206, 0.759);
+    text-decoration: none;
+    transition: 0.6s;
+    animation: nav 2.5s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+}
+.icon-reseau  .fa-brands {
+    background: transparent;
+    font-size: 36px;
+}
+.icon-reseau a:hover {
+    background: rgba(69, 206, 206, 0.759);
+    color: rgb(55, 50, 50);
+    box-shadow: 0 0 20px rgba(69, 206, 206, 0.759);
+    border: none;
+}
+
+@keyframes logo {
+    0% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes nav {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes h3 {
+    0% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes h1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes p {
+    0% {
+        /* transform: translateY(-100px); */
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
