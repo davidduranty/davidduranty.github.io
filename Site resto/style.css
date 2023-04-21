@@ -203,6 +203,27 @@ ul li:hover::after {
     object-fit: cover;
     
 }
+.galerie-biere {
+    position: relative;
+    height: 400px;
+}
+.galerie-biere h2 {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: rgba(69, 206, 206, 0.759);
+}
+.img-bieres {
+    display: flex;
+    overflow-x: hidden;
+    width: 70%;
+    margin: 50px auto;
+    gap: 40px;
+}
+.img-bieres img {
+    width: 280px;
+    height: 200px;
+}
 @keyframes nav {
     0% {
         transform: translateX(-300px);
