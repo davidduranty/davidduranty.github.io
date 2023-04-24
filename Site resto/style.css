@@ -178,20 +178,23 @@ ul li:hover::after {
     transition: 0.8s ease-in;
 }
 .photo {
-    overflow-x: hidden;
+    
     width: 70%;
     margin: 50px auto;
 }
 .photo-swiper {
+    overflow-x: hidden;
     display: flex;
     flex-shrink: 0;
     gap: 40px;
     flex-wrap: nowrap;
+    scroll-behavior: smooth;
 }
 .photo-swiper img {
     box-shadow: 0 0 10px;
 }
 .biere {
+    height: 400px;
     display: flex;
     margin: 50px 0px;
     background: rgba(67, 84, 89, 0.528);
