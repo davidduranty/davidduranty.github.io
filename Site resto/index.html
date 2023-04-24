@@ -13,22 +13,20 @@
   </head>
   <body>
     <section class="navbar">
-      <div class="logo">RESTAURANT <span class="textDefil"></span></div>
+      <div class="logo">RESTAURANT: <span class="textDefil"></span></div>
       <div class="menu">
         <nav>
           <ul>
-            <li style="--i: 1">Acceuil</li>
-            <li style="--i: 2">Burgers</li>
-            <li style="--i: 3">A Propos</li>
-            <li style="--i: 4">Cartes burgers</li>
-            <li style="--i: 5">Bière</li>
-            <li style="--i: 6">Carte des bières</li>
-            <li style="--i: 7">Contact</li>
+            <li><a href="#acceuil" style="--i: 1">Acceuil</a></li>
+            <li><a href="#burgers" style="--i: 2">Burgers</a></li>
+            <li><a href="#aPropos" style="--i: 3">A Propos</a></li>
+            <li><a href="#biere" style="--i: 5">Bière</a></li>
+            <li><a href="#contact" style="--i: 7">Contact</a></li>
           </ul>
         </nav>
       </div>
     </section>
-    <section class="img">
+    <section id="acceuil" class="img">
       <div class="img-content">
         <img src="assets/img/bar-498420_1920.jpg" alt="" />
       </div>
@@ -37,7 +35,7 @@
       </div>
       <button class="btn">Réservation Rapide</button>
     </section>
-    <section class="galerie-burger">
+    <section id="burgers" class="galerie-burger">
       <h2>
         Vous adorez nos BURGERS
         <img class="star" src="assets/svg/1336003.png" alt="" />
@@ -133,7 +131,12 @@
         </div>
       </div>
     </section>
-    <section class="biere">
+    <div class="carte-burger">
+      <button id="cartesBurgers" class="bouton1">
+        Afficher la carte des burgers
+      </button>
+    </div>
+    <section id="aPropos" class="biere">
       <div class="texte-biere">
         <h2>
           Qui sommes nous
@@ -158,10 +161,8 @@
         <img src="assets/img biere/th.jpg" alt="" />
       </div>
     </section>
-    <div class="carte-burger">
-      <button class="bouton">Afficher la carte des burgers</button>
-    </div>
-    <section class="galerie-biere">
+
+    <section id="biere" class="galerie-biere">
       <h2>Vous aimez surement nos BIERES</h2>
       <svg
         class="left gauche"
@@ -235,21 +236,42 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
       </div>
     </section>
     <div class="carte-burger">
-      <button class="bouton">Afficher la carte des bières</button>
+      <button id="carteDesBieres" class="bouton">
+        Afficher la carte des bières
+      </button>
     </div>
-    <section class="footer">
-      <h1>CONTACT</h1>
-      <p>Adresse <i class="fa-solid fa-location-dot"></i></p>
-      <p>Horaire d'ouverture <i class="fa-solid fa-timer"></i></p>
-      <p>Téléphone <i class="fa-solid fa-phone"></i></p>
-      <p>Message <i class="fa-solid fa-message"></i></p>
-      <form action="">
-        <input type="text" placeholder="Nom" />
-        <input type="phone" placeholder="Numéro téléphone" />
-        <input type="email" placeholder="Email" />
-        <input type="textarea" placeholder="Message" />
-      </form>
-      <button>Envoyer message</button>
+    <section id="contact" class="footer">
+      <div class="titre">RESTAURANT: CALIFORNIA</div>
+      <div class="contact">
+        <h1>CONTACT</h1>
+        <p>
+          Adresse <i class="fa-solid fa-location-dot"></i>: 25 rue du Code
+          1233456 Code sur Mer
+        </p>
+        <p>
+          Horaire d'ouverture: <i class="fa-solid fa-timer"></i> Du lundi au
+          samedi 11h -> 15h et 19h -> 23h
+        </p>
+        <span class="dimanche">Dimanche: fermé </span>
+        <p>Téléphone <i class="fa-solid fa-phone"></i>:123456789</p>
+      </div>
+      <div class="footer-right">
+        <form action="">
+          <input type="text" placeholder="Nom" />
+          <input type="phone" placeholder="Numéro téléphone" />
+          <input type="email" placeholder="Email" />
+          <textarea
+            class="textarea"
+            type="textarea"
+            placeholder="Message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </form>
+        <button class="btn2">Envoyer message</button>
+      </div>
       <div class="map"></div>
     </section>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
