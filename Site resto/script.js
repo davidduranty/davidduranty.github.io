@@ -35,3 +35,13 @@ changeNext();
 changePrevious();
 changeNextBeer();
 changePreviousBeer();
+const carte = document.querySelector(".carte")
+const btn = document.getElementById("cartesBurgers")
+
+
+btn.addEventListener("click", () => {
+  carte.classList.add("carteMove")
+})
+window.addEventListener("click", () => {
+   carte.classList.toggle("carteRemove")
+})

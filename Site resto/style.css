@@ -117,7 +117,7 @@ ul li:hover::after {
 .galerie-burger h2 {
     display: flex;
     align-items: center;
-    margin: 20px;
+    /* margin: 20px; */
     color: rgba(69, 206, 206, 0.759);
 }
 .star {
@@ -159,6 +159,7 @@ ul li:hover::after {
     background: rgb(70, 98, 104);
     border: 1px solid black;
     box-shadow: 0 0 8px ;
+    
 }
 .bouton1:hover {
     color: white;
@@ -314,6 +315,72 @@ input {
     box-shadow: 0 0 10px;
     border: none;
     cursor: pointer;
+}
+.carte {
+    position: absolute;
+    transform: translateX(-2000px);
+    opacity: 0;
+    z-index: 100000;
+}
+.carteMove {
+    transform: translateX(0) ;
+    transition: 0.9s ease;
+    opacity: 1;
+}
+.carteRemove {
+    transform: translateX(-2000px) !important;
+    transition: 0.9s ease;
+}
+
+.titre-carte {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.container {
+    
+    margin: 100px auto;
+    border-radius: 20px;
+    width: 80%;
+    height: 700px;
+    display: flex;
+    background: rgb(112, 104, 104);
+}
+.menu-left, .menu-right{
+    margin: 0 auto;
+}
+.h2 {
+    font-size: 1rem;
+}
+#left {
+    width: 40%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(10, 70px);
+    grid-template-columns: 90% 10%;
+}
+#right {
+    width: 40%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(10, 70px);
+    grid-template-columns: 90% 10%;
+}
+.box {
+    
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box, .prix {
+    border: 2px solid black;
 }
 @keyframes nav {
     0% {
