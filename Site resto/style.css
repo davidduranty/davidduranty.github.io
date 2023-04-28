@@ -321,15 +321,51 @@ input {
     transform: translateX(-2000px);
     opacity: 0;
     z-index: 100000;
+    
+}
+.carteBiere {
+    position: absolute;
+    transform: translateX(-2000px);
+    opacity: 0;
+    z-index: 100000;
+}
+.croix {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: black;
+    border-radius: 20px;
+}
+.croixBox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: black;
+    border-radius: 20px;
 }
 .carteMove {
     transform: translateX(0) ;
     transition: 0.9s ease;
     opacity: 1;
+   
+}
+.carteMoveBox {
+    transform: translateX(0) ;
+    transition: 0.9s ease;
+    opacity: 1;
 }
 .carteRemove {
-    transform: translateX(-2000px) !important;
+    transform: translateX(-2000px);
     transition: 0.9s ease;
+    /* opacity: 0; */
+    z-index: -100000;
+    box-shadow: 0 10px 30px black;
 }
 
 .titre-carte {
@@ -338,8 +374,14 @@ input {
     font-size: 3rem;
     color: white;
 }
+.titre-carte-biere {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
 .container {
-    
+    position: relative;
     margin: 100px auto;
     border-radius: 20px;
     width: 80%;
@@ -347,7 +389,19 @@ input {
     display: flex;
     background: rgb(112, 104, 104);
 }
+.containerBiere {
+    position: relative;
+    margin: 100px 60px;
+    border-radius: 20px;
+    width: 250%;
+    height: 700px;
+    display: flex;
+    background: rgb(112, 104, 104);
+}
 .menu-left, .menu-right{
+    margin: 0 auto;
+}
+.menu-leftBiere, .menu-rightBiere{
     margin: 0 auto;
 }
 .h2 {
@@ -360,7 +414,21 @@ input {
     grid-template-rows: repeat(10, 70px);
     grid-template-columns: 90% 10%;
 }
+#leftBiere {
+    width: 40%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(10, 70px);
+    grid-template-columns: 90% 10%;
+}
 #right {
+    width: 40%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(10, 70px);
+    grid-template-columns: 90% 10%;
+}
+#rightBiere {
     width: 40%;
     height: 800px;
     display: grid;
