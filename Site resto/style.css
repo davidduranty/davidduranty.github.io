@@ -319,14 +319,17 @@ input {
 .carte {
     position: absolute;
     transform: translateX(-2000px);
-    opacity: 0;
+    
     z-index: 100000;
     
 }
 .carteBiere {
+    width: 90%;
+    margin-top: -200px;
+    margin-left: 250px;
     position: absolute;
     transform: translateX(-2000px);
-    opacity: 0;
+    
     z-index: 100000;
 }
 .croix {
@@ -351,21 +354,14 @@ input {
 }
 .carteMove {
     transform: translateX(0) ;
-    transition: 0.9s ease;
-    opacity: 1;
+    transition: 0.9s ease-in-out;
+    
    
 }
 .carteMoveBox {
     transform: translateX(0) ;
     transition: 0.9s ease;
     opacity: 1;
-}
-.carteRemove {
-    transform: translateX(-2000px);
-    transition: 0.9s ease;
-    /* opacity: 0; */
-    z-index: -100000;
-    box-shadow: 0 10px 30px black;
 }
 
 .titre-carte {
@@ -388,12 +384,13 @@ input {
     height: 700px;
     display: flex;
     background: rgb(112, 104, 104);
+    box-shadow: 0 0 10px ;
 }
 .containerBiere {
     position: relative;
     margin: 100px 60px;
     border-radius: 20px;
-    width: 250%;
+    width: 80%;
     height: 700px;
     display: flex;
     background: rgb(112, 104, 104);

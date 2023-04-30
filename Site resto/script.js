@@ -41,26 +41,39 @@ const croix = document.querySelector(".croix")
 const croixBox = document.querySelector(".croixBox")
 const carteBiere = document.querySelector(".carteBiere")
 const carteDesBieres = document.getElementById("carteDesBieres")
+console.log(carte);
 btn.addEventListener("click", () => {
   carte.classList.add("carteMove")
 })
-carteDesBieres.addEventListener("click", () => {
-  carteBiere.classList.add("carteMoveBox")
-})
-
 croix.addEventListener("click", () => {
-  carte.classList.add("carteRemove")
-  
-  setTimeout(() => {
-
-    window.location.reload();
-  },1000)
+  carte.classList.remove("carteMove")
+})
+carteDesBieres.addEventListener("click", () => {
+  carteBiere.classList.add("carteMove")
 })
 croixBox.addEventListener("click", () => {
-  carteBiere.classList.add("carteRemove")
-  
-  setTimeout(() => {
-
-    window.location.reload();
-  },1000)
+  carteBiere.classList.remove("carteMove")
 })
+// btn.addEventListener("click", () => {
+//   carte.classList.add("carteMove")
+// })
+// carteDesBieres.addEventListener("click", () => {
+//   carteBiere.classList.add("carteMoveBox")
+// })
+
+// croix.addEventListener("click", () => {
+//   carte.classList.add("carteRemove")
+  
+//   setTimeout(() => {
+
+//     window.location.reload();
+//   },1000)
+// })
+// croixBox.addEventListener("click", () => {
+//   carteBiere.classList.add("carteRemove")
+  
+//   setTimeout(() => {
+
+//     window.location.reload();
+//   },1000)
+// })
