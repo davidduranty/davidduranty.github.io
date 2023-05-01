@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body {
-    background: rgb(70, 98, 104);
+    background: rgba(75, 123, 137, 0.528);
     font-family: "cardo", sans-serif;
-    border: 1px solid red inset;
+    
 }
 .navbar {
     position: fixed;
@@ -78,6 +79,7 @@ ul li:hover::after {
 }
 .img {
     position: relative;
+    
 }
 .img-content {
     width: 100%;
@@ -112,7 +114,9 @@ ul li:hover::after {
 }
 .galerie-burger {
     position: relative;
+    
     height: 400px;
+    background: rgba(44, 69, 77, 0.528);
 }
 .galerie-burger h2 {
     display: flex;
@@ -147,13 +151,17 @@ ul li:hover::after {
     border-radius: 20px;
 }
 .carte-burger {
+    position: relative;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    background: rgba(75, 123, 137, 0.528);
     
 }
 .bouton1 {
+    position: absolute;
+    top: -80px;
     padding: 20px;
     border-radius: 30px;
     background: rgb(70, 98, 104);
@@ -197,8 +205,8 @@ ul li:hover::after {
 .biere {
     height: 400px;
     display: flex;
-    margin: 50px 0px;
-    background: rgba(67, 84, 89, 0.528);
+    margin: 0px 0px;
+    background: rgba(75, 123, 137, 0.528);
 }
 .biere h2 {
     margin: 20px 20px;
@@ -229,12 +237,14 @@ ul li:hover::after {
 .galerie-biere {
     position: relative;
     height: 400px;
+    background: rgba(75, 123, 137, 0.528);
 }
 .galerie-biere h2 {
     display: flex;
     align-items: center;
-    margin: 20px;
+    padding-left: 20px;
     color: rgba(69, 206, 206, 0.759);
+    
 }
 .img-bieres {
     display: flex;
@@ -249,7 +259,7 @@ ul li:hover::after {
     height: 200px;
 }
 .footer {
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 10% 40% 50%;
@@ -295,6 +305,10 @@ input {
     box-shadow: 0 0 10px;
     border: none;
 }
+.input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
 .textarea {
     border-radius: 10px;
     margin: 20px 0 0 50px;
@@ -304,6 +318,11 @@ input {
     box-shadow: 0 0 10px;
     border: none;
     resize: none;
+    color: white;
+}
+.textarea::placeholder {
+    color: white;
+    padding: 5px 0 0 10px;
 }
 .btn2 {
     border-radius: 50px;

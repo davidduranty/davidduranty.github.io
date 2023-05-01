@@ -54,26 +54,14 @@ carteDesBieres.addEventListener("click", () => {
 croixBox.addEventListener("click", () => {
   carteBiere.classList.remove("carteMove")
 })
-// btn.addEventListener("click", () => {
-//   carte.classList.add("carteMove")
-// })
-// carteDesBieres.addEventListener("click", () => {
-//   carteBiere.classList.add("carteMoveBox")
-// })
 
-// croix.addEventListener("click", () => {
-//   carte.classList.add("carteRemove")
-  
-//   setTimeout(() => {
-
-//     window.location.reload();
-//   },1000)
-// })
-// croixBox.addEventListener("click", () => {
-//   carteBiere.classList.add("carteRemove")
-  
-//   setTimeout(() => {
-
-//     window.location.reload();
-//   },1000)
-// })
+const nav = document.querySelectorAll(".nav")
+window.addEventListener("scroll", () => {
+ nav.forEach(element => {
+   if (scrollY > 1000) {
+    element.style.color = "white"
+   } else {
+     element.style.color = "rgba(69, 206, 206, 0.759)"
+  }
+ });
+})

@@ -13,15 +13,17 @@
   </head>
   <body>
     <section class="navbar">
-      <div class="logo">RESTAURANT: <span class="textDefil"></span></div>
+      <div class="logo nav">
+        RESTAURANT: <span class="textDefil nav"></span>
+      </div>
       <div class="menu">
         <nav>
           <ul>
-            <li><a href="#acceuil" style="--i: 1">Acceuil</a></li>
-            <li><a href="#burgers" style="--i: 2">Burgers</a></li>
-            <li><a href="#aPropos" style="--i: 3">A Propos</a></li>
-            <li><a href="#biere" style="--i: 5">Bière</a></li>
-            <li><a href="#contact" style="--i: 7">Contact</a></li>
+            <li><a class="nav" href="#acceuil" style="--i: 1">Acceuil</a></li>
+            <li><a class="nav" href="#burgers" style="--i: 2">Burgers</a></li>
+            <li><a class="nav" href="#aPropos" style="--i: 3">A Propos</a></li>
+            <li><a class="nav" href="#biere" style="--i: 4">Bière</a></li>
+            <li><a class="nav" href="#contact" style="--i: 5">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -577,9 +579,24 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
       </div>
       <div class="footer-right">
         <form action="">
-          <input type="text" placeholder="Nom" />
-          <input type="phone" placeholder="Numéro téléphone" />
-          <input type="email" placeholder="Email" />
+          <input
+            type="text"
+            class="input"
+            placeholder="Nom"
+            style="color: white"
+          />
+          <input
+            type="phone"
+            class="input"
+            placeholder="Numéro téléphone"
+            style="color: white"
+          />
+          <input
+            type="email"
+            class="input"
+            placeholder="Email"
+            style="color: white"
+          />
           <textarea
             class="textarea"
             type="textarea"
