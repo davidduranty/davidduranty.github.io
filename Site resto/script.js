@@ -35,33 +35,36 @@ changeNext();
 changePrevious();
 changeNextBeer();
 changePreviousBeer();
-const carte = document.querySelector(".carte")
-const btn = document.getElementById("cartesBurgers")
-const croix = document.querySelector(".croix")
-const croixBox = document.querySelector(".croixBox")
-const carteBiere = document.querySelector(".carteBiere")
-const carteDesBieres = document.getElementById("carteDesBieres")
+const carte = document.querySelector(".carte");
+const btn = document.getElementById("cartesBurgers");
+const croix = document.querySelector(".croix");
+const croixBox = document.querySelector(".croixBox");
+const carteBiere = document.querySelector(".carteBiere");
+const carteDesBieres = document.getElementById("carteDesBieres");
 console.log(carte);
 btn.addEventListener("click", () => {
-  carte.classList.add("carteMove")
-})
+  carte.classList.add("carteMove");
+});
 croix.addEventListener("click", () => {
-  carte.classList.remove("carteMove")
-})
+  carte.classList.remove("carteMove");
+});
 carteDesBieres.addEventListener("click", () => {
-  carteBiere.classList.add("carteMove")
-})
+  carteBiere.classList.add("carteMove");
+});
 croixBox.addEventListener("click", () => {
-  carteBiere.classList.remove("carteMove")
-})
+  carteBiere.classList.remove("carteMove");
+});
 
-const nav = document.querySelectorAll(".nav")
+const nav = document.querySelectorAll(".nav");
+
 window.addEventListener("scroll", () => {
- nav.forEach(element => {
-   if (scrollY > 1000) {
-    element.style.color = "white"
-   } else {
-     element.style.color = "rgba(69, 206, 206, 0.759)"
-  }
- });
-})
+  const scrollValue =
+    (window.scrollY + window.innerHeight) * 100 / document.body.offsetHeight;
+  nav.forEach((element) => {
+    if (scrollValue > 75) {
+      element.style.color = "white";
+    } else {
+      element.style.color = "rgba(69, 206, 206, 0.759)";
+    }
+  });
+});
