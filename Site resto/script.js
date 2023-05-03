@@ -56,10 +56,11 @@ croixBox.addEventListener("click", () => {
 });
 
 const nav = document.querySelectorAll(".nav");
+const swiper = document.querySelector(".photo-swiper");
 
 window.addEventListener("scroll", () => {
   const scrollValue =
-    (window.scrollY + window.innerHeight) * 100 / document.body.offsetHeight;
+    ((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight;
   nav.forEach((element) => {
     if (scrollValue > 75) {
       element.style.color = "white";
@@ -67,4 +68,8 @@ window.addEventListener("scroll", () => {
       element.style.color = "rgba(69, 206, 206, 0.759)";
     }
   });
+  if (scrollValue > 50) {
+    swiper.style.transform = "translateX(0)";
+    swiper.style.transition = "1s ease";
+  }
 });

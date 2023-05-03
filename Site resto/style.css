@@ -191,49 +191,41 @@ ul li:hover::after {
     transition: 0.8s ease-in;
 }
 .photo {
-    
-    width: 70%;
-    margin: 50px auto;
+   
 }
 .photo-swiper {
-    overflow-x: hidden;
+    transform: translateX(2000px);
+    width: 70%;
+    height: 200px;
+    margin: 50px auto;
+    overflow: hidden;
     display: flex;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     gap: 40px;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
 }
 .photo-swiper img {
     box-shadow: 0 0 10px;
+    width: 280px;
+    height: 200px;
 }
-.img1  {
+.img-content1, .img-content2, .img-content3, .img-content4, .img-content5, .img-content6, .img-content7, .img-content8, .img-content9, .img-content10 {
     position: relative;
 }
-.pContent {
-    position: absolute;
-    width: 280px;
-    top: 100px;
-    font-size: 0.9rem;
-    z-index: -10;
-    color: white;
-    text-shadow: 0 0 10px white;
-    letter-spacing: 1px;
-}
-/* .img2 {
-    position: relative;
-}
-.pContent2 {
-    position: absolute;
-    width: 280px;
-    top: 100px;
-    font-size: 0.9rem;
-    z-index: -10;
-    color: white;
-    text-shadow: 0 0 10px white;
-    letter-spacing: 1px;
-} */
 
-.imgHover:hover {
+.pContent1, .pContent2, .pContent3, .pContent4, .pContent5, .pContent6, .pContent7, .pContent8, .pContent9, .pContent10 {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: bold;  
+}
+
+
+.img1:hover, .img2:hover, .img3:hover,.img4:hover, .img5:hover, .img6:hover, .img7:hover, .img8:hover, .img9:hover, .img10:hover {
     opacity: 0.05;
     cursor: pointer;
     
@@ -532,4 +524,5 @@ input {
         box-shadow: 0 0 10px;
     }
 }
+
 
