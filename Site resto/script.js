@@ -23,12 +23,12 @@ function changePrevious() {
 }
 function changeNextBeer() {
   rightBeer.addEventListener("click", () => {
-    beer.scrollLeft -= 360;
+    beer.scrollLeft -= 330;
   });
 }
 function changePreviousBeer() {
   leftBeer.addEventListener("click", () => {
-    beer.scrollLeft += 360;
+    beer.scrollLeft += 330;
   });
 }
 changeNext();
@@ -41,6 +41,8 @@ const croix = document.querySelector(".croix");
 const croixBox = document.querySelector(".croixBox");
 const carteBiere = document.querySelector(".carteBiere");
 const carteDesBieres = document.getElementById("carteDesBieres");
+const span = document.querySelector(".btn");
+const rect = document.querySelector(".rect");
 console.log(carte);
 btn.addEventListener("click", () => {
   carte.classList.add("carteMove");
@@ -62,7 +64,7 @@ window.addEventListener("scroll", () => {
   const scrollValue =
     ((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight;
   nav.forEach((element) => {
-    if (scrollValue > 75) {
+    if (scrollValue > 70) {
       element.style.color = "black";
     } else {
       element.style.color = "rgba(69, 206, 206, 0.759)";
@@ -72,4 +74,11 @@ window.addEventListener("scroll", () => {
     swiper.style.transform = "translateX(0)";
     swiper.style.transition = "1s ease";
   }
+});
+span.addEventListener("mouseover", () => {
+  rect.classList.add("rectangle");
+});
+span.addEventListener("mouseout", () => {
+  rect.classList.remove("rectangle");
+  rect.style.transition = "2s";
 });

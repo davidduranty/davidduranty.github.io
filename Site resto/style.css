@@ -11,6 +11,9 @@ body {
     font-weight: bold;
     
 }
+h2 {
+    margin: 20px 0 0 20px;
+}
 .navbar {
     position: fixed;
     width: 100%;
@@ -98,11 +101,14 @@ ul li:hover::after {
     font-size: 4rem;
     color: rgba(69, 206, 206, 0.759);
 }
+.boutonBtn {
+    position: relative;
+}
 .btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, -850%);
     cursor: pointer;
     background: transparent;
     padding: 20px;
@@ -111,10 +117,25 @@ ul li:hover::after {
     font-size: 1.2rem;
     box-shadow: 0 0 10px black;
 }
+.rect {
+    position: absolute;
+    top: -528px;
+    left: 900px;
+    z-index: 60;
+    border-top: 5px solid rgba(69, 206, 206, 0.759);
+    box-shadow:  0 0 10px rgba(69, 206, 206, 0.759);
+    width: 30px;
+    height: 10px;
+}
 .btn:hover {
     color: white;
-    transition: 0.9s ease;
+    border-radius: 20px;
+    transition: 0.9s ease-in-out;
     box-shadow: 0 0 10px white;
+}
+.rectangle {
+    transform: translateX(-130px);
+    transition: 1s ease-in-out;
 }
 .galerie-burger {
     position: relative;
@@ -149,7 +170,7 @@ ul li:hover::after {
 }
 .left:hover, .right:hover {
     cursor: pointer;
-    background: rgba(57, 51, 51, 0.533);
+    background: rgba(132, 122, 122, 0.343);
     transition: 0.8s ease-in-out;
     box-shadow: 0 0 10px rgba(57, 51, 51, 0.533);
     border-radius: 20px;
@@ -199,7 +220,7 @@ ul li:hover::after {
     overflow: hidden;
     display: flex;
     /* flex-shrink: 0; */
-    gap: 40px;
+    gap: 30px;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
 }
@@ -282,8 +303,8 @@ ul li:hover::after {
 .swiper-biere {
     
     /* transform: translateX(2000px); */
-    width: 60%;
-    height: 200px;
+    width: 970px;
+    height: 220px;
     margin: 50px auto;
     overflow: hidden;
     display: flex;
@@ -323,7 +344,7 @@ ul li:hover::after {
     width: 100%;
     display: grid;
     grid-template-columns: 10% 40% 50%;
-    background: rgba(142, 133, 133, 0.533);
+    background: rgba(207, 192, 192, 0.533);
 }
 .titre {
     display: flex;
@@ -419,8 +440,11 @@ input {
     right: 10px;
     top: 10px;
     cursor: pointer;
-    background: black;
+    /* background: black; */
     border-radius: 20px;
+}
+.croix:hover, .croixBox:hover{
+    animation: croix 1s ease-in-out;
 }
 .croixBox {
     position: absolute;
@@ -429,9 +453,10 @@ input {
     right: 10px;
     top: 10px;
     cursor: pointer;
-    background: black;
+    /* background: black; */
     border-radius: 20px;
 }
+
 .carteMove {
     transform: translateX(0) ;
     transition: 0.9s ease-in-out;
@@ -463,7 +488,7 @@ input {
     width: 80%;
     height: 700px;
     display: flex;
-    background: rgb(112, 104, 104);
+    background: rgb(176, 162, 162);
     box-shadow: 0 0 10px ;
 }
 .containerBiere {
@@ -473,7 +498,7 @@ input {
     width: 80%;
     height: 700px;
     display: flex;
-    background: rgb(112, 104, 104);
+    background: rgb(189, 172, 172);
 }
 .menu-left, .menu-right{
     margin: 0 auto;
@@ -496,7 +521,7 @@ input {
     height: 800px;
     display: grid;
     grid-template-rows: repeat(10, 70px);
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 80% 20%;
 }
 #right {
     width: 40%;
@@ -510,7 +535,7 @@ input {
     height: 800px;
     display: grid;
     grid-template-rows: repeat(10, 70px);
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 80% 20%;
 }
 .box {
     
@@ -556,5 +581,9 @@ input {
         box-shadow: 0 0 10px;
     }
 }
-
+@keyframes croix {
+    0% {
+        transform: rotate(180deg);
+    }
+}
 
