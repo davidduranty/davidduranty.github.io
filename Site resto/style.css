@@ -6,7 +6,7 @@
     
 }
 body {
-    background: rgba(75, 123, 137, 0.528);
+    /* background: rgba(75, 123, 137, 0.528); */
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    background: rgba(57, 51, 51, 0.533);
+    /* background: rgba(57, 51, 51, 0.533); */
 }
 .logo {
     width: 40%;
@@ -120,7 +120,7 @@ ul li:hover::after {
     position: relative;
     
     height: 400px;
-    background: rgba(44, 69, 77, 0.528);
+    /* background: rgba(44, 69, 77, 0.528); */
 }
 .galerie-burger h2 {
     display: flex;
@@ -160,7 +160,7 @@ ul li:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(75, 123, 137, 0.528);
+    /* background: rgba(75, 123, 137, 0.528); */
     
 }
 .bouton1 {
@@ -190,9 +190,7 @@ ul li:hover::after {
     cursor: pointer;
     transition: 0.8s ease-in;
 }
-.photo {
-   
-}
+
 .photo-swiper {
     transform: translateX(2000px);
     width: 70%;
@@ -208,7 +206,7 @@ ul li:hover::after {
 .photo-swiper img {
     box-shadow: 0 0 10px;
     width: 280px;
-    height: 200px;
+    height: 220px;
 }
 .img-content1, .img-content2, .img-content3, .img-content4, .img-content5, .img-content6, .img-content7, .img-content8, .img-content9, .img-content10 {
     position: relative;
@@ -231,10 +229,12 @@ ul li:hover::after {
     
 }
 .biere {
+    
+    width: 100%;
     height: 400px;
     display: flex;
-    margin: 0px 0px;
-    background: rgba(75, 123, 137, 0.528);
+    gap: 40px;
+    /* background: rgba(75, 123, 137, 0.528); */
 }
 .biere h2 {
     margin: 20px 20px;
@@ -243,6 +243,12 @@ ul li:hover::after {
 }
 .str {
     margin-top: -1px;
+}
+.texte-biere {
+    margin-left: 50px;
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    border: none;
 }
 .biere p {
     margin: 0 20px;
@@ -253,38 +259,64 @@ ul li:hover::after {
 }
 .img-biere {
     display: flex;
-    margin-right: 10%;
     
-
+    margin-left: 240px;
+    box-shadow: 0 0 10px black;
 }
 .img-biere img {
     width: 500px;
     object-fit: cover;
-    
+    justify-content: end;
 }
 .galerie-biere {
     position: relative;
     height: 400px;
-    background: rgba(75, 123, 137, 0.528);
+    /* background: rgba(75, 123, 137, 0.528); */
 }
 .galerie-biere h2 {
     display: flex;
     align-items: center;
     padding-left: 20px;
     color: rgba(69, 206, 206, 0.759);
+}
+.swiper-biere {
+    
+    /* transform: translateX(2000px); */
+    width: 60%;
+    height: 200px;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    /* flex-shrink: 0; */
+    gap: 60px;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
     
 }
-.img-bieres {
-    display: flex;
-    overflow-x: hidden;
-    width: 70%;
-    margin: 50px auto;
-    gap: 40px;
-    scroll-behavior: smooth;
-}
-.img-bieres img {
+.swiper-biere img {
+    box-shadow: 0 0 10px;
     width: 280px;
     height: 200px;
+    
+}
+.img-leffe, .img-skol, .img-1664, .img-guinness, .img-hoegaarden, .img-carlsberg, .img-budweiser {
+    position: relative;
+}
+.leffep, .b1664p, .skolp, .guinnessp, .hoegaardenp, .budweiserp, .carlsbergp  {
+    position: absolute;
+    top: 0;
+    z-index: -3;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    width: 280px;
+    height: 200px; 
+}
+
+.leffe:hover, .skol:hover, .guinness:hover, .b1664:hover, .hoegaarden:hover, .budweiser:hover, .carlsberg:hover {
+    opacity: 0.05;
+    cursor: pointer;
 }
 .footer {
     margin-top: 0px;

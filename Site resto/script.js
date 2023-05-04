@@ -6,7 +6,7 @@ let typed = new Typed(".textDefil", {
   loop: true,
 });
 const slide = document.querySelector(".photo-swiper");
-const beer = document.querySelector(".img-bieres");
+const beer = document.querySelector(".swiper-biere");
 const right = document.getElementById("layer+");
 const left = document.getElementById("layer-");
 const rightBeer = document.getElementById("layer++");
@@ -63,7 +63,7 @@ window.addEventListener("scroll", () => {
     ((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight;
   nav.forEach((element) => {
     if (scrollValue > 75) {
-      element.style.color = "white";
+      element.style.color = "black";
     } else {
       element.style.color = "rgba(69, 206, 206, 0.759)";
     }
