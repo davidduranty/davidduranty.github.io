@@ -21,9 +21,15 @@
           <ul>
             <li><a class="nav" href="#acceuil" style="--i: 1">Acceuil</a></li>
             <li><a class="nav" href="#burgers" style="--i: 2">Burgers</a></li>
-            <li><a class="nav" href="#aPropos" style="--i: 3">A Propos</a></li>
-            <li><a class="nav" href="#biere" style="--i: 4">Bière</a></li>
-            <li><a class="nav" href="#contact" style="--i: 5">Contact</a></li>
+            <li>
+              <a class="nav propos" href="#aPropos" style="--i: 3">A Propos</a>
+            </li>
+            <li>
+              <a class="nav menuBiere" href="#biere" style="--i: 4">Bière</a>
+            </li>
+            <li>
+              <a class="nav contact" href="#contact" style="--i: 5">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -39,8 +45,67 @@
         <button class="btn">Réservation Rapide</button>
         <span class="rect"></span>
       </div>
-      
     </section>
+      <section class="reservation">
+        <div class="reserve-container">
+          <div class="conatiner-reserve-close">
+            <button class="close-reserve">&#88;</button>
+          </div>
+          <div class="reserve-title">
+            <h2>Réservation en ligne</h2>
+          </div> 
+          <div id="chooseDate">
+            <input id="date" type="date">
+          </div>
+          <div class="reserve-identity">
+            <label class="reserve-label" for="name">Votre Nom</label>
+            <input class="reserve-place" type="name" placeholder="NOM">
+          </div>
+          <div class="reserve-number">
+            <p>Adultes -------------------------- 39£ x </p>
+            <select name="number" id="select-adult">
+              <option value="">0</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <span class="totalAdult">TOTAL : </span>
+          <div class="reserve-number">
+            <p>Enfants -------------------------- 15£ x </p>
+            <select name="number" id="select-adult">
+              <option value="">0</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <span class="totalAdult">TOTAL : </span>
+          <div class="reserve-email">
+            <label class="label-email" for="email">Votre Email</label>
+            <input class="email-input" type="email" placeholder="Votre email">
+          </div>
+          <div class="validate">
+            <button class="btn-valide">Valider</button>
+            <button class="btn-annule">Annuler</button>
+          </div>
+        </div>
+      </section>
+    
     <section id="burgers" class="galerie-burger">
       <h2>
         Vous adorez nos BURGERS
@@ -669,10 +734,10 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
         <div class="img-leffe">
           <div class="leffe bibine">
             <img src="assets/img galerie biere/th (1).jpg" alt="" />
-            
           </div>
           <div class="leffep">
-            <p>LEFFE</p><br><br>
+            <p>LEFFE</p>
+            <br /><br />
             <p>PRIX: 5.5£</p>
           </div>
         </div>
@@ -681,56 +746,62 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
             <img src="assets/img galerie biere/th (2).jpg" alt="" />
           </div>
           <div class="skolp">
-            <p>SKOL</p><br><br>
+            <p>SKOL</p>
+            <br /><br />
             <p>PRIX: 4.5£</p>
           </div>
         </div>
         <div class="img-guinness">
           <div class="guinness bibine">
-            <img src="assets/img galerie biere/th (3).jpg" alt="" />           
+            <img src="assets/img galerie biere/th (3).jpg" alt="" />
           </div>
           <div class="guinnessp">
-            <p>GUINNESS</p><br><br>
+            <p>GUINNESS</p>
+            <br /><br />
             <p>PRIX: 6.5£</p>
           </div>
         </div>
         <div class="img-1664">
           <div class="b1664 bibine">
-            <img src="assets/img galerie biere/th (4).jpg" alt="" />            
+            <img src="assets/img galerie biere/th (4).jpg" alt="" />
           </div>
           <div class="b1664p">
-            <p>1664</p><br><br>
+            <p>1664</p>
+            <br /><br />
             <p>PRIX: 6.0£</p>
           </div>
-        </div>  
+        </div>
         <div class="img-hoegaarden">
           <div class="hoegaarden bibine">
-            <img src="assets/img galerie biere/th5.jpg" alt="" />           
+            <img src="assets/img galerie biere/th5.jpg" alt="" />
           </div>
           <div class="hoegaardenp">
-            <p>HOEGAARDEN</p><br><br>
+            <p>HOEGAARDEN</p>
+            <br /><br />
             <p>PRIX: 6.2£</p>
           </div>
         </div>
         <div class="img-budweiser">
           <div class="budweiser bibine">
-            <img src="assets/img galerie biere/th (6).jpg" alt="" />           
+            <img src="assets/img galerie biere/th (6).jpg" alt="" />
           </div>
           <div class="budweiserp">
-            <p>BUDWEISER</p><br><br>
+            <p>BUDWEISER</p>
+            <br /><br />
             <p>PRIX: 5.8£</p>
-          </div>         
+          </div>
         </div>
         <div class="img-carlsberg">
           <div class="carlsberg bibine">
-            <img src="assets/img galerie biere/th (7).jpg" alt="" />           
+            <img src="assets/img galerie biere/th (7).jpg" alt="" />
           </div>
           <div class="carlsbergp">
-            <p>CARLSBERG</p><br><br>
+            <p>CARLSBERG</p>
+            <br /><br />
             <p>PRIX: 6.4£</p>
-          </div>          
+          </div>
         </div>
-      </div>     
+      </div>
     </section>
 
     <div class="carte-burger">
@@ -757,19 +828,19 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
         <form action="">
           <input
             type="text"
-            class="input"
+            class="inputFooter"
             placeholder="Nom"
             style="color: white"
           />
           <input
             type="phone"
-            class="input"
+            class="inputFooter"
             placeholder="Numéro téléphone"
             style="color: white"
           />
           <input
             type="email"
-            class="input"
+            class="inputFooter"
             placeholder="Email"
             style="color: white"
           />

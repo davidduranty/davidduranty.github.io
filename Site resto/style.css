@@ -101,6 +101,130 @@ ul li:hover::after {
     font-size: 4rem;
     color: rgba(69, 206, 206, 0.759);
 }
+.moveReserve {
+    position: absolute;
+    transform: translateX(120%);
+    transition: 0.9s ease;
+    
+    
+}
+.reservation {
+    position: absolute;
+    width: 60%;
+    height: 920px;
+    top: 200px;
+    left: -900px;
+    z-index: 100000;
+    transition: 0.9s ease-in-out;
+    
+}
+.reserve-container {
+    width: 60%;
+    height: 880px;
+    margin: 20px auto; 
+    background: rgba(0, 128, 128, 0.731);
+    border-radius: 30px; 
+    overflow: hidden;
+}
+.conatiner-reserve-close {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0 0;  
+}
+.close-reserve {
+    padding: 5px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.reserve-container h2 {
+    display: flex;
+    justify-content: center;
+    
+}
+#chooseDate {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#date {
+    padding: 20px 60px;
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2rem; 
+}
+.reserve-identity, .reserve-email {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 10px;
+    margin: 20px 0;
+}
+.reserve-label, .label-email {
+    font-size: 1.2rem;
+    color: rgba(78, 72, 72, 0.729);
+    margin-bottom: 10px;
+    text-shadow: 0 0 3px;
+}
+.reserve-place, .email-input {
+    width: 60%;
+    height: 50px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    padding-left: 10px;
+    box-shadow: 0 0 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.reserve-number {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reserve-number p {
+    font-size: 1.5rem;
+}
+#select-adult {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+.validate {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-valide, .btn-annule {
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-valide:hover {
+    background: green;
+    transition: 0.4s ease;
+    color:white;
+}
+.btn-annule:hover {
+    background: red;
+    transition: 0.4s ease;
+    color:white;
+}
 .boutonBtn {
     position: relative;
 }
@@ -117,18 +241,18 @@ ul li:hover::after {
     font-size: 1.2rem;
     box-shadow: 0 0 10px black;
 }
+
 .rect {
     position: absolute;
     top: -528px;
     left: 900px;
     z-index: 60;
     border-top: 5px solid rgba(69, 206, 206, 0.759);
-    box-shadow:  0 0 10px rgba(69, 206, 206, 0.759);
     width: 30px;
     height: 10px;
 }
 .btn:hover {
-    color: white;
+    color: rgb(54, 49, 49);
     border-radius: 20px;
     transition: 0.9s ease-in-out;
     box-shadow: 0 0 10px white;
@@ -147,7 +271,7 @@ ul li:hover::after {
     display: flex;
     align-items: center;
     /* margin: 20px; */
-    color: rgba(69, 206, 206, 0.759);
+    /* color: rgba(69, 206, 206, 0.759); */
 }
 .star {
     margin: 10px;
@@ -183,6 +307,10 @@ ul li:hover::after {
     align-items: center;
     /* background: rgba(75, 123, 137, 0.528); */
     
+}
+span {
+    color: rgb(151, 144, 144);
+    font-size: 0.8rem;
 }
 .bouton1 {
     position: absolute;
@@ -250,9 +378,9 @@ ul li:hover::after {
     
 }
 .biere {
-    
-    width: 100%;
-    height: 400px;
+    margin: 50px 100px;
+    /* width: 100%;
+    height: 400px; */
     display: flex;
     gap: 40px;
     /* background: rgba(75, 123, 137, 0.528); */
@@ -268,7 +396,6 @@ ul li:hover::after {
 .texte-biere {
     margin-left: 50px;
     width: 50%;
-    box-shadow: 0 0 10px black;
     border: none;
 }
 .biere p {
@@ -276,6 +403,7 @@ ul li:hover::after {
     width: 60%;
     margin-bottom: 50px;
     letter-spacing: 2px;
+    line-height: 25px;
     
 }
 .img-biere {
@@ -298,7 +426,7 @@ ul li:hover::after {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    color: rgba(69, 206, 206, 0.759);
+    /* color: rgba(69, 206, 206, 0.759); */
 }
 .swiper-biere {
     
@@ -309,7 +437,7 @@ ul li:hover::after {
     overflow: hidden;
     display: flex;
     /* flex-shrink: 0; */
-    gap: 60px;
+    gap: 50px;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
     
@@ -376,7 +504,7 @@ form {
     flex-direction: column;
     
 }
-input {
+.inputFooter {
     height: 50px;
     width: 50%;
     margin-top: 20px;
@@ -386,7 +514,7 @@ input {
     box-shadow: 0 0 10px;
     border: none;
 }
-.input::placeholder {
+.inputFooter::placeholder {
     color: white;
     padding-left: 10px;
 }
@@ -425,9 +553,9 @@ input {
     
 }
 .carteBiere {
-    width: 90%;
-    margin-top: -200px;
-    margin-left: 250px;
+    width: 60%;
+    margin: 0 auto;
+    /* margin-left: 250px; */
     position: absolute;
     transform: translateX(-2000px);
     
@@ -458,47 +586,48 @@ input {
 }
 
 .carteMove {
-    transform: translateX(0) ;
+    transform: translateX(150px) ;
     transition: 0.9s ease-in-out;
     
-   
-}
-.carteMoveBox {
-    transform: translateX(0) ;
-    transition: 0.9s ease;
-    opacity: 1;
-}
+}   
 
+.carteMoveBox {
+    transform: translateX(300px) ;
+    transition: 0.9s ease-in-out;
+}
 .titre-carte {
     margin-top: 20px;
     text-align: center;
+    padding-right: 90px;
     font-size: 3rem;
     color: white;
 }
 .titre-carte-biere {
     margin-top: 20px;
     text-align: center;
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: black;
 }
 .container {
     position: relative;
-    margin: 100px auto;
+    margin: 100px 100px;
     border-radius: 20px;
     width: 80%;
     height: 700px;
     display: flex;
-    background: rgb(176, 162, 162);
+    background: rgb(219, 205, 205);
     box-shadow: 0 0 10px ;
+
 }
 .containerBiere {
     position: relative;
     margin: 100px 60px;
     border-radius: 20px;
-    width: 80%;
+    /* width: 80%; */
     height: 700px;
     display: flex;
-    background: rgb(189, 172, 172);
+    background: rgb(219, 205, 205);
+    overflow: hidden;
 }
 .menu-left, .menu-right{
     margin: 0 auto;
@@ -507,7 +636,7 @@ input {
     margin: 0 auto;
 }
 .h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 #left {
     width: 40%;

@@ -43,7 +43,20 @@ const carteBiere = document.querySelector(".carteBiere");
 const carteDesBieres = document.getElementById("carteDesBieres");
 const span = document.querySelector(".btn");
 const rect = document.querySelector(".rect");
-console.log(carte);
+const propos = document.querySelector(".propos");
+const menuBiere = document.querySelector(".menuBiere");
+const contact = document.querySelector(".contact");
+const btnReserve = document.querySelector(".boutonBtn")
+const carteReserve = document.querySelector(".reservation")
+const closeReserve = document.querySelector(".close-reserve")
+
+btnReserve.addEventListener("click", () => {
+  carteReserve.classList.add("moveReserve")
+})
+closeReserve.addEventListener("click", () => {
+  carteReserve.classList.remove("moveReserve")
+})
+
 btn.addEventListener("click", () => {
   carte.classList.add("carteMove");
 });
@@ -51,10 +64,10 @@ croix.addEventListener("click", () => {
   carte.classList.remove("carteMove");
 });
 carteDesBieres.addEventListener("click", () => {
-  carteBiere.classList.add("carteMove");
+  carteBiere.classList.add("carteMoveBox");
 });
 croixBox.addEventListener("click", () => {
-  carteBiere.classList.remove("carteMove");
+  carteBiere.classList.remove("carteMoveBox");
 });
 
 const nav = document.querySelectorAll(".nav");
@@ -63,17 +76,23 @@ const swiper = document.querySelector(".photo-swiper");
 window.addEventListener("scroll", () => {
   const scrollValue =
     ((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight;
+  console.log(scrollValue);
   nav.forEach((element) => {
     if (scrollValue > 70) {
       element.style.color = "black";
     } else {
       element.style.color = "rgba(69, 206, 206, 0.759)";
     }
+    if (scrollValue > 50) {
+      swiper.style.transform = "translateX(0)";
+      swiper.style.transition = "1s ease";
+    }
+    if (scrollValue > 80 && scrollValue < 98) {
+      propos.style.color = "white";
+      menuBiere.style.color = "white";
+      contact.style.color = "white";
+    }
   });
-  if (scrollValue > 50) {
-    swiper.style.transform = "translateX(0)";
-    swiper.style.transition = "1s ease";
-  }
 });
 span.addEventListener("mouseover", () => {
   rect.classList.add("rectangle");
@@ -82,3 +101,6 @@ span.addEventListener("mouseout", () => {
   rect.classList.remove("rectangle");
   rect.style.transition = "2s";
 });
+
+const dateToday = new Date().toISOString().split("T")[0];
+date.value = dateToday;
