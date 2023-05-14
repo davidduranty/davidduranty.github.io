@@ -62,39 +62,28 @@
             <input class="reserve-place" type="name" placeholder="NOM">
           </div>
           <div class="reserve-number">
-            <p>Adultes -------------------------- 39£ x </p>
-            <select name="number" id="select-adult">
-              <option value="">0</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-              <option value="">7</option>
-              <option value="">8</option>
-              <option value="">9</option>
-              <option value="">10</option>
-            </select>
+            <p>Adultes -------------------------- <span class="adultPrice">39£</span>  x </p>
+            <form action="" id="formAdult">
+              <input name="number" placeholder="0" id="select-adult" autocomplete="none">
+            </form>
+             
+          </input>
           </div>
-          <span class="totalAdult">TOTAL : </span>
+          <div class="prixTotalAdult">
+            <p>TOTAL :</p><span id="totalAdult"></span>
+          </div> 
           <div class="reserve-number">
-            <p>Enfants -------------------------- 15£ x </p>
-            <select name="number" id="select-adult">
-              <option value="">0</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-              <option value="">6</option>
-              <option value="">7</option>
-              <option value="">8</option>
-              <option value="">9</option>
-              <option value="">10</option>
-            </select>
+            <p>Enfants -------------------------- <span class="childPrice">15£</span> x </p>
+            <form action="" id="formEnfant">
+            <input name="number" placeholder="0" id="select-enfant" autocomplete="none">
+          </form>
           </div>
-          <span class="totalAdult">TOTAL : </span>
+          <div class="prixTotalEnfant">
+            <p>TOTAL :</p><span id="totalEnfant"></span>
+          </div>
+          <!-- <div class="prix-total-Reservation">
+            <p>Prix Total de la réservation : </p><span id="ptr"></span> 
+          </div> -->
           <div class="reserve-email">
             <label class="label-email" for="email">Votre Email</label>
             <input class="email-input" type="email" placeholder="Votre email">
@@ -831,19 +820,19 @@ C15.172,39.813,15.172,40.446,15.563,40.836z"
             class="inputFooter"
             placeholder="Nom"
             style="color: white"
-          />
+          >
           <input
             type="phone"
             class="inputFooter"
             placeholder="Numéro téléphone"
             style="color: white"
-          />
+          >
           <input
             type="email"
             class="inputFooter"
             placeholder="Email"
             style="color: white"
-          />
+          >
           <textarea
             class="textarea"
             type="textarea"

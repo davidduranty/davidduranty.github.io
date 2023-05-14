@@ -9,7 +9,7 @@ body {
     /* background: rgba(75, 123, 137, 0.528); */
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    
+    overflow-x: hidden;
 }
 h2 {
     margin: 20px 0 0 20px;
@@ -104,9 +104,7 @@ ul li:hover::after {
 .moveReserve {
     position: absolute;
     transform: translateX(120%);
-    transition: 0.9s ease;
-    
-    
+    transition: 0.9s ease;   
 }
 .reservation {
     position: absolute;
@@ -158,6 +156,10 @@ ul li:hover::after {
     border: none;
     font-size: 2rem; 
 }
+.adultPrice, .childPrice {
+    color: black;
+    font-size: 1.2rem;
+}
 .reserve-identity, .reserve-email {
     width: 100%;
     height: 100px;
@@ -192,7 +194,7 @@ ul li:hover::after {
 .reserve-number p {
     font-size: 1.5rem;
 }
-#select-adult {
+#select-adult, #select-enfant  {
     text-align: center;
     width: 60px;
     height: 60px;
@@ -202,6 +204,28 @@ ul li:hover::after {
     font-size: 1.2rem;
     font-weight: bold;
     border: none;
+}
+.prixTotalAdult, .prixTotalEnfant {
+    display: flex;
+    align-items: center;
+}
+#totalAdult, #totalEnfant {
+    font-size: 1.2rem;
+    color: black;
+    padding-left: 10px;
+}
+.prix-total-Reservation {
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+#ptr {
+   border: 2px solid black;
+   padding: 20px;
+   color: black;
+   font-size: 1.1rem;
+   border-radius: 10px;
 }
 .validate {
     margin-top: 80px;
@@ -430,7 +454,7 @@ span {
 }
 .swiper-biere {
     
-    /* transform: translateX(2000px); */
+    transform: translateX(-2000px);
     width: 970px;
     height: 220px;
     margin: 50px auto;

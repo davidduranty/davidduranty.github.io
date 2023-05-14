@@ -46,16 +46,16 @@ const rect = document.querySelector(".rect");
 const propos = document.querySelector(".propos");
 const menuBiere = document.querySelector(".menuBiere");
 const contact = document.querySelector(".contact");
-const btnReserve = document.querySelector(".boutonBtn")
-const carteReserve = document.querySelector(".reservation")
-const closeReserve = document.querySelector(".close-reserve")
+const btnReserve = document.querySelector(".boutonBtn");
+const carteReserve = document.querySelector(".reservation");
+const closeReserve = document.querySelector(".close-reserve");
 
 btnReserve.addEventListener("click", () => {
-  carteReserve.classList.add("moveReserve")
-})
+  carteReserve.classList.add("moveReserve");
+});
 closeReserve.addEventListener("click", () => {
-  carteReserve.classList.remove("moveReserve")
-})
+  carteReserve.classList.remove("moveReserve");
+});
 
 btn.addEventListener("click", () => {
   carte.classList.add("carteMove");
@@ -72,11 +72,12 @@ croixBox.addEventListener("click", () => {
 
 const nav = document.querySelectorAll(".nav");
 const swiper = document.querySelector(".photo-swiper");
+const swiperBiere = document.querySelector(".swiper-biere");
 
 window.addEventListener("scroll", () => {
   const scrollValue =
     ((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight;
-  console.log(scrollValue);
+
   nav.forEach((element) => {
     if (scrollValue > 70) {
       element.style.color = "black";
@@ -86,6 +87,10 @@ window.addEventListener("scroll", () => {
     if (scrollValue > 50) {
       swiper.style.transform = "translateX(0)";
       swiper.style.transition = "1s ease";
+    }
+    if (scrollValue > 70) {
+      swiperBiere.style.transform = "translateX(0)";
+      swiperBiere.style.transition = "1s ease";
     }
     if (scrollValue > 80 && scrollValue < 98) {
       propos.style.color = "white";
@@ -104,3 +109,31 @@ span.addEventListener("mouseout", () => {
 
 const dateToday = new Date().toISOString().split("T")[0];
 date.value = dateToday;
+date.min = dateToday;
+
+const adultSelect = document.getElementById("select-adult");
+const enfantSelect = document.getElementById("select-enfant");
+const ptr = document.getElementById("ptr")
+console.log(ptr);
+let adultPrice = 39;
+let enfantPrice = 15;
+let totalE = ""
+let totalA = ""
+const price =  () => {
+  formAdult.addEventListener("submit", (e) => {
+     e.preventDefault()
+    totalAdult.textContent = adultSelect.value * adultPrice + " euros";
+    totalA = totalAdult.textContent
+  });
+  
+  formEnfant.addEventListener("submit", (e) => {
+    e.preventDefault()
+    totalEnfant.textContent = enfantSelect.value * enfantPrice + " euros";
+    totalE = totalEnfant.textContent
+  });
+  
+
+  //  ptr.innerHTML += `<ul>${totalA}  ${totalE}   euros</ul>`  
+  
+};
+price();
