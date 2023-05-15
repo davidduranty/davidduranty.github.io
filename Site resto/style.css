@@ -204,6 +204,7 @@ ul li:hover::after {
     font-size: 1.2rem;
     font-weight: bold;
     border: none;
+    background: teal;
 }
 .prixTotalAdult, .prixTotalEnfant {
     display: flex;
@@ -579,7 +580,6 @@ form {
 .carteBiere {
     width: 60%;
     margin: 0 auto;
-    /* margin-left: 250px; */
     position: absolute;
     transform: translateX(-2000px);
     
@@ -592,7 +592,6 @@ form {
     right: 10px;
     top: 10px;
     cursor: pointer;
-    /* background: black; */
     border-radius: 20px;
 }
 .croix:hover, .croixBox:hover{
