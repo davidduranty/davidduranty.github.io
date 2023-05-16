@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    
+    .nav {
+        width: 60%;
+        height: 60px;
+        
+
+        ul {
+            height: 60px;
+            @include space-evenly;
+            
+
+            li {
+                font-size: "font1";
+                height: 60px;
+                list-style: none;
+                padding: 21px 61px;
+                font-size: 0.9rem;
+                color: $color1;
+                letter-spacing: 1px;
+                }  
+
+        }
+        li:hover {
+            background: $color1;
+            color: $color2;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+    }
+
+    .icons {
+        width: 40%;
+        @include end;
+        
+        i {
+            color: $color1;
+            font-size: 1.5rem;
+            margin: 0 40px 0 0;
+            cursor: pointer;
+        }
+
+        i:hover {
+            font-size: 2rem;
+            transition: 0.7s ease-in-out;
+        }
+    }
+
+   
+}

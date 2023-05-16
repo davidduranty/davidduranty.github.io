@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "font1";
+    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(/assets/fonts/Merriweather-Light.ttf);
+}
+
+@mixin space-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+$color1:white;
+$color2:black;

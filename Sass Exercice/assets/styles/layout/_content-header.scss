@@ -1,0 +1,23 @@
+.content-title {
+    
+    background: $color1;
+    height: 200px;
+    padding: 50px 300px 0 300px;
+    text-align: center;
+    
+    h1 {
+        font-size: 4rem;
+        font-family: "font1";
+    }
+}
+.content-text {
+    background: $color1;
+    height: 200px;
+    padding: 30px 355px 50px 355px;
+    text-align: center;
+
+    p {
+        font-family: "font2";
+        line-height: 35px;
+    }
+}

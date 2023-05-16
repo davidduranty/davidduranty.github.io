@@ -1,0 +1,22 @@
+.content-img{
+    background: $color1;
+    display: flex;
+    flex-direction: column;
+    .img {
+        margin: 0px 150px;
+        height: 700px;
+        background-image: url("/assets/img/pic01.jpg");
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .btn {
+        margin: 40px 42%;
+        padding: 15px;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+
