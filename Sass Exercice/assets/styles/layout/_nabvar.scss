@@ -1,5 +1,6 @@
 .navbar {
     display: flex;
+    position: relative;
     
     .nav {
         width: 60%;
@@ -19,14 +20,16 @@
                 font-size: 0.9rem;
                 color: $color1;
                 letter-spacing: 1px;
+
+                &:hover {
+                    background: $color1;
+                    color: $color2;
+                    transition: 0.7s;
+                    cursor: pointer;
+                }
                 }  
 
-        }
-        li:hover {
-            background: $color1;
-            color: $color2;
-            transition: 0.7s;
-            cursor: pointer;
+                
         }
     }
 
@@ -39,12 +42,13 @@
             font-size: 1.5rem;
             margin: 0 40px 0 0;
             cursor: pointer;
+            
+            &:hover {
+                font-size: 2rem;
+                transition: 0.7s ease-in-out;
+            }
         }
 
-        i:hover {
-            font-size: 2rem;
-            transition: 0.7s ease-in-out;
-        }
     }
 
    

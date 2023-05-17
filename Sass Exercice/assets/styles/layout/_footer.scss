@@ -1,0 +1,77 @@
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 700px;
+    background: $color1;
+    display: flex;
+    
+    .footer-left {
+        width: 50%;
+        padding: 40px 30px;
+        // border: 1px solid black;
+        min-height: 800px;
+        
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            letter-spacing: 1px;
+            label {
+                font-weight: bold;
+                font-family: "font1";
+            }
+            input {
+                width: 100%;
+                height: 50px;
+                border-color: rgb(120, 112, 112, 0.26);
+                border-radius: 5px;
+            }
+            textarea {
+                width: 100%;
+                resize: none;
+                border-color: rgb(120, 112, 112, 0.26);
+            }
+            .btn {
+                padding: 20px 50px;
+                background: transparent;
+                border-color: rgb(120, 112, 112, 0.26);
+                font-family: 'font1';
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .footer-right {
+        width: 50%;
+        // border: 1px solid black;
+        min-height: 800px;
+
+        .adress, .phone, .email, .social {
+            width: 100%;
+            height: 175px;
+            padding: 0 80px 0 50px;
+            border: 1px solid rgba(199, 194, 194, 0.266);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+           p {
+            padding-right: 255px;
+            font-size: 0.7rem;
+            
+           }
+           .nash {
+            
+            padding-left: 80px;
+           }
+        }
+        .social i {
+            font-size: 1.5rem;
+            border-radius: 50%;
+            border: 1px solid black;
+            padding: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    }
+}
