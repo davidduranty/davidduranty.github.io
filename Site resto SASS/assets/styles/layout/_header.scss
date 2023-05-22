@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color1;
+    color: $color2;
+    margin: 0 50px;
+    // overflow-x: hidden;
+}
+.header {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/img/bg-slider-06.jpg");
+    background-size: cover;
+    
+
+    .navbar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+
+        .logo {
+            width: 20%;
+            @include center;
+
+            h1 {
+                font-family: "allura";
+                font-weight: bold;
+            }
+        }
+
+        nav {
+            width: 60%;
+            height: 60px;
+
+            ul {
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                li {
+                    list-style: none;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .icons {
+            height: 60px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .title {
+        width: 600px;
+        height: 250px;
+        margin: 200px auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+
+        h1 {
+            @include center;
+            font-family: "allura";
+            font-size: 4rem;
+            color: $color3;
+        }
+
+        h2 {
+            @include center;
+            font-size: 6rem;
+            font-family: "pop";
+            letter-spacing: 7px;
+        }
+        .couvert {
+            height: 50px;
+            width: 50px;
+            margin: 20px auto;
+            
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+        p {
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 1.2rem;
+            font-family: "pop";
+        }
+    }
+}

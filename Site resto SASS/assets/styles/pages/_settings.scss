@@ -1,0 +1,37 @@
+
+
+
+
+@font-face {
+    font-family: "Allura";
+    src: url(/assets/fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: "pop";
+    src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "rob";
+    src: url(/assets/fonts/Roboto-Light.ttf);
+}
+
+$font1: "allura" "sans serif";
+$font2: "pop" "sans serif";
+$font3: "rob" "sans serif";
+
+$color1: rgb(34, 31, 31);
+$color2: rgb(232, 224, 224);
+$color3: rgb(139, 102, 59);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    @include center;
+    padding: 10px 20px;
+}

@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Allura";
+  src: url(/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "pop";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "rob";
+  src: url(/assets/fonts/Roboto-Light.ttf);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34, 31, 31);
+  color: rgb(232, 224, 224);
+  margin: 0 50px;
+}
+
+.header {
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url("/assets/img/bg-slider-06.jpg");
+  background-size: cover;
+}
+.header .navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.header .navbar .logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar .logo h1 {
+  font-family: "allura";
+  font-weight: bold;
+}
+.header .navbar nav {
+  width: 60%;
+  height: 60px;
+}
+.header .navbar nav ul {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .navbar nav ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.header .navbar .icons {
+  height: 60px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .navbar .icons i {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.header .title {
+  width: 600px;
+  height: 250px;
+  margin: 200px auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.header .title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "allura";
+  font-size: 4rem;
+  color: rgb(139, 102, 59);
+}
+.header .title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-family: "pop";
+  letter-spacing: 7px;
+}
+.header .title .couvert {
+  height: 50px;
+  width: 50px;
+  margin: 20px auto;
+}
+.header .title .couvert img {
+  width: 40px;
+  height: 40px;
+}
+.header .title p {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-family: "pop";
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+}
+.container .section1 {
+  margin: 10px 0;
+  display: flex;
+  height: 590px;
+  color: rgb(34, 31, 31);
+  box-shadow: 0 0 5px white;
+}
+.container .section1 .box-left {
+  width: 50%;
+  background: white;
+}
+.container .section1 .box-left .box-left-inside {
+  margin: 20px;
+  height: 550px;
+  padding: 30px 20px;
+  border: 1px dashed grey;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 3fr 2fr 1fr 1fr;
+}
+.container .section1 .box-left .box-left-inside h1 {
+  font-family: "allura";
+  color: rgb(139, 102, 59);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.container .section1 .box-left .box-left-inside h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .section1 .box-left .box-left-inside img {
+  margin: 20px auto;
+}
+.container .section1 .box-left .box-left-inside .text-inside {
+  text-align: center;
+  font-size: 1rem;
+}
+.container .section1 .box-left .box-left-inside .img-avatar {
+  border-radius: 150px;
+}
+.container .section1 .box-left .box-left-inside h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "pop";
+}
+.container .section1 .box-left p {
+  text-align: center;
+  color: rgb(192, 185, 185);
+  font-size: 0.9rem;
+}
+.container .section1 .box-right {
+  width: 50%;
+  background-image: url("/assets/img/store-01.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .section2 {
+  position: relative;
+  width: 100%;
+  height: 921px;
+  color: rgb(232, 224, 224);
+}
+.container .section2 .menubg {
+  position: absolute;
+  top: 300px;
+  z-index: -3;
+  width: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .section2 .title {
+  margin-top: 100px;
+  text-align: center;
+}
+.container .section2 .title h1 {
+  font-family: "allura";
+  color: rgb(139, 102, 59);
+  font-size: 2rem;
+}
+.container .section2 .title img {
+  padding: 20px 0;
+}
+.container .section2 .menu {
+  width: 60%;
+  height: 50px;
+  margin: 0 20%;
+}
+.container .section2 .menu ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .section2 .menu ul li {
+  list-style: none;
+  font-family: "rob";
+  cursor: pointer;
+}
+.container .section2 .menu ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid rgb(232, 224, 224);
+}
+.container .section2 .tableau {
+  width: 60%;
+  margin: 0 20%;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  color: rgb(34, 31, 31);
+  background: rgb(232, 224, 224);
+}
+.container .section2 .tableau .italian {
+  display: flex;
+}
+.container .section2 .tableau .italian img {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=index.css.map */
