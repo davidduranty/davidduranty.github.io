@@ -91,11 +91,7 @@
                 margin-top: 50px;
                 text-align: center;
 
-                h1 {
-                    font-family: "allura";
-                    color: $color3;
-                    font-size: 2rem;
-                }
+                @include img;
 
                 img {
                     padding: 20px 0;
@@ -150,9 +146,7 @@
                     border-bottom: 1px dashed grey;
 
                     .img-dish {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include center;
                         
                         img {
                             width: 70px;
@@ -199,5 +193,89 @@
                     }
                 }
             }
+    }
+    .section3 {
+        max-width: 1000px;
+        min-height: 400px;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        .info {
+
+            background: black;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            .info-cadre {
+                display: grid;
+                margin: 20px;
+                border: 1px dashed $color3;
+                min-height: 400px;
+
+                .info-title {
+                    @include center;
+                    flex-direction: column;
+
+                    h1 {
+                        font-family: "allura";
+                        color: $color3;
+                    }
+
+                    h2 {
+                        font-family: "pop";
+                        font-weight: bold;
+                    }
+                    
+                    .info-img {
+                        padding-top: 20px;
+                    }
+                }
+
+                .store-time-one {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        text-align: center;
+                        color: $color3;
+                        font-weight: bold;
+                    }
+
+                    .size {
+                        font-size: 0.9rem;
+                        color: $color2;
+                    }
+                }
+
+                .store-time-last {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        text-align: center;
+                        color: $color3;
+                        font-weight: bold;
+                    }
+
+                    .size {
+                        font-size: 0.9rem;
+                        color: $color2;
+                    }
+                }
+
+                .number {
+                    text-align: center;
+                    color: $color3;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+        .cadre-blanc {
+            background: $color2;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
     }
 }

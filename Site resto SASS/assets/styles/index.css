@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Allura";
-  src: url(/assets/fonts/Allura-Regular.ttf);
+  src: url("/assets/fonts/Allura-Regular.ttf");
 }
 @font-face {
   font-family: "pop";
-  src: url(/assets/fonts/Poppins-Medium.ttf);
+  src: url("/assets/fonts/Poppins-Medium.ttf");
 }
 @font-face {
   font-family: "rob";
-  src: url(/assets/fonts/Roboto-Light.ttf);
+  src: url("/assets/fonts/Roboto-Light.ttf");
 }
 .btn {
   display: flex;
@@ -200,8 +200,6 @@ body {
 .container .section2 .title {
   margin-top: 50px;
   text-align: center;
-}
-.container .section2 .title h1 {
   font-family: "allura";
   color: rgb(139, 102, 59);
   font-size: 2rem;
@@ -254,8 +252,8 @@ body {
 }
 .container .section2 .tableau .italian .img-dish, .container .section2 .tableau .fried .img-dish, .container .section2 .tableau .tenu .img-dish, .container .section2 .tableau .roast .img-dish, .container .section2 .tableau .salted .img-dish, .container .section2 .tableau .crab .img-dish, .container .section2 .tableau .imported .img-dish, .container .section2 .tableau .baked .img-dish {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .container .section2 .tableau .italian .img-dish img, .container .section2 .tableau .fried .img-dish img, .container .section2 .tableau .tenu .img-dish img, .container .section2 .tableau .roast .img-dish img, .container .section2 .tableau .salted .img-dish img, .container .section2 .tableau .crab .img-dish img, .container .section2 .tableau .imported .img-dish img, .container .section2 .tableau .baked .img-dish img {
   width: 70px;
@@ -292,4 +290,75 @@ body {
   color: rgb(139, 102, 59);
   font-weight: bold;
   font-size: 1.1rem;
+}
+.container .section3 {
+  max-width: 1000px;
+  min-height: 400px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.container .section3 .info {
+  background: black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .section3 .info .info-cadre {
+  display: grid;
+  margin: 20px;
+  border: 1px dashed rgb(139, 102, 59);
+  min-height: 400px;
+}
+.container .section3 .info .info-cadre .info-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .section3 .info .info-cadre .info-title h1 {
+  font-family: "allura";
+  color: rgb(139, 102, 59);
+}
+.container .section3 .info .info-cadre .info-title h2 {
+  font-family: "pop";
+  font-weight: bold;
+}
+.container .section3 .info .info-cadre .info-title .info-img {
+  padding-top: 20px;
+}
+.container .section3 .info .info-cadre .store-time-one {
+  display: flex;
+  flex-direction: column;
+}
+.container .section3 .info .info-cadre .store-time-one p {
+  text-align: center;
+  color: rgb(139, 102, 59);
+  font-weight: bold;
+}
+.container .section3 .info .info-cadre .store-time-one .size {
+  font-size: 0.9rem;
+  color: rgb(232, 224, 224);
+}
+.container .section3 .info .info-cadre .store-time-last {
+  display: flex;
+  flex-direction: column;
+}
+.container .section3 .info .info-cadre .store-time-last p {
+  text-align: center;
+  color: rgb(139, 102, 59);
+  font-weight: bold;
+}
+.container .section3 .info .info-cadre .store-time-last .size {
+  font-size: 0.9rem;
+  color: rgb(232, 224, 224);
+}
+.container .section3 .info .info-cadre .number {
+  text-align: center;
+  color: rgb(139, 102, 59);
+  font-weight: bold;
+}
+.container .section3 .cadre-blanc {
+  background: rgb(232, 224, 224);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }/*# sourceMappingURL=index.css.map */

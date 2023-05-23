@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: "Allura";
-    src: url(/assets/fonts/Allura-Regular.ttf);
+    src: url("/assets/fonts/Allura-Regular.ttf");
 }
 
 @font-face {
     font-family: "pop";
-    src: url(/assets/fonts/Poppins-Medium.ttf);
+    src: url("/assets/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
     font-family: "rob";
-    src: url(/assets/fonts/Roboto-Light.ttf);
+    src: url("/assets/fonts/Roboto-Light.ttf");
 }
 
 $font1: "allura" "sans serif";
@@ -29,6 +29,12 @@ $color3: rgb(139, 102, 59);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin img {
+    font-family: "allura";
+    color: $color3;
+    font-size: 2rem;
 }
 
 .btn {
