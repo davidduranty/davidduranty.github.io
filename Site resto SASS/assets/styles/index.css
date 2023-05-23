@@ -122,7 +122,7 @@ body {
 .container .section1 {
   margin: 10px 0;
   display: flex;
-  height: 590px;
+  height: 450px;
   color: rgb(34, 31, 31);
   box-shadow: 0 0 5px white;
 }
@@ -132,11 +132,11 @@ body {
 }
 .container .section1 .box-left .box-left-inside {
   margin: 20px;
-  height: 550px;
+  height: 410px;
   padding: 30px 20px;
   border: 1px dashed grey;
   display: grid;
-  grid-template-rows: 1fr 1fr 2fr 3fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .container .section1 .box-left .box-left-inside h1 {
   font-family: "allura";
@@ -151,13 +151,16 @@ body {
   align-items: center;
 }
 .container .section1 .box-left .box-left-inside img {
-  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
 }
 .container .section1 .box-left .box-left-inside .text-inside {
   text-align: center;
   font-size: 1rem;
 }
 .container .section1 .box-left .box-left-inside .img-avatar {
+  padding-top: 10px;
   border-radius: 150px;
 }
 .container .section1 .box-left .box-left-inside h3 {
@@ -172,10 +175,12 @@ body {
 }
 .container .section1 .box-right {
   width: 50%;
+  height: 450px;
   background-image: url("/assets/img/store-01.jpg");
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+  background-position: center;
 }
 .container .section2 {
   position: relative;
@@ -193,7 +198,7 @@ body {
      object-fit: cover;
 }
 .container .section2 .title {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 .container .section2 .title h1 {
@@ -228,19 +233,63 @@ body {
   border-bottom: 1px solid rgb(232, 224, 224);
 }
 .container .section2 .tableau {
-  width: 60%;
-  margin: 0 20%;
-  border: 1px solid red;
+  width: 55%;
+  height: 650px;
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 150px);
   color: rgb(34, 31, 31);
   background: rgb(232, 224, 224);
+  border-radius: 10px;
+  box-shadow: 0 -5px 0 rgb(139, 102, 59);
 }
-.container .section2 .tableau .italian {
+.container .section2 .tableau .italian, .container .section2 .tableau .fried, .container .section2 .tableau .tenu, .container .section2 .tableau .roast, .container .section2 .tableau .salted, .container .section2 .tableau .crab, .container .section2 .tableau .imported, .container .section2 .tableau .baked {
+  display: grid;
+  width: 370px;
+  height: 150px;
+  grid-template-columns: 70px 250px 50px;
+  margin: 20px;
+  border-bottom: 1px dashed grey;
+}
+.container .section2 .tableau .italian .img-dish, .container .section2 .tableau .fried .img-dish, .container .section2 .tableau .tenu .img-dish, .container .section2 .tableau .roast .img-dish, .container .section2 .tableau .salted .img-dish, .container .section2 .tableau .crab .img-dish, .container .section2 .tableau .imported .img-dish, .container .section2 .tableau .baked .img-dish {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container .section2 .tableau .italian img {
-  width: 100px;
-  height: 100px;
+.container .section2 .tableau .italian .img-dish img, .container .section2 .tableau .fried .img-dish img, .container .section2 .tableau .tenu .img-dish img, .container .section2 .tableau .roast .img-dish img, .container .section2 .tableau .salted .img-dish img, .container .section2 .tableau .crab .img-dish img, .container .section2 .tableau .imported .img-dish img, .container .section2 .tableau .baked .img-dish img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.container .section2 .tableau .italian .text, .container .section2 .tableau .fried .text, .container .section2 .tableau .tenu .text, .container .section2 .tableau .roast .text, .container .section2 .tableau .salted .text, .container .section2 .tableau .crab .text, .container .section2 .tableau .imported .text, .container .section2 .tableau .baked .text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+  margin: auto 0;
+  padding: 0 0 0 8px;
+}
+.container .section2 .tableau .italian .text h2, .container .section2 .tableau .fried .text h2, .container .section2 .tableau .tenu .text h2, .container .section2 .tableau .roast .text h2, .container .section2 .tableau .salted .text h2, .container .section2 .tableau .crab .text h2, .container .section2 .tableau .imported .text h2, .container .section2 .tableau .baked .text h2 {
+  width: 300px;
+  font-size: 0.8rem;
+  color: rgba(69, 62, 62, 0.889);
+}
+.container .section2 .tableau .italian .text p, .container .section2 .tableau .fried .text p, .container .section2 .tableau .tenu .text p, .container .section2 .tableau .roast .text p, .container .section2 .tableau .salted .text p, .container .section2 .tableau .crab .text p, .container .section2 .tableau .imported .text p, .container .section2 .tableau .baked .text p {
+  font-size: 0.8rem;
+  width: 70%;
+  font-family: "rob";
+}
+.container .section2 .tableau .italian .price, .container .section2 .tableau .fried .price, .container .section2 .tableau .tenu .price, .container .section2 .tableau .roast .price, .container .section2 .tableau .salted .price, .container .section2 .tableau .crab .price, .container .section2 .tableau .imported .price, .container .section2 .tableau .baked .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 8px 0;
+}
+.container .section2 .tableau .italian .price p, .container .section2 .tableau .fried .price p, .container .section2 .tableau .tenu .price p, .container .section2 .tableau .roast .price p, .container .section2 .tableau .salted .price p, .container .section2 .tableau .crab .price p, .container .section2 .tableau .imported .price p, .container .section2 .tableau .baked .price p {
+  font-family: "rob";
+  color: rgb(139, 102, 59);
+  font-weight: bold;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=index.css.map */
