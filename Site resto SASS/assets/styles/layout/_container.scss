@@ -276,6 +276,288 @@
             background: $color2;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
+
+            .cadre-resto {
+                margin-top: 50px;
+                @include center;
+                flex-direction: column;
+
+                h1 {
+                    font-family: "allura";
+                    color: $color3;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                }
+
+                h2{
+                    color: $color1;
+                    font-family: "pop";
+                    
+                }
+
+                .info-img {
+                    margin: 20px;
+                }
+            }
+
+            .form {
+                height: 100px;
+
+                form {
+                    height: 100px;
+                    margin: 0 40px;
+                    display: grid;
+                    grid-template-columns: repeat(3, auto);
+                    
+
+                    select, input {
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid grey;
+                        width: 80%;
+                    }
+                }
+            }
+
+            .bouton-now {
+                @include center;
+                margin-top: 20px;
+
+                .btn {
+                    background: $color1;
+                    color: $color2;
+                    border-radius: 50px;
+                    border: none;
+                    font-family: "pop";
+                    padding: 15px 50px;
+                }
+            }
+        }
+    }
+
+    .section4 {
+        max-width: 100%;
+        min-height: 800px;
+
+        .title {
+            @include center;
+            flex-direction: column;
+            margin-top: 50px;
+
+            h1 {
+                color: $color3;
+                font-family: "allura";
+                font-size: 3rem;
+                font-weight: 100;
+            }
+
+            h2 {
+                font-family: "pop";
+                font-size: 2.7rem;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 20px 0;
+            }
+        }
+
+        .cadre-container {
+            width: 55%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 55% 43%;
+            gap: 10px;
+
+            .cadre-left {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 10px;
+
+                .cadre-haut {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+
+                    .box-left {
+                        background-image: url(/assets/img/event-01.jpg);
+                        background-size: cover;
+                        object-fit: cover;
+                        @include center;
+
+                        .day {
+                            position: relative;
+                            width: 40%;
+                            height: 40%;
+                            background: $color1;
+
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .box-right {
+                        background: $color2;
+                        color: $color1;
+                        display: grid;
+                        grid-template-rows: 60px 60px;
+                        
+
+                        h1 {
+                            font-size: 0.95rem;
+                            padding-left: 15px;
+                            display: flex;
+                            align-items: end;
+                            color: rgb(118, 116, 116);
+                            font-weight: 100;
+                        }
+
+                        .text-info {
+                            display: flex;
+                            font-size: 0.8rem;
+                            color: rgb(192, 184, 184);
+                            align-items: center;
+                            
+                            i {
+                                padding: 0 5px 0 10px;
+                            }
+
+                        }
+
+                        h2 {
+                            padding: 0 0 0 10px;
+                            font-size: 0.95rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .cadre-bas {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+
+                    .box-left {
+                        background-image: url(/assets/img/event-02.jpg);
+                        background-size: cover;
+                        object-fit: cover;
+                        @include center;
+
+                        .day {
+                            position: relative;
+                            width: 40%;
+                            height: 40%;
+                            background: $color1;
+
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .box-right {
+                        background: $color2;
+                        color: $color1;
+                        display: grid;
+                        grid-template-rows: 60px 60px;
+                        
+
+                        h1 {
+                            font-size: 0.95rem;
+                            padding-left: 15px;
+                            display: flex;
+                            align-items: end;
+                            color: rgb(118, 116, 116);
+                            font-weight: 100;
+                        }
+
+                        .text-info {
+                            display: flex;
+                            font-size: 0.8rem;
+                            color: rgb(192, 184, 184);
+                            align-items: center;
+                            
+                            i {
+                                padding: 0 5px 0 10px;
+                            }
+
+                        }
+
+                        h2 {
+                            padding: 0 0 0 10px;
+                            font-size: 0.95rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .cadre-right {
+                background-image: url(/assets/img/event-03.jpg);
+                background-size: cover;
+                object-fit: cover;
+
+                .cadre-right-blanc {
+                    background: $color2;
+                    margin: 5%;
+                    height: 90%;
+                    position: relative;
+
+                    .day {
+                        margin: 0 auto;
+                        @include center;
+                        width: 25%;
+                        height: 25%;
+                        background: $color1;
+                        
+
+                        span {
+                            text-align: center;
+                            
+                        }
+                    }
+
+                    .thous {
+                        color: $color1;
+                        display: grid;
+                        grid-template-rows: 40px 80px 30px;
+                        margin-top: 20px;
+
+                        h1 {
+                            width: 70%;
+                            margin: 0 auto;
+                            font-size: 1.2rem;
+                            text-align: center;
+                        }
+
+                        .text-info {
+                            display: flex;
+                            font-size: 0.8rem;
+                            color: rgb(192, 184, 184);
+                            align-items: center;
+                            justify-content: center;
+
+                            i {
+                                padding: 0 5px 0 
+                            }
+                        }
+
+                        h2 {
+                            font-size: 0.95rem;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
 }

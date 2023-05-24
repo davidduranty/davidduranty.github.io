@@ -361,4 +361,250 @@ body {
   background: rgb(232, 224, 224);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.container .section3 .cadre-blanc .cadre-resto {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .section3 .cadre-blanc .cadre-resto h1 {
+  font-family: "allura";
+  color: rgb(139, 102, 59);
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.container .section3 .cadre-blanc .cadre-resto h2 {
+  color: rgb(34, 31, 31);
+  font-family: "pop";
+}
+.container .section3 .cadre-blanc .cadre-resto .info-img {
+  margin: 20px;
+}
+.container .section3 .cadre-blanc .form {
+  height: 100px;
+}
+.container .section3 .cadre-blanc .form form {
+  height: 100px;
+  margin: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.container .section3 .cadre-blanc .form form select, .container .section3 .cadre-blanc .form form input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid grey;
+  width: 80%;
+}
+.container .section3 .cadre-blanc .bouton-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.container .section3 .cadre-blanc .bouton-now .btn {
+  background: rgb(34, 31, 31);
+  color: rgb(232, 224, 224);
+  border-radius: 50px;
+  border: none;
+  font-family: "pop";
+  padding: 15px 50px;
+}
+.container .section4 {
+  max-width: 100%;
+  min-height: 800px;
+}
+.container .section4 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.container .section4 .title h1 {
+  color: rgb(139, 102, 59);
+  font-family: "allura";
+  font-size: 3rem;
+  font-weight: 100;
+}
+.container .section4 .title h2 {
+  font-family: "pop";
+  font-size: 2.7rem;
+}
+.container .section4 .title img {
+  width: 30px;
+  height: 30px;
+  margin: 20px 0;
+}
+.container .section4 .cadre-container {
+  width: 55%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 55% 43%;
+  gap: 10px;
+}
+.container .section4 .cadre-container .cadre-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-left {
+  background-image: url(/assets/img/event-01.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-left .day {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  background: rgb(34, 31, 31);
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-left .day span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-right {
+  background: rgb(232, 224, 224);
+  color: rgb(34, 31, 31);
+  display: grid;
+  grid-template-rows: 60px 60px;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-right h1 {
+  font-size: 0.95rem;
+  padding-left: 15px;
+  display: flex;
+  align-items: end;
+  color: rgb(118, 116, 116);
+  font-weight: 100;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-right .text-info {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgb(192, 184, 184);
+  align-items: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-right .text-info i {
+  padding: 0 5px 0 10px;
+}
+.container .section4 .cadre-container .cadre-left .cadre-haut .box-right h2 {
+  padding: 0 0 0 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-left {
+  background-image: url(/assets/img/event-02.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-left .day {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  background: rgb(34, 31, 31);
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-left .day span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-right {
+  background: rgb(232, 224, 224);
+  color: rgb(34, 31, 31);
+  display: grid;
+  grid-template-rows: 60px 60px;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-right h1 {
+  font-size: 0.95rem;
+  padding-left: 15px;
+  display: flex;
+  align-items: end;
+  color: rgb(118, 116, 116);
+  font-weight: 100;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-right .text-info {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgb(192, 184, 184);
+  align-items: center;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-right .text-info i {
+  padding: 0 5px 0 10px;
+}
+.container .section4 .cadre-container .cadre-left .cadre-bas .box-right h2 {
+  padding: 0 0 0 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.container .section4 .cadre-container .cadre-right {
+  background-image: url(/assets/img/event-03.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc {
+  background: rgb(232, 224, 224);
+  margin: 5%;
+  height: 90%;
+  position: relative;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .day {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 25%;
+  background: rgb(34, 31, 31);
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .day span {
+  text-align: center;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous {
+  color: rgb(34, 31, 31);
+  display: grid;
+  grid-template-rows: 40px 80px 30px;
+  margin-top: 20px;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous h1 {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous .text-info {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgb(192, 184, 184);
+  align-items: center;
+  justify-content: center;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous .text-info i {
+  padding: 0 5px 0;
+}
+.container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous h2 {
+  font-size: 0.95rem;
+  text-align: center;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
