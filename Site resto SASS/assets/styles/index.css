@@ -30,10 +30,12 @@ body {
 }
 
 .header {
-  min-width: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  height: 800px;
   background-image: url("/assets/img/bg-slider-06.jpg");
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header .navbar {
   width: 100%;
@@ -606,5 +608,109 @@ body {
 .container .section4 .cadre-container .cadre-right .cadre-right-blanc .thous h2 {
   font-size: 0.95rem;
   text-align: center;
+  cursor: pointer;
+}
+.container .section5 {
+  position: relative;
+  background-image: url("/assets/img/gmap.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+.container .section5 .text-cadre-blanc {
+  position: absolute;
+  width: 55%;
+  height: 350px;
+  background: rgb(232, 224, 224);
+  color: rgb(34, 31, 31);
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-rows: 200px 70px 80px;
+}
+.container .section5 .text-cadre-blanc img {
+  position: absolute;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.container .section5 .text-cadre-blanc .lorem {
+  grid-row: 1;
+  width: 80%;
+  margin: 60px auto 0 auto;
+  line-height: 2rem;
+  text-align: center;
+}
+.container .section5 .text-cadre-blanc .titre-russell {
+  grid-row: 2/3;
+  text-align: center;
+  padding-top: 30px;
+}
+.container .section5 .text-cadre-blanc .ceo {
+  grid-row: 3/4;
+  text-align: center;
+  color: rgb(139, 102, 59);
+  font-size: 0.9rem;
+  padding-top: 20px;
+}
+
+.footer {
+  background-image: url("/assets/img/bg-footer.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .box-footer-left {
+  width: 60%;
+  margin: 30px 20px 30px 240px;
+}
+.footer .box-footer-left h1 {
+  font-family: "allura";
+  color: rgb(139, 102, 59);
+}
+.footer .box-footer-left p {
+  line-height: 2rem;
+  color: rgb(154, 142, 142);
+}
+.footer .box-footer-right {
+  width: 60%;
+  margin: 30px 20px 30px 40px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.footer .box-footer-right form {
+  display: flex;
+  flex-direction: column;
+}
+.footer .box-footer-right form label {
+  font-size: 0.9rem;
+  color: rgb(154, 142, 142);
+}
+.footer .box-footer-right form input {
+  margin-top: 10px;
+  height: 25px;
+  background: none;
+  border: 1px solid rgb(110, 107, 107);
+  width: 60%;
+}
+.footer .box-footer-right .reseau-footer {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .box-footer-right .reseau-footer h1 {
+  font-size: 0.8rem;
+}
+.footer .box-footer-right .reseau-footer i {
   cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

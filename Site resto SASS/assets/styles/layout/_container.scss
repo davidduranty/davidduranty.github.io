@@ -560,4 +560,62 @@
             }
         }
     }
+
+    .section5 {
+        position: relative;
+        background-image: url("/assets/img/gmap.jpg");
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+
+        .text-cadre-blanc {
+            position: absolute;
+            width: 55%;
+            height: 350px;
+            background: $color2;
+            color: $color1;
+            top: -100px;
+            left: 50%;
+            transform: translate(-50%);
+            display: grid;
+            grid-template-rows: 200px 70px 80px;
+            
+
+            img {
+                position: absolute;
+                border-radius: 50px;
+                width: 60px;
+                height: 60px;
+                top: -25px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+
+            .lorem {
+                grid-row: 1 ;
+                width: 80%;
+                margin: 60px auto 0 auto;
+                line-height: 2rem;
+                text-align: center;
+            }
+
+            .titre-russell {
+                grid-row: 2/ 3;
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            .ceo {
+                grid-row: 3 / 4;
+                text-align: center;
+                color: $color3;
+                font-size: 0.9rem;
+                padding-top: 20px;
+            }
+            
+        }
+    }
+
+    
 }

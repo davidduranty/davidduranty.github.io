@@ -1,0 +1,64 @@
+.footer {
+    background-image: url("/assets/img/bg-footer.jpg");
+    background-size: cover;
+    object-fit: cover;
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .box-footer-left {
+        width: 60%;
+        margin: 30px 20px 30px 240px;
+
+        h1 {
+            font-family: "allura";
+            color: $color3;
+        }
+
+        p {
+            line-height: 2rem;
+            color: rgb(154, 142, 142);
+        }
+    }
+
+    .box-footer-right {
+        width: 60%;
+        margin: 30px 20px 30px 40px;
+        
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        form {
+            
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 0.9rem;
+                color: rgb(154, 142, 142);
+            }
+
+            input {
+                margin-top: 10px;
+                height: 25px;
+                background: none;
+                border: 1px solid rgb(110, 107, 107);
+                width: 60%;
+            }
+        }
+
+        .reseau-footer {
+            display: flex;
+            width: 60%;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+                font-size: 0.8rem;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+}
