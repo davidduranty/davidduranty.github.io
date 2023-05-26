@@ -6,9 +6,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media screen and (max-width:1300px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: none;
+        
+    }
+
     .box-footer-left {
         width: 60%;
         margin: 30px 20px 30px 240px;
+
+        @media screen and (max-width:1300px) {
+            margin: 30px auto;
+            text-align: center;
+        }
 
         h1 {
             font-family: "allura";
@@ -28,10 +40,24 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
 
+        @media screen and (max-width:1300px) {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-self: center;
+        }
+
         form {
             
             display: flex;
             flex-direction: column;
+
+            @media screen and (max-width:1300px) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             label {
                 font-size: 0.9rem;
@@ -52,12 +78,25 @@
             width: 60%;
             align-items: center;
             justify-content: space-between;
+
+            @media screen and (max-width:1300px) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
             h1 {
                 font-size: 0.8rem;
             }
 
             i {
                 cursor: pointer;
+
+                @media screen and (max-width:1300px) {
+                    margin-left: 5px;
+                }
             }
         }
     }

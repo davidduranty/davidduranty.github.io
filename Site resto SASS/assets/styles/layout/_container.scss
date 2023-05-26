@@ -1,17 +1,28 @@
 .container {
-    min-width: 100%;
-    min-height: 100vh;
+    // min-width: 100%;
+    // min-height: 100vh;
 
     .section1 {
         margin: 10px 0;
+        width: 100%;
         display: flex;
-        height: 450px;
         color: $color1;
         box-shadow: 0 0 5px white;
+
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;
+            ;
+            
+        }
 
         .box-left {
             width: 50%;
             background: white;
+
+            @media screen and (max-width:1000px) {
+                width: 100%;
+            }
 
             .box-left-inside {
                 margin: 20px;
@@ -69,7 +80,13 @@
             background-size: cover;
             object-fit: cover;
             background-position: center;
+
+            @media screen and (max-width:1000px) {
+                width: 100%;
+            }
         }
+
+       
     }
 
     .section2 {
@@ -78,6 +95,10 @@
             height: 921px;
             color: $color2;
 
+            @media screen and (max-width:1600px) {
+                height: 1700px;
+            }
+
             .menubg {
                 position: absolute;
                 top: 300px;
@@ -85,6 +106,10 @@
                 width: 100%;
                 background-size: cover;
                 object-fit: cover;
+
+                @media screen and (max-width:1000px) {
+                    display: none;
+                }
             }
 
             .title {
@@ -137,6 +162,13 @@
                 border-radius: 10px;
                 box-shadow: 0 -5px 0 rgb(139, 102, 59);
 
+                @media screen and (max-width:1600px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    height: 1400px;
+                    width: 40%;
+                }
+
                 .italian, .fried, .tenu, .roast, .salted, .crab, .imported, .baked {
                     display: grid;
                     width: 370px;
@@ -145,8 +177,20 @@
                     margin: 20px;
                     border-bottom: 1px dashed grey;
 
+                    @media screen and (max-width:1600px) {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        justify-self: center;
+                        align-self: center;
+                        border-bottom: none;
+                    }
+
                     .img-dish {
                         @include center;
+
+                        @media screen and (max-width:1600px) {
+                            text-align: center;
+                        }
                         
                         img {
                             width: 70px;
@@ -164,17 +208,27 @@
                         margin: auto 0;
                         padding: 0 0 0 8px;
 
+                        
+
                         h2 {
                             
                             width: 300px;
                             font-size: 0.8rem;
                             color: rgba(69, 62, 62, 0.889);
+
+                            @media screen and (max-width:1600px) {
+                                text-align: center;
+                            }
                         }
 
                         p {
                             font-size: 0.8rem;
                             width: 70%;
                             font-family: "rob";
+
+                            @media screen and (max-width:1600px) {
+                                text-align: center;
+                            }
                         }
                     }
 
@@ -184,6 +238,11 @@
                         justify-content: center;
                         align-items: center;
                         margin: 0 0 8px 0;
+
+                        @media screen and (max-width:1600px) {
+                            text-align: center;
+                        }
+
                         p {
                             font-family: "rob";
                             color: $color3;
@@ -200,6 +259,12 @@
         margin: 60px auto;
         display: grid;
         grid-template-columns: 1fr 3fr;
+
+        @media screen and (max-width:1000px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
 
         .info {
 
@@ -369,6 +434,11 @@
             display: grid;
             grid-template-columns: 55% 43%;
             gap: 10px;
+
+            @media screen and (max-width:1000px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
 
             .cadre-left {
                 display: grid;
@@ -567,7 +637,12 @@
         background-size: cover;
         object-fit: cover;
         width: 100%;
-        height: 400px;
+        min-height: 400px;
+
+        @media screen and (max-width:1000px) {
+            background: none;
+            
+        }
 
         .text-cadre-blanc {
             position: absolute;
@@ -580,6 +655,13 @@
             transform: translate(-50%);
             display: grid;
             grid-template-rows: 200px 70px 80px;
+
+            @media screen and (max-width:1000px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 100px;
+                height: 400px;
+            }
             
 
             img {
@@ -598,6 +680,10 @@
                 margin: 60px auto 0 auto;
                 line-height: 2rem;
                 text-align: center;
+
+                @media screen and (max-width:1300px) {
+                    line-height: 0.8rem;
+                }
             }
 
             .titre-russell {
@@ -612,6 +698,7 @@
                 color: $color3;
                 font-size: 0.9rem;
                 padding-top: 20px;
+
             }
             
         }

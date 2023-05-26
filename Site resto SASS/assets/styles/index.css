@@ -67,12 +67,24 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .header .navbar nav {
+    display: none;
+  }
+}
 .header .navbar .icons {
   height: 60px;
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .header .navbar .icons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
 }
 .header .navbar .icons i {
   margin-right: 20px;
@@ -101,6 +113,11 @@ body {
   font-family: "pop";
   letter-spacing: 7px;
 }
+@media screen and (max-width: 900px) {
+  .header .title h2 {
+    font-size: 1rem;
+  }
+}
 .header .title .couvert {
   height: 50px;
   width: 50px;
@@ -116,21 +133,33 @@ body {
   font-size: 1.2rem;
   font-family: "pop";
 }
-
-.container {
-  min-width: 100%;
-  min-height: 100vh;
+@media screen and (max-width: 900px) {
+  .header .title p {
+    font-size: 1rem;
+  }
 }
+
 .container .section1 {
   margin: 10px 0;
+  width: 100%;
   display: flex;
-  height: 450px;
   color: rgb(34, 31, 31);
   box-shadow: 0 0 5px white;
+}
+@media screen and (max-width: 1000px) {
+  .container .section1 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .section1 .box-left {
   width: 50%;
   background: white;
+}
+@media screen and (max-width: 1000px) {
+  .container .section1 .box-left {
+    width: 100%;
+  }
 }
 .container .section1 .box-left .box-left-inside {
   margin: 20px;
@@ -184,11 +213,21 @@ body {
      object-fit: cover;
   background-position: center;
 }
+@media screen and (max-width: 1000px) {
+  .container .section1 .box-right {
+    width: 100%;
+  }
+}
 .container .section2 {
   position: relative;
   width: 100%;
   height: 921px;
   color: rgb(232, 224, 224);
+}
+@media screen and (max-width: 1600px) {
+  .container .section2 {
+    height: 1700px;
+  }
 }
 .container .section2 .menubg {
   position: absolute;
@@ -198,6 +237,11 @@ body {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+  .container .section2 .menubg {
+    display: none;
+  }
 }
 .container .section2 .title {
   margin-top: 50px;
@@ -244,6 +288,14 @@ body {
   border-radius: 10px;
   box-shadow: 0 -5px 0 rgb(139, 102, 59);
 }
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 1400px;
+    width: 40%;
+  }
+}
 .container .section2 .tableau .italian, .container .section2 .tableau .fried, .container .section2 .tableau .tenu, .container .section2 .tableau .roast, .container .section2 .tableau .salted, .container .section2 .tableau .crab, .container .section2 .tableau .imported, .container .section2 .tableau .baked {
   display: grid;
   width: 370px;
@@ -252,10 +304,24 @@ body {
   margin: 20px;
   border-bottom: 1px dashed grey;
 }
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau .italian, .container .section2 .tableau .fried, .container .section2 .tableau .tenu, .container .section2 .tableau .roast, .container .section2 .tableau .salted, .container .section2 .tableau .crab, .container .section2 .tableau .imported, .container .section2 .tableau .baked {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-self: center;
+    border-bottom: none;
+  }
+}
 .container .section2 .tableau .italian .img-dish, .container .section2 .tableau .fried .img-dish, .container .section2 .tableau .tenu .img-dish, .container .section2 .tableau .roast .img-dish, .container .section2 .tableau .salted .img-dish, .container .section2 .tableau .crab .img-dish, .container .section2 .tableau .imported .img-dish, .container .section2 .tableau .baked .img-dish {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau .italian .img-dish, .container .section2 .tableau .fried .img-dish, .container .section2 .tableau .tenu .img-dish, .container .section2 .tableau .roast .img-dish, .container .section2 .tableau .salted .img-dish, .container .section2 .tableau .crab .img-dish, .container .section2 .tableau .imported .img-dish, .container .section2 .tableau .baked .img-dish {
+    text-align: center;
+  }
 }
 .container .section2 .tableau .italian .img-dish img, .container .section2 .tableau .fried .img-dish img, .container .section2 .tableau .tenu .img-dish img, .container .section2 .tableau .roast .img-dish img, .container .section2 .tableau .salted .img-dish img, .container .section2 .tableau .crab .img-dish img, .container .section2 .tableau .imported .img-dish img, .container .section2 .tableau .baked .img-dish img {
   width: 70px;
@@ -276,16 +342,31 @@ body {
   font-size: 0.8rem;
   color: rgba(69, 62, 62, 0.889);
 }
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau .italian .text h2, .container .section2 .tableau .fried .text h2, .container .section2 .tableau .tenu .text h2, .container .section2 .tableau .roast .text h2, .container .section2 .tableau .salted .text h2, .container .section2 .tableau .crab .text h2, .container .section2 .tableau .imported .text h2, .container .section2 .tableau .baked .text h2 {
+    text-align: center;
+  }
+}
 .container .section2 .tableau .italian .text p, .container .section2 .tableau .fried .text p, .container .section2 .tableau .tenu .text p, .container .section2 .tableau .roast .text p, .container .section2 .tableau .salted .text p, .container .section2 .tableau .crab .text p, .container .section2 .tableau .imported .text p, .container .section2 .tableau .baked .text p {
   font-size: 0.8rem;
   width: 70%;
   font-family: "rob";
+}
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau .italian .text p, .container .section2 .tableau .fried .text p, .container .section2 .tableau .tenu .text p, .container .section2 .tableau .roast .text p, .container .section2 .tableau .salted .text p, .container .section2 .tableau .crab .text p, .container .section2 .tableau .imported .text p, .container .section2 .tableau .baked .text p {
+    text-align: center;
+  }
 }
 .container .section2 .tableau .italian .price, .container .section2 .tableau .fried .price, .container .section2 .tableau .tenu .price, .container .section2 .tableau .roast .price, .container .section2 .tableau .salted .price, .container .section2 .tableau .crab .price, .container .section2 .tableau .imported .price, .container .section2 .tableau .baked .price {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 8px 0;
+}
+@media screen and (max-width: 1600px) {
+  .container .section2 .tableau .italian .price, .container .section2 .tableau .fried .price, .container .section2 .tableau .tenu .price, .container .section2 .tableau .roast .price, .container .section2 .tableau .salted .price, .container .section2 .tableau .crab .price, .container .section2 .tableau .imported .price, .container .section2 .tableau .baked .price {
+    text-align: center;
+  }
 }
 .container .section2 .tableau .italian .price p, .container .section2 .tableau .fried .price p, .container .section2 .tableau .tenu .price p, .container .section2 .tableau .roast .price p, .container .section2 .tableau .salted .price p, .container .section2 .tableau .crab .price p, .container .section2 .tableau .imported .price p, .container .section2 .tableau .baked .price p {
   font-family: "rob";
@@ -299,6 +380,13 @@ body {
   margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+@media screen and (max-width: 1000px) {
+  .container .section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .container .section3 .info {
   background: black;
@@ -445,6 +533,12 @@ body {
   display: grid;
   grid-template-columns: 55% 43%;
   gap: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .container .section4 .cadre-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 .container .section4 .cadre-container .cadre-left {
   display: grid;
@@ -617,7 +711,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
+}
+@media screen and (max-width: 1000px) {
+  .container .section5 {
+    background: none;
+  }
 }
 .container .section5 .text-cadre-blanc {
   position: absolute;
@@ -630,6 +729,14 @@ body {
   transform: translate(-50%);
   display: grid;
   grid-template-rows: 200px 70px 80px;
+}
+@media screen and (max-width: 1000px) {
+  .container .section5 .text-cadre-blanc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 400px;
+  }
 }
 .container .section5 .text-cadre-blanc img {
   position: absolute;
@@ -646,6 +753,11 @@ body {
   margin: 60px auto 0 auto;
   line-height: 2rem;
   text-align: center;
+}
+@media screen and (max-width: 1300px) {
+  .container .section5 .text-cadre-blanc .lorem {
+    line-height: 0.8rem;
+  }
 }
 .container .section5 .text-cadre-blanc .titre-russell {
   grid-row: 2/3;
@@ -669,9 +781,22 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: none;
+  }
+}
 .footer .box-footer-left {
   width: 60%;
   margin: 30px 20px 30px 240px;
+}
+@media screen and (max-width: 1300px) {
+  .footer .box-footer-left {
+    margin: 30px auto;
+    text-align: center;
+  }
 }
 .footer .box-footer-left h1 {
   font-family: "allura";
@@ -687,9 +812,25 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+@media screen and (max-width: 1300px) {
+  .footer .box-footer-right {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+}
 .footer .box-footer-right form {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1300px) {
+  .footer .box-footer-right form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .footer .box-footer-right form label {
   font-size: 0.9rem;
@@ -708,9 +849,22 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1300px) {
+  .footer .box-footer-right .reseau-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .footer .box-footer-right .reseau-footer h1 {
   font-size: 0.8rem;
 }
 .footer .box-footer-right .reseau-footer i {
   cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .footer .box-footer-right .reseau-footer i {
+    margin-left: 5px;
+  }
 }/*# sourceMappingURL=index.css.map */

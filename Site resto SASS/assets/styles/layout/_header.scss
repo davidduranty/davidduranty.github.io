@@ -8,7 +8,7 @@ body {
     background: $color1;
     color: $color2;
     margin: 0 50px;
-    // overflow-x: hidden;
+    
 }
 .header {
     max-width: 100%;
@@ -49,6 +49,11 @@ body {
                     cursor: pointer;
                 }
             }
+
+            @media screen and (max-width:900px) {
+                display: none;
+                
+            }
         }
         
         .icons {
@@ -57,6 +62,12 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media screen and (max-width:900px) {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+            }
 
             i {
                 margin-right: 20px;
@@ -77,6 +88,7 @@ body {
             font-family: "allura";
             font-size: 4rem;
             color: $color3;
+
         }
 
         h2 {
@@ -84,6 +96,10 @@ body {
             font-size: 6rem;
             font-family: "pop";
             letter-spacing: 7px;
+
+            @media screen and (max-width:900px) {
+                font-size: 1rem;
+            }
         }
         .couvert {
             height: 50px;
@@ -101,6 +117,10 @@ body {
             letter-spacing: 3px;
             font-size: 1.2rem;
             font-family: "pop";
+
+            @media screen and (max-width:900px) {
+                font-size: 1rem;
+            }
         }
     }
 }
