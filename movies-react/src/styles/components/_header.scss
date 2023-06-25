@@ -1,0 +1,31 @@
+.header {
+    max-width: 100%;
+    margin: 100px;
+    display: flex;
+
+    .navigation {
+        width: 20%;
+        height: 100px;
+    
+        ul{
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    .title {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 4px;
+            text-shadow: 2px 5px 2px rgb(64, 64, 189);
+        }
+    }
+
+}
