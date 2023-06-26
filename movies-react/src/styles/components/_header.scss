@@ -6,12 +6,48 @@
     .navigation {
         width: 20%;
         height: 100px;
-    
+        
+        a {
+            padding: 30px; 
+        }
+
         ul{
             height: 100px;
             display: flex;
             justify-content: space-around;
             align-items: center;
+        }
+
+        .nav-active {
+            position: relative;
+            color: white;
+
+            &::after {
+                content: "";
+                height: 100%;
+                width: 0;
+                transform: translateX(-50%);
+                position: absolute;
+                border-radius: 10px;
+                bottom: 0px;
+                left: 50%;
+                background: rgb(64, 64, 189);
+                // -webkit-animation: anim 0.3s ease forwards;
+                animation: anim 0.6s ease forwards;
+                z-index: -1;
+        
+                @-webkit-keyframes anim {
+                  to {
+                    width: 100%;
+                  
+                  }
+                }
+                @keyframes anim {
+                  to {
+                    width: 100%;
+                  }
+                }
+            }
         }
     }
 
@@ -27,5 +63,7 @@
             text-shadow: 2px 5px 2px rgb(64, 64, 189);
         }
     }
+
+    
 
 }
