@@ -4,7 +4,7 @@
     display: flex;
 
     .navigation {
-        width: 20%;
+        width: 30%;
         height: 100px;
         
         a {
@@ -14,8 +14,13 @@
         ul{
             height: 100px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+
+            li {
+              color: white;
+
+            }
         }
 
         .nav-active {

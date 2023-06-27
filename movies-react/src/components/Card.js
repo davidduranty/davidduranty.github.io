@@ -15,10 +15,13 @@ const Card = () => {
 
   return (
     <div className="card-container">
+      
       <ul>
+      
         {data.map((card, index) => (
           <AfficheFilm key={index} card={card} />
         ))}
+        
       </ul>
     </div>
   );
