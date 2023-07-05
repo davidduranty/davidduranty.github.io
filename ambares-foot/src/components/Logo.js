@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div>
       <div className="logo">
-        <img src="logoAmbares.png" alt="Logo ambares Foot" />
+        <img src="logo.png" alt="Logo ambares Foot" />
         <h1>Bienvenue sur le site ES AMBARES</h1>
       </div>
     </div>
