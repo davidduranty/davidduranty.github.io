@@ -60,7 +60,7 @@
     }
      
     h1 {
-        padding-left: 20px;
+        font-family: $font1;
         letter-spacing: 2px;
         font-size: 3rem;
     }
@@ -81,7 +81,7 @@
 
     #text-target {
         
-        width: 500px;
+        width: 480px;
         height: 70px;
         display: flex;
         justify-content: center;
@@ -98,13 +98,13 @@
       }
       @keyframes color {
         0% {
-          color: blue;
+          color: teal;
         }
         50% {
-          color: #ec006e;
+          color: teal;
         }
         100% {
-          color: blue;
+          color: teal;
         }
       }
     .letter {
