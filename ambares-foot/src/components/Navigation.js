@@ -6,18 +6,18 @@ const Navigation = () => {
     <div className="navigation">
       <div className="nav-left">
         <NavLink to="/">
-          <li>Accueil</li>
+          <li style={{ style: "--i: 6" }}>Accueil</li>
         </NavLink>
         <NavLink to="/team">
-          <li>Equipes</li>
+          <li style={{ style: "--i: 7" }}>Equipes</li>
         </NavLink>
       </div>
       <div className="nav-right">
         <NavLink to="/photo">
-          <li>Photo</li>
+          <li style={{ style: "--i: 8" }}>Galerie</li>
         </NavLink>
         <NavLink to="/evenement">
-          <li>Evènement</li>
+          <li style={{ style: "--i: 9" }}>Evènement</li>
         </NavLink>
       </div>
     </div>

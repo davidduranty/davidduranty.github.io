@@ -1,23 +1,55 @@
 .navigation {
     display: flex;
     justify-content: space-between;
+   
     
     
-    a li {
-        padding: 15px;
-        color: rgb(227, 181, 181);
+    a {
+      display: inline-block;
+      animation: nav 2s ease forwards;
+      opacity: 0;
+      animation-delay: calc(2s * var(--i));
 
-        &:hover {
-            scale: 1.1;
-            overflow: hidden;
-            transition: 0.6s ease-in-out;
+      @keyframes nav {
+        0% {
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
         }
     }
+    li {
+      
+         min-width: 50px;
+        padding: 15px;
+        color: rgb(227, 181, 181);
+        
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 3px;
+          background: rgb(227, 181, 181);
+          margin: auto;
+          transition: 0.9s;
+          border-radius: 50px;
+
+        }
+        &:hover::after {
+          width: 100%;
+        }
+  
+       
+    }
+  }
+      
 
     &::before {
         content: "";
         position: absolute;
-        width: 300px;
+        width: 350px;
         height: 300px;
         background: rgb(191, 239, 206);
         z-index: -1;
@@ -30,7 +62,7 @@
     &::after {
         content: "";
         position: absolute;
-        width: 300px;
+        width: 350px;
         height: 300px;
         background: rgb(191, 239, 206);
         border-radius: 50%;
@@ -41,7 +73,7 @@
     }
 
     .nav-left {
-        width: 200px;
+        
         height: 100px;
     }
     
@@ -53,30 +85,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0 0 0 ;
+    margin: 200px 0 0 0 ;
+    animation: logo 5s ease-in-out forwards;
+
+    @keyframes logo {
+      0% {
+        transform: translateX(-2000px);
+        opacity: 0;
+      }
+    }
     
     img{
-        width: 200px;
+        width: 180px;
+        animation: img 10s ease forwards, zoom 4s ease-in-out infinite;
+        z-index: 2;
+        animation-delay: 2s, 3s;
+        
+
+        @keyframes zoom {
+          0% {
+            transform: translateY(-5px);
+          }
+          50% {
+            transform: translateY(5px);
+          }
+          100% {
+            transform: translateY(-5px);
+          }
+        }
+
     }
      
     h1 {
         font-family: $font1;
         letter-spacing: 2px;
         font-size: 3rem;
+        z-index: 3;
     }
 }
 
 .text-dynamic {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5px;
     width: 60%;
     height: 100px;
-    margin:0px 300px 0 300px;
+    margin: 0 auto;
+    animation: text 7s ease forwards;
+
+    @keyframes text {
+      0% {
+        transform: translateY(2000px);
+        opacity: 0;
+      }
+    }
 
     span {
+      display: flex;
         width: 30%;
-        font-size: 4rem;
+        font-size: 3.6rem;
+        justify-content: center;
+        align-items: center;
     }
 
     #text-target {
@@ -89,8 +159,9 @@
         font-size: 3rem;
         overflow: hidden;
         perspective: 200px;
-        text-shadow: 0 0 10px;
+        text-shadow: 2px 2px 2px black, 2px 2px 1em red, 2px 2px 0.9em teal;
         animation: color 30s alternate infinite;
+        border-radius: 50px;
         
     }
     .word {
@@ -126,7 +197,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 70px 20px;
-    height: 300px;
+    height: 500px;
     align-items: center;
 
     a {
