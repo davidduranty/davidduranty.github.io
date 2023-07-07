@@ -50,7 +50,6 @@ const DynamicText = () => {
 
   return (
     <div className="text-dynamic">
-      <span>Devises : </span>
       <span id="text-target"></span>
     </div>
   );

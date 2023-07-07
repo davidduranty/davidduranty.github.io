@@ -1,16 +1,14 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
-import DynamicText from "../components/DynamicText";
-import IconSocial from "../components/IconSocial";
+import Arrow from "../components/Arrow";
+
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <Logo />
-      <DynamicText />
-      <IconSocial/>
+      <Arrow left={"/pagegard"} />
+      
     </div>
   );
 };
