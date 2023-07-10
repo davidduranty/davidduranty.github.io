@@ -4,6 +4,7 @@
     margin: 0 10%;
     position: relative;
     height: 200px;
+    overflow: hidden;
 
     a {
       display: inline-block;
@@ -77,6 +78,58 @@
         
         height: 100px;
     }
-    
+}
+
+.container {
+  margin: 100px 10%;
+  min-height: 800px;
+  .president {
+    margin: 0 20%;
+
+    img {
+      display: block;
+      float: left;
+      border: 1px solid black;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      margin: 0 30px 10px 0;
+      box-shadow: 0 0 5px;
+    }
+
+    p {
+      line-height: 25px;
+      color: rgba(155, 140, 140, 0.743);
+      font-family: $font-2;
+      letter-spacing: 1px;
+    }
+  }
+
+  .bureau  {
+
+    h1 {
+
+      font-size: 2.5rem;
+    }
+
+      img {
+        border: 1px solid black;
+        display: block;
+        width: 90%;
+        height: 600px;
+        margin: 10px auto;
+        box-shadow: 0 0 5px;
+      }
+  }
+}
+.arrow {
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%);
+    font-size: 3rem;
+    color: rgba(132, 124, 124, 0.574);
+  }
 }
 

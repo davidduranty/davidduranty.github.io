@@ -6,7 +6,7 @@ import Arrow from "../components/Arrow";
 
 const PageGard = () => {
   return (
-    <div>
+    <div className="gard-container">
       <Logo />
       <DynamicText />
       <Arrow right={"/accueil"} />
