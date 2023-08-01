@@ -1,0 +1,28 @@
+{
+    "thes": [
+        {
+            "name":"Thé Noir",
+            "img": "./assets/img/Thé-noir.webp",
+            "content": " Lorem, ipsum dolor sit amet ",
+            "prix": "7.00 € Les 100g"
+        },
+        {
+            "name":"Thé Vert",
+            "img": "./assets/img/thé-vert.webp",
+            "content": " Lorem, ipsum dolor sit  ",
+            "prix": "8.00 € Les 100g"
+        },
+        {
+            "name":"Bali",
+            "img": "./assets/img/Bali.webp",
+            "content": " Lorem, ipsum dolor sit amet ",
+            "prix": "11.00 € Les 100g"
+        },
+        {
+            "name":"Jardin Bleu",
+            "img": "./assets/img/Jardin-bleu.webp",
+            "content": " Lorem, ipsum dolor sit amet ",
+            "prix": "8.50 € Les 100g"
+        }
+    ]
+}
