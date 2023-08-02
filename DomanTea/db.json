@@ -1,28 +1,52 @@
 {
     "thes": [
         {
-            "name":"Thé Noir",
+            "name":"Smokey Lapsang⭐",
             "img": "./assets/img/Thé-noir.webp",
-            "content": " Lorem, ipsum dolor sit amet ",
+            "content": " Thé noir | Notes fumées ",
             "prix": 7
         },
         {
-            "name":"Thé Vert",
+            "name":"Kiwi Fukuyu⭐⭐",
             "img": "./assets/img/thé-vert.webp",
-            "content": " Lorem, ipsum dolor sit  ",
+            "content": " Thé vert | Kiwi ",
             "prix": 8
         },
         {
-            "name":"Bali",
+            "name":"Bali ⭐⭐⭐",
             "img": "./assets/img/Bali.webp",
-            "content": " Lorem, ipsum dolor sit amet ",
+            "content": " Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin ",
             "prix": 11
         },
         {
-            "name":"Jardin Bleu",
+            "name":"Jardin Bleu ⭐",
             "img": "./assets/img/Jardin-bleu.webp",
-            "content": " Lorem, ipsum dolor sit amet ",
+            "content": " Thé noir | Miel, Figue, Fraise ",
             "prix": 8.50
+        },
+        {
+            "name":"Great Earl Grey ⭐⭐",
+            "img":"./assets/img/Thé-blanc.webp",
+            "content":"Thé blanc | Bergamote",
+            "prix":16.00
+        }, 
+        {
+            "name":"Passion de Fleurs ⭐⭐⭐⭐",
+            "img":"./assets/img/Passion-de-fleurs.webp",
+            "content":"Thé blanc | Rose, Abricot, Fruit de la passion",
+            "prix":18.50 
+        },
+        {
+            "name":"Thé Blanc D'Anji⭐⭐⭐",
+            "img":"./assets/img/Thé-blanc-Anji.webp",
+            "content":"Thé blanc ",
+            "prix":15.00 
+        },
+        {
+            "name":"Thé Blanc D'Oranger⭐⭐",
+            "img":"./assets/img/Thé-blanc-d'oranger.webp",
+            "content":"Thé blanc | Néroli ",
+            "prix":19.50
         }
     ]
 }

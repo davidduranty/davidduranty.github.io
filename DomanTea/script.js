@@ -1,4 +1,6 @@
 const container = document.querySelector(".card-container");
+const form = document.querySelector(".form");
+const loupe = document.querySelector(".loupe")
 
 let userThes = [];
 
@@ -16,10 +18,10 @@ const fetchThe = async () => {
         `
       <div class="card">
         <img src=${the.img} alt="Photo de ${the.name}">
-        <h1>${the.name}</h1><span>⭐⭐⭐</span>
+        <h1>${the.name}</h1>
         <p class="compo">Composition : ${the.content}</p>
         <div class="select">
-          <h4>${the.prix} £ Les 100g</h4>
+          <h4>${the.prix} € Les 100g</h4>
           <button class="btn">Ajouter</button>
         </div>
       </div>
@@ -29,3 +31,9 @@ const fetchThe = async () => {
 };
 
 fetchThe();
+
+
+loupe.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.classList.toggle("formActive")
+})
