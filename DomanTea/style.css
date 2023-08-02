@@ -68,11 +68,17 @@ svg {
 
 body {
     height: 100vh;
-    display: flex;
+    
     justify-content: center;
-    margin: 200px auto;
+    margin: 0px auto;
     gap: 20px;
     overflow: hidden;
+}
+.card-container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .card {
     max-width: 250px;
@@ -93,7 +99,7 @@ span {
     margin-left: 20px;
 }
 
-p{
+.compo{
     padding: 10px 0;
     height: 50px;
 }

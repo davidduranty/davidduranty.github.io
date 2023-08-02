@@ -1,3 +1,5 @@
+const container = document.querySelector(".card-container");
+
 let userThes = [];
 
 const fetchThe = async () => {
@@ -7,7 +9,7 @@ const fetchThe = async () => {
 
   console.log(userThes);
 
-  document.body.innerHTML = userThes
+  container.innerHTML = userThes
     .sort((a, b) => a.prix - b.prix)
     .map(
       (the) =>
@@ -15,7 +17,7 @@ const fetchThe = async () => {
       <div class="card">
         <img src=${the.img} alt="Photo de ${the.name}">
         <h1>${the.name}</h1><span>⭐⭐⭐</span>
-        <p>Composition : ${the.content}</p>
+        <p class="compo">Composition : ${the.content}</p>
         <div class="select">
           <h4>${the.prix} £ Les 100g</h4>
           <button class="btn">Ajouter</button>
