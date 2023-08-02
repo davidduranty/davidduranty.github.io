@@ -65,3 +65,51 @@ p {
 svg {
     margin: 0 5px;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+    gap: 20px;
+    overflow: hidden;
+}
+.card {
+    max-width: 250px;
+    max-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.344);
+}
+span {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+p{
+    padding: 10px 0;
+    height: 50px;
+}
+.select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.btn {
+    font-family: "font1";
+    border: none;
+    padding: 8px 4px;
+    background: transparent;
+    cursor: pointer;
+}
