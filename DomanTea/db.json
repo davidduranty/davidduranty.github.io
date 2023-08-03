@@ -1,52 +1,76 @@
 {
     "thes": [
         {
-            "name":"Smokey Lapsang⭐",
+            "name": "Smokey Lapsang⭐",
             "img": "./assets/img/Thé-noir.webp",
             "content": " Thé noir | Notes fumées ",
             "prix": 7
         },
         {
-            "name":"Kiwi Fukuyu⭐⭐",
+            "name": "Kiwi Fukuyu⭐⭐",
             "img": "./assets/img/thé-vert.webp",
             "content": " Thé vert | Kiwi ",
             "prix": 8
         },
         {
-            "name":"Bali ⭐⭐⭐",
+            "name": "Bali ⭐⭐⭐",
             "img": "./assets/img/Bali.webp",
             "content": " Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin ",
             "prix": 11
         },
         {
-            "name":"Jardin Bleu ⭐",
+            "name": "Jardin Bleu ⭐",
             "img": "./assets/img/Jardin-bleu.webp",
             "content": " Thé noir | Miel, Figue, Fraise ",
             "prix": 8.50
         },
         {
-            "name":"Great Earl Grey ⭐⭐",
-            "img":"./assets/img/Thé-blanc.webp",
-            "content":"Thé blanc | Bergamote",
-            "prix":16.00
-        }, 
-        {
-            "name":"Passion de Fleurs ⭐⭐⭐⭐",
-            "img":"./assets/img/Passion-de-fleurs.webp",
-            "content":"Thé blanc | Rose, Abricot, Fruit de la passion",
-            "prix":18.50 
+            "name": "Great Earl Grey ⭐⭐",
+            "img": "./assets/img/Thé-blanc.webp",
+            "content": "Thé blanc | Bergamote",
+            "prix": 16.00
         },
         {
-            "name":"Thé Blanc D'Anji⭐⭐⭐",
-            "img":"./assets/img/Thé-blanc-Anji.webp",
-            "content":"Thé blanc ",
-            "prix":15.00 
+            "name": "Passion de Fleurs ⭐⭐⭐⭐",
+            "img": "./assets/img/Passion-de-fleurs.webp",
+            "content": "Thé blanc | Rose, Abricot, Fruit de la passion",
+            "prix": 18.50
         },
         {
-            "name":"Thé Blanc D'Oranger⭐⭐",
-            "img":"./assets/img/Thé-blanc-d'oranger.webp",
-            "content":"Thé blanc | Néroli ",
-            "prix":19.50
+            "name": "Thé Blanc D'Anji⭐⭐⭐",
+            "img": "./assets/img/Thé-blanc-Anji.webp",
+            "content": "Thé blanc ",
+            "prix": 15.00
+        },
+        {
+            "name": "Thé Blanc D'Oranger⭐⭐",
+            "img": "./assets/img/Thé-blanc-d'oranger.webp",
+            "content": "Thé blanc | Néroli ",
+            "prix": 19.50
+        },
+        {
+            "name": "Dong Ding Oolong⭐⭐⭐⭐⭐⭐",
+            "img": "./assets/img/Dong-Ding-Oolong.webp",
+            "content": "Oolong ",
+            "prix": 34.00
+        },
+        {
+            "name": "High Mountain Jin Xuan⭐⭐⭐⭐⭐",
+            "img": "./assets/img/High-Mountain-Jin-Xuan.webp",
+            "content": "Oolong ",
+            "prix": 45.50
+        },
+        {
+            "name": "Jardin Du Luxembourg⭐⭐⭐⭐",
+            "img": "./assets/img/Jardin-Du-Luxembourg.webp",
+            "content": "Oolong | Aubépine, Rose, Jasmin, Acacia",
+            "prix": 16.00
+        },
+        {
+            "name": "Oolong Caramel Au Beurre Salé⭐⭐⭐",
+            "img": "./assets/img/Oolong-Caramel-Au-Beurre-Salé.webp",
+            "content": "Oolong | Caramel",
+            "prix": 13.50
         }
     ]
 }
