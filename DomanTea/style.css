@@ -9,6 +9,10 @@
     list-style: none;
     
 }
+body {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.283);
+}
 
 .header {
     display: flex;
@@ -54,7 +58,7 @@ p {
     cursor: pointer;
 }
 
-.fr {
+#fr {
     border-right: 1px solid black;
     padding: 0 12px;
 }
@@ -72,10 +76,7 @@ svg {
 }
 
 
-body {
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.283);
-}
+
 .form{
     margin-top: 40px;
     height: 50px;
@@ -99,10 +100,50 @@ input {
     border: none;
     
 }
+
+.boutonUpDown {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    border: none;
+}
+
+.btnSort{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    height: 50px;
+    background: rgba(125, 116, 116, 0.283);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.344);
+    cursor: pointer;
+}
+
+#minToMax{
+    border-right: 2px solid white;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+#maxToMin {
+    border-radius: 0 20px 20px 0;
+    
+}
+
+#arrow {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 1.8rem;
+}
+
 .card-container {
     max-width: 60%;
     min-height: 500px;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -151,7 +192,12 @@ h4 {
     padding-right: -20px;
 }
 
-.btn {
+#span {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.btn{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
     padding: 8px 4px;
