@@ -32,7 +32,6 @@ body {
 }
 
 .navbar {
-    
     width: 70%;
     height: 100px;
 }
@@ -43,7 +42,7 @@ ul {
     align-items: center;
 }
 
-li {
+.selects {
     cursor: pointer;
 }
 
@@ -57,9 +56,13 @@ li {
 p {
     cursor: pointer;
 }
+.active {
+    background: rgb(55, 55, 169);
+    color: white;
+    transition: 0.9s ease;
+}
 
-#fr {
-    border-right: 1px solid black;
+#fr, #en {
     padding: 0 12px;
 }
 
