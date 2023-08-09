@@ -15,9 +15,10 @@ const selectFive = document.querySelector(".select5");
 const selectSix = document.querySelector(".select6");
 const croissant = document.querySelector(".croissant");
 const decroissant = document.querySelector(".decroissant");
+const compo = document.querySelectorAll(".compo");
 
 // const btnAll = document.querySelectorAll(".btn")
-console.log(body);
+console.log(compo);
 let userThes = [];
 let triSort = "";
 
@@ -49,7 +50,7 @@ const theDisplay = () => {
       <p class="compo">Composition : ${the.content}</p>
       <div class="select">
       <h4>${the.prix.toFixed(2)} € <span id="span">/ Les 100g</span></h4>
-      <button class='btn'>${(the.btn.onclick = "mafunction();")}</button>
+      <button class='btn'>${the.btn}</button>
       </div>
       </div>
       `;
@@ -72,6 +73,8 @@ btns.forEach((btn) => {
     theDisplay();
   });
 });
+
+
 
 lang.forEach((el) => {
   el.addEventListener("click", () => {
@@ -96,6 +99,7 @@ lang.forEach((el) => {
 //     console.log(e.target.id);
 //   })
 // })
+
 fetchThe();
 theSearch();
 
