@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="connexion">
+        <h1 class="connexion-title">CONNEXION</h1>
+    </div>
     <form action="">
         <div class="pseudo-container container">
-            <label for="">Pseudo</label>
+            <label for="pseudo">Pseudo</label>
             <input class="inputForm" type="text" id="pseudo" autocomplete="off">
             <span></span>
         </div>
         <div class="email-container container">
             <label for="email">Email</label>
-            <input class="inputForm" type="email" id="email" autocomplete="off">
-            <span></span>
+            <input class="inputForm" type="text" id="email" autocomplete="off">
+            <span>Email Incorrect</span>
         </div>
         <div class="password-container container">
             <label for="password">MOT DE PASSE</label>
             <input class="inputForm" type="password" id="password" autocomplete="off">
+            <p id="progress-bar"></p>
             <span></span>
         </div>
         <div class="confirm-container container">
-            <label for="password">COMFIRMER</label>
+            <label for="confirm">COMFIRMER</label>
             <input class="inputForm" type="password" id="confirm" autocomplete="off">
             <span></span>
         </div>
-        <button id="valider">Valider</button>
+        <input type="submit" value="Valider" id="valider">
     </form>
 
-    <script src="script.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
