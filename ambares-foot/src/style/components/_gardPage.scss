@@ -1,5 +1,7 @@
 
 .gard-container {
+  border: 1px solid red;
+  height: 100vh;
   overflow: hidden;
 
   .logo {
@@ -171,5 +173,27 @@
               transition: 0.8s ease-in;
           }
       }
+  }
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: bubble 8s forwards;
+  filter: hue-rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@keyframes bubble {
+  to {
+    top: -250px;
+    left: var(--left);
+    opacity: 0.3;
+    filter: hue-rotate(120deg);
   }
 }
