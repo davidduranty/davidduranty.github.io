@@ -129,8 +129,8 @@ section {
   cursor: pointer;
 }
 .navbar .icons i:hover {
-  font-size: 2rem;
-  transition: 0.7s ease-in-out;
+  scale: 1.5;
+  transition: 0.3s ease-in-out;
 }
 
 .date {

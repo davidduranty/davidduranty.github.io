@@ -1,6 +1,5 @@
 
 .gard-container {
-  border: 1px solid red;
   height: 100vh;
   overflow: hidden;
 
@@ -121,33 +120,22 @@
   }
   
   .arrow {
-      
-      a {
+      .right {
           position: absolute;
           top: 50%;
-          transform: translate(50%, 50%);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 60px;
-          height: 60px;
+          right:2%;
+          transform: translate(-50%);
           font-size: 3rem;
-          color: rgba(132, 124, 124, 0.574);
-          user-select: none;
-          transition: 0.4s ease;
+          color: rgba(132, 124, 124, 0.263);
+          transition: 0.9s ease-in-out;
   
           &:hover {
-              font-size: 4rem;            
+              scale: 1.5;
+              transition: 0.9s ease-in-out;
+              color: rgba(132, 124, 124, 0.762);         
           }
   
       }
-      .right {
-          right: 40px;
-      }
-  
-      // .left {
-      //     left: -20px;
-      // }
   }
   
   .icon {
@@ -167,6 +155,7 @@
           font-size: 4rem;
           opacity: 0.2;
           color: rgb(68, 146, 146);
+          transition: 0.8s ease-in;
   
           &:hover {
               scale: 1.2;
@@ -176,24 +165,24 @@
   }
 }
 
-.bubble {
-  position: absolute;
-  border-radius: 300px;
-  background: rgba(255, 166, 0, 0.6);
-  opacity: 0;
-  animation: bubble 8s forwards;
-  filter: hue-rotate(90deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .bubble {
+//   position: absolute;
+//   border-radius: 300px;
+//   background: rgba(255, 166, 0, 0.6);
+//   opacity: 0;
+//   animation: bubble 8s forwards;
+//   filter: hue-rotate(90deg);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
   
-}
+// }
 
-@keyframes bubble {
-  to {
-    top: -250px;
-    left: var(--left);
-    opacity: 0.3;
-    filter: hue-rotate(120deg);
-  }
-}
+// @keyframes bubble {
+//   to {
+//     top: -250px;
+//     left: var(--left);
+//     opacity: 0.3;
+//     filter: hue-rotate(120deg);
+//   }
+// }

@@ -227,3 +227,9 @@ nav img {
 .nav-bar-column ul li i:hover {
     transform: rotate(-90deg);
 }
+.trouver i:hover {
+    background: teal;
+    color: white;
+    transform: rotate(45deg);
+    animation: 0.8s ease-in-out;
+}

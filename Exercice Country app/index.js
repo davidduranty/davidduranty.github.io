@@ -62,6 +62,7 @@ const countriesDisplay = () => {
     .join("");
 };
 countriesDisplay();
+
 const countriesSearch = () => {
   inputSearch.addEventListener("input", countriesDisplay);
 };

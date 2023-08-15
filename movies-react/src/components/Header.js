@@ -6,17 +6,27 @@ const Header = () => {
     <div className="header">
       <div className="navigation">
         <ul>
-          <NavLink to="/" className={(nav) => (nav.isActive? "nav-active" : "") } >
-            <li>ACCUEIL</li>
-          </NavLink>
-          <NavLink to="/favorite" className={(nav) => (nav.isActive? "nav-active" : "") }>
-            <li>COUP DE COEUR</li>
-          </NavLink>
+          <li>
+            <NavLink
+              to="/"
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
+            >
+              ACCUEIL
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/favorite"
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
+            >
+              COUPS DE COEUR
+            </NavLink>
+          </li>
         </ul>
-          </div>
-          <div className="title">
-              <h1>React Movies</h1>
-          </div>
+      </div>
+      <div className="title">
+        <h1>React Movies</h1>
+      </div>
     </div>
   );
 };

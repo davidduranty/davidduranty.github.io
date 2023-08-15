@@ -65,11 +65,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    
   }
   body {
     background: rgba(0, 0, 0, 0.691);
     color: rgba(214, 204, 204, 0.794);
+    overflow: hidden;
   }
   .navbar {
     width: 100%;
@@ -109,6 +110,7 @@ i {
   transform: translateY(-200px);
   transition: 0.5s;
   opacity: 0;
+  z-index: 30;
 }
 .visibleNavbar {
   opacity: 1;
@@ -125,9 +127,11 @@ i {
   cursor: pointer;
 }
 .container {
-  display: flex;
+  position: relative;
 }
 .lecteur1 {
+    position: absolute;
+    left: 36%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,21 +146,95 @@ i {
     transform: translateY(500px);
     transition: 0.9s;
 }
+.lecteur1 img {
+  width: 284px;
+  height: 238px;
+  border-radius: 20px 20px 0 0;
+}
 .lecteurVisibleLove {
   transform: translateY(0); 
 }
+.btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.btn i {
+  font-size: 1.5rem;
+}
+.btn1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.btn1 i {
+  font-size: 1.5rem;
+}
+.btn2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.btn2 i {
+  font-size: 1.5rem;
+}
+.btn3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.btn3 i {
+  font-size: 1.5rem;
+}
+.btn4 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.btn4 i {
+  font-size: 1.5rem;
+}
+.current-time {
+  display: flex;
+  font-size: 0.5rem;
+  
+}
+.current-duration {
+  margin-top: -5px;
+  font-size: .5rem;
+  
+}
 .textLove {
   position: absolute;
-  z-index: -50;
   width: 25%;
   height: 300px;
-  left: 290px;
+  left: 90px;
   top: 300px;
   animation: text 6s ease;
+  /* scale: 0; */
+  transform: translateY(600px);
+  transition: 1s;
 }
 .textLove p{
   text-shadow: -1px 0px 8px pink;
+  
 }
+.textHide {
+  /* scale: 1; */
+  transform: translateY(0);
+  transition: 0.8s;
+}
+
 @keyframes text {
   0% {
     opacity: 0;
@@ -179,24 +257,8 @@ i {
 }
 
 .lecteur2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  border: 1px solid rgba(58, 52, 52, 0.251);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.691);
-  border-radius: 20px 20px 50px 50px;
-  width: 25%;
-  height: 400px;
-  margin: 100px auto;
-  transform: translateY(450px);
-  transition: 0.9s;
-}
-.lecteurVisibleJ {
-  transform: translateY(0);
-}
-.lecteur3 {
+  position: absolute;
+  left: 36%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,11 +272,37 @@ i {
   margin: 100px auto;
   transform: translateY(500px);
   transition: 0.9s;
+}
+.lecteur2 img {
+  width: 284px;
+  height: 238px;
+  border-radius: 20px 20px 0 0;
 }
 .lecteurVisibleO {
   transform: translateY(0);
+  transition: 0.8s;
 }
-.lecteur4 {
+.textOne {
+  position: absolute;
+  width: 25%;
+  height: 400px;
+  left: 90px;
+  top: 150px;
+  animation: text 6s ease;
+  /* scale: 0; */
+  transform: translateY(600px);
+  transition: 1s;
+}
+.textOne p {
+  font-size: .70rem;
+}
+.textOneHide {
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.lecteur3 {
+  position: absolute;
+  left: 36%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,10 +317,79 @@ i {
   transform: translateY(500px);
   transition: 0.9s;
 }
+.lecteur3 img {
+  width: 284px;
+  height: 238px;
+  border-radius: 20px 20px 0 0;
+}
+.lecteurVisibleJ {
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.textJammin {
+  position: absolute;
+  width: 25%;
+  height: 500px;
+  left: 90px;
+  top: 100px;
+  animation: text 6s ease;
+  /* scale: 0; */
+  transform: translateY(600px);
+  transition: 1s;
+}
+.textJammin p {
+  font-size: .65rem;
+}
+.textJamminHide {
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.lecteur4 {
+  position: absolute;
+  left: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border: 1px solid rgba(58, 52, 52, 0.251);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.691);
+  border-radius: 20px 20px 50px 50px;
+  width: 25%;
+  height: 400px;
+  top: 30px;
+  /* margin: 100px auto; */
+  transform: translateY(500px);
+  transition: 0.9s
+}
+.lecteur4 img {
+  width: 284px;
+  height: 238px;
+  border-radius: 20px 20px 0 0;
+}
 .lecteurVisibleC {
   transform: translateY(0);
+  transition: 0.8s;
 }
-.controls1, .controls2 {
+.textCould {
+  position: absolute;
+  width: 25%;
+  height: 500px;
+  left: 90px;
+  top: 200px;
+  animation: text 6s ease;
+  /* scale: 0; */
+  transform: translateY(400px);
+  transition: 1s;
+}
+.textCould p {
+  font-size: 1rem;
+}
+.textCouldHide {
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.controls1, .controls2, .controls3, .controls4 {
   margin: 10px 0;
   padding: 30px;
   display: flex;
@@ -240,8 +397,8 @@ i {
   justify-content: center;
 }
 
-.circle1, .circle2 {
-  font-size: 1.5rem;
+.circle1, .circle2, .circle3, .circle4 {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,19 +409,19 @@ i {
     padding-right: 5px;
     margin: 0 20px 10px 20px;
 }
-.circle1:hover, .circle2:hover {
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover  {
     background: teal;
 }
-
+.circle1 i, .circle2 i , .circle3 i , .circle4 i {
+  padding-right: 5px;
+}
 .lecture i {
     font-size: 2rem;
     padding: 10px;
 }
 
-.backward1 {
-   
-}
-.backward1 button, .backward2 button {
+
+.backward1 button, .backward2 button, .backward3 button, .backward4 button {
     font-size: 1.5rem;
     width: 50px;
     height: 50px;
@@ -275,10 +432,8 @@ i {
     display: flex;
     align-items: center;
 }
-.forward1 {
-    
-}
-.forward1 button, .forward2 button  {
+
+.forward1 button, .forward2 button, .forward3 button , .forward4 button   {
     font-size: 1.5rem;
     width: 50px;
     height: 50px;
@@ -290,24 +445,57 @@ i {
     align-items: center;
     padding-left: 2px;
 }
-.range1, .range2 {
+.range1, .range2, .range3, .range4 {
+    position: relative;
+    width: 100%;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    bottom: 20px;
+ 
 }
-.range1 input, .range2 input {
-    width: 150px;
-    height: 5px;
-
-    
+#progress1 {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-.active {
-  opacity: 0;
+.current-duration {
+  position: absolute;
+  top: 19px;
+  right: 1px;
 }
-.double {
-  opacity: 1;
+#progress2 {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.current-duration {
+  position: absolute;
+  top: 19px;
+  right: 1px;
+}
+#progress3 {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.current-duration {
+  position: absolute;
+  top: 19px;
+  right: 1px;
+}
+#progress4 {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.current-duration {
+  position: absolute;
+  top: 19px;
+  right: 1px;
 }

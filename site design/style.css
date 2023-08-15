@@ -45,10 +45,21 @@ ul {
 li {
     margin-right: 50px;
     margin-left: 60px;
-    animation: menu 2s;
-    animation-delay: calc(.5s * var(--i));
+    /* animation: menu 2s;
+    animation-delay: calc(.5s * var(--i)); */
     /* transform: translate(600px); */
-    
+}
+li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgba(69, 206, 206, 0.759);
+    margin: auto;
+    transition: 0.8s;
+}
+li:hover::after {
+    width: 100%;
 }
 ul li a {
     display: inline-block;
@@ -104,10 +115,11 @@ p {
     animation: p 5s ease forwards;
 }
 .img-content {
-    margin-top: 50px;
+    margin-top: 200px;
     margin-left: 100px;
 }
 .img-content img {
+    
     max-width: 500px;
     margin-right: -20px;
     opacity: 0;
@@ -164,11 +176,11 @@ p {
 }
 @keyframes nav {
     0% {
-        transform: translateY(-100px);
+        transform: translateX(-300px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }

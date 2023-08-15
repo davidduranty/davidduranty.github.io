@@ -124,13 +124,21 @@
   }
 }
 .arrow {
+
   .left {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 2%;
     transform: translate(-50%);
     font-size: 3rem;
-    color: rgba(132, 124, 124, 0.574);
+    color: rgba(132, 124, 124, 0.263);
+    transition: 0.9s ease-in-out;
+
+    &:hover {
+      scale: 1.5; 
+      transition: 0.9s ease-in-out; 
+      color: rgba(132, 124, 124, 0.762);
+    }
   }
 }
 

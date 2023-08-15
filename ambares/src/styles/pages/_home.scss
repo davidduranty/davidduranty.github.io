@@ -1,15 +1,111 @@
+
+
+
+
+.home-container {
+    background: rgba(188, 180, 180, 0.648);
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 10px 0 0 0;
+    background: url("../../styles/img/photo.jpg")center/cover;
+    opacity: 0.5;
+   
+    
+}
+
 .logo {
     margin: 50px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     
     img {
         width: 50px;
         height: 50px;
     }
+
+    p {
+        
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
-
-h1 {
-    border: 1px solid green;
+.navigation ul{
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    li {
+        color: black;
+
+        &:hover {
+            scale: 1.5;
+            color: rgb(21, 126, 21);
+            transition: .9s ease;
+            
+            &:hover::after {
+                opacity: 1;
+                transform: translateX(0);
+                transition: 0.6s;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: rgb(21, 126, 21);
+            border-radius: 50%;
+            margin: 0 auto;
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+    }
 }
+
+.history, .organigramme {
+    margin: 100px 50px;
+
+    h1 {
+    font-size: 2.5rem;
+    color: rgb(21, 126, 21);
+    }
+
+    p {
+        color: white;
+        margin: 0 100px;
+        min-height: 200px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}
+h1 {
+    margin: 100px 150px;
+    font-size: 2.5rem;
+    color: rgb(21, 126, 21);
+}
+.container {
+    margin: 100px 50px;
+    display: flex;
+    
+
+    .name {
+        margin: auto 100px;
+        
+    }
+   
+    .img-president {
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+
+

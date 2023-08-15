@@ -6,6 +6,8 @@ const form = document.querySelector("form");
 
 let pseudo, email, password, confirmPass;
 
+// Error
+
 const errorDisplay = (tag, message, valid) => {
   const container = document.querySelector("." + tag + "-container");
   const span = document.querySelector("." + tag + "-container > span");
@@ -18,6 +20,8 @@ const errorDisplay = (tag, message, valid) => {
     span.textContent = message;
   }
 };
+
+// Pseudo
 
 const pseudoChecker = (value) => {
   if (value.length > 0 && (value.length < 3 || value.length > 20)) {
@@ -35,6 +39,8 @@ const pseudoChecker = (value) => {
   }
 };
 
+// EMAIL
+
 const emailChecker = (value) => {
   if (
     !value.match(
@@ -48,6 +54,9 @@ const emailChecker = (value) => {
     email = value;
   }
 };
+
+//PASSWORD
+
 const passwordChecker = (value) => {
   progressBar.classList = "";
   if (
@@ -72,6 +81,9 @@ const passwordChecker = (value) => {
   }
   if (confirmPass) confirmChecker(confirmPass);
 };
+
+//CONFIRM
+
 const confirmChecker = (value) => {
   if (value !== password) {
     errorDisplay("confirm", "Les mots de passe ne correspondent pas");
@@ -102,6 +114,8 @@ inputs.forEach((input) => {
     }
   });
 });
+
+// VALIDATION FORMULAIRE
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
