@@ -7,7 +7,7 @@ import "./styles/index.scss";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./reducers";
-import { getPosts } from "./actions/post.action";
+import { addPost, editPost, getPosts } from "./actions/post.action";
 import { getUser } from "./actions/user.action";
 
 const store = configureStore({
@@ -17,6 +17,7 @@ const store = configureStore({
 
 store.dispatch(getPosts());
 store.dispatch(getUser());
+
 
 ReactDOM.render(
   <Provider store={store}>
