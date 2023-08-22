@@ -2,7 +2,7 @@ const PostModel = require("../models/post.model");
 
 module.exports.getPosts = async (req, res) => {
   const posts = await PostModel.find();
-  res.status().json(posts);
+  res.status(200).json(posts);
 };
 
 module.exports.setPosts = async (req, res) => {
