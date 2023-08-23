@@ -1,10 +1,12 @@
 import React from 'react';
 import Logo from '../components/Logo';
+import Navigation from '../components/Navigation';
 
 const Accessoires = () => {
     return (
         <div>
-            <Logo/>
+            <Logo />
+            <Navigation/>
             <h1>Accessoires</h1>
         </div>
     );
