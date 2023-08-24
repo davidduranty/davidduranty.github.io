@@ -1,9 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
+import Icons from "./Icons";
 
 const Navigation = () => {
   return (
-    <div className="navigation">
+    <div className="navigation-container">
+      <Logo/>
       <ul>
         <NavLink to="/THES & INFUSIONS">
           <li>THÉS & INFUSIONS</li>
@@ -24,6 +27,7 @@ const Navigation = () => {
           <li>FAMILLE DOMAN</li>
         </NavLink>
       </ul>
+      <Icons/>
     </div>
   );
 };
