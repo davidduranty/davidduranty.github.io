@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import Icons from "./Icons";
+import Language from "./Language";
 
 const Navigation = () => {
   return (
@@ -27,6 +28,7 @@ const Navigation = () => {
           <li>FAMILLE DOMAN</li>
         </NavLink>
       </ul>
+      <Language/>
       <Icons/>
     </div>
   );

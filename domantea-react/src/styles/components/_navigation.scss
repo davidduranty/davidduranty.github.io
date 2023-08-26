@@ -7,7 +7,7 @@
     right: 0;
 
     ul {
-        width: 65%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -67,8 +67,35 @@
     }
 }
 
+.language-container {
+    width: 10%;
+    height: 70px;
+    display: flex;
+    @include center;
+
+    button {
+        background: transparent;
+        border: none;
+        margin-right: 10px;
+        font-size: 1.1rem;
+        color: white;
+        font-family: "font2";
+        cursor: pointer;
+        height: 20px;
+        margin-bottom: 0px;
+        @include center;   
+    }
+
+    .en {
+        padding-left: 10px;
+        border-left: 3px solid white;
+
+    }
+
+}
+
 .icons-container {
-    width: 20%;
+    width: 15%;
     @include end;
     padding-right: 20px;
 

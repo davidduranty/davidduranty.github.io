@@ -1,12 +1,14 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Content from "../components/Content";
+import ContentImg from "../components/ContentImg";
+import TheContainer from "../components/TheContainer";
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <Content/>
+      <ContentImg />
+      <TheContainer/>
     </div>
   );
 };
