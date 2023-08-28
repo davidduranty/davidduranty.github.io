@@ -6,40 +6,56 @@ const TeasBalls = () => {
       <div className="img">
         <img src="Thé-noir.avif" alt="" />
         <div className="rond-text">
-          <h3>TH&#201;S NOIRS</h3>
+          <h3 className="hide">TH&#201;S NOIRS</h3>
         </div>
       </div>
-      <div className="rond-2">
+      <div className="img">
         <img src="Thé_vert.avif" alt="" />
-        <h3>TH&#201;S VERTS</h3>
+        <div className="rond-text">
+          <h3>TH&#201;S VERTS</h3>
+        </div>
       </div>
-      <div className="rond-3">
+      <div className="img">
         <img src="Thé-blanc.avif" alt="" />
-        <h3>TH&#201;S BLANCS</h3>
+        <div className="rond-text">
+          <h3>TH&#201;S BLANCS</h3>
+        </div>
       </div>
-      <div className="rond-4">
+      <div className="img">
         <img src="Thé-jaune.avif" alt="" />
-        <h3>TH&#201;S JAUNES</h3>
+        <div className="rond-text">
+          <h3>TH&#201;S JAUNES</h3>
+        </div>
       </div>
-      <div className="rond-5">
+      <div className="img">
         <img src="Thé-sombre.avif" alt="" />
-        <h3>TH&#201;S SOMBRE</h3>
+        <div className="rond-text">
+          <h3>TH&#201;S SOMBRE</h3>
+        </div>
       </div>
-      <div className="rond-6">
+      <div className="img">
         <img src="Thé-oolong.avif" alt="" />
-        <h3>TH&#201;S OOLONGS</h3>
+        <div className="rond-text">
+          <h3>TH&#201;S OOLONGS</h3>
+        </div>
       </div>
-      <div className="rond-7">
+      <div className="img">
         <img src="Tisane.avif" alt="" />
-        <h3>TISANE</h3>
+        <div className="rond-text">
+          <h3>TISANE</h3>
+        </div>
       </div>
-      <div className="rond-8">
+      <div className="img">
         <img src="Rooibos.avif" alt="" />
-        <h3>ROOIBOS</h3>
+        <div className="rond-text">
+          <h3>ROOIBOS</h3>
+        </div>
       </div>
-      <div className="rond-9">
+      <div className="img">
         <img src="Carcadet.avif" alt="" />
-        <h3>CARCADET</h3>
+        <div className="rond-text">
+          <h3>CARCADET</h3>
+        </div>
       </div>
     </div>
   );

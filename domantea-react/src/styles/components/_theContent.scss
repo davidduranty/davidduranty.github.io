@@ -1,12 +1,11 @@
 .the-container {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
 }
 
-.teas-balls-container {
-    
-    height: 120px;
-    margin: 100px 15%;
+.teas-balls-container {   
+    height: 150px;
+    margin: 100px 12%;
     display: flex;
     column-gap: 10px;
     position: relative;
@@ -19,6 +18,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            background: none;
         }
     
         .rond-text {
@@ -29,29 +29,51 @@
             display: flex; 
             justify-content: center;
             align-items: center;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 110px;
+            height: 110px;
             transition: 0.5s ease-in-out;
             border: none;
+            border-radius: 50%; 
+            transition: 0.5s ease-in-out;
 
             &:hover {
                 background: white;
+                cursor: pointer;
                 transition: 0.5s ease-in-out;
             }
-    
             h3 {
-                text-align: center;
+                font-family: "font1";
+                letter-spacing: 1px;
                 color: white;
-                word-spacing: 10px;
-                cursor: pointer;
-
+                font-size: 1.2rem;
+                transition: 0.3s ease-in-out;
+    
                 &:hover {
                     color: black;
-                    transition: 0.5s ease-in-out;
+                    transition: 0.3s ease-in-out;
                 }
             }
         }
-    }
-}
+
+      
+            
+               
     
+        
+    }
+}  
+
+.stars-title, .selection-title, .magazine-title {
+    margin: 0 12%;
+    max-width: 100%;
+    height: 60px;
+}
+
+.swiper-stars-of-month, .swiper-selection, .swiper-magazine {
+    border: 1px solid red;
+    margin: 0 11%;
+    max-width: 100%;
+    min-height: 400px;
+}

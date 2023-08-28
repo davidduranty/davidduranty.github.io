@@ -1,0 +1,32 @@
+.footer-container-haut {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 100px 11%;
+    max-width: 100%;
+    min-height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+
+    .frais-de-port-container, .paiement-securise, .sav-qualite {
+        display: grid;
+        grid-template-rows: 40% 20% 20%;
+
+        .img, .h2, .h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-family: "font2";
+            font-size: 0.8rem;
+            font-weight: 100;
+        }
+
+        h4 {
+            font-size: 0.7rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+}
