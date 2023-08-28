@@ -21,11 +21,11 @@ $color6:rgb(173, 50, 50, 0.75);
     align-items: center;
 }
 
-@mixin end {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
+// @mixin end {
+//     display: flex;
+//     justify-content: end;
+//     align-items: center;
+// }
 
 @mixin start {
     display: flex;
