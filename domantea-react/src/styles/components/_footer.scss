@@ -42,6 +42,7 @@
         min-height: 400px;
         grid-template-areas: 
         "1 1 1 1";
+        border-bottom: 1px solid rgb(203, 189, 189);
 
         .doman-freres-container {
             // padding: 0 10px;
@@ -172,13 +173,49 @@
     }
 
     // Footer Bas
-    .iref {
 
-        .icon-iref {
-             
-            img {
-                width: 120px;
-                height: 120px;
+    .footer-bas {
+        .all-droits-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-family: "font2";
+                
+            }
+
+            .lien-container-bas {
+                display: flex;
+                
+
+                li {
+                    padding-left: 20px;
+                    text-decoration: underline;
+                    font-family: "font2";
+                    color: black;
+                    text-underline-offset: .3rem;
+                }
+            }
+        }
+        .iref {
+            display: flex;
+            align-items: center;
+            margin-top: 80px;
+            .icon-iref {
+                 
+                img {
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                }
+            }
+            .last-text {
+                padding-left: 20px;
+
+                p {
+                    font-family: "font2";
+                }
             }
         }
     }

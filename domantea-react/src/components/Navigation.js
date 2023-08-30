@@ -4,28 +4,29 @@ import Logo from "./Logo";
 import Icons from "./Icons";
 import Language from "./Language";
 
+
 const Navigation = () => {
   return (
     <div className="navigation-container">
       <Logo/>
-      <ul>
+      <ul className='ul'>
         <NavLink to="/THES & INFUSIONS">
-          <li>THÉS & INFUSIONS</li>
+          <li className="li li-container ">THÉS & INFUSIONS</li>           
         </NavLink>
         <NavLink to="/BOITES & SACHETS">
-          <li>BOITES & SACHETS</li>
+          <li className="li">BOITES & SACHETS</li>
         </NavLink>
         <NavLink to="/COFFRETS & CADEAUX">
-          <li>COFFRETS & CADEAUX</li>
+          <li className="li">COFFRETS & CADEAUX</li>
         </NavLink>
         <NavLink to="/ACCESSOIRES">
-          <li>ACCESSOIRES</li>
+          <li className="li">ACCESSOIRES</li>
         </NavLink>
         <NavLink to="/GOURMANDISES">
-          <li>GOURMANDISES</li>
+          <li className="li">GOURMANDISES</li>
         </NavLink>
         <NavLink to="/FAMILLE DOMAN">
-          <li>FAMILLE DOMAN</li>
+          <li className="li">FAMILLE DOMAN</li>
         </NavLink>
       </ul>
       <Language/>

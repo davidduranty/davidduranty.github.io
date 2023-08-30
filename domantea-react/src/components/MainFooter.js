@@ -125,7 +125,7 @@ const MainFooter = () => {
       <div className="footer-bas">
         <div className="all-droits-container">
           <div className="all-droits">
-            <p>DOMANN Frères © 2023 - All rights reserved</p>
+            <p>DOMAN Tea Frères © 2023 - All rights reserved</p>
           </div>
           <div className="lien-container-bas">
             <NavLink to="/mentions">
@@ -144,14 +144,14 @@ const MainFooter = () => {
               <li>Politique de confidentialité</li>
             </NavLink>
           </div>
-          <div className="iref">
+        </div>
+        <div className="iref">
             <div className="icon-iref">
               <img src="logo-iref.webp" alt="Lien Iref" />
             </div>
             <div className="last-text">
               <p>DOMANN Frères, élue enseigne de l’année 2023</p>
             </div>
-          </div>
         </div>
       </div>
     </div>

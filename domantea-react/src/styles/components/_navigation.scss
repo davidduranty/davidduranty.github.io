@@ -6,16 +6,19 @@
     top: 0;
     right: 0;
 
-    ul {
+    .ul {
         width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        
 
-        li {
+        .li {
             color: $color1;
             cursor: pointer;
             transition: 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
 
             &:hover, .active {
                 color: $color6;
@@ -115,5 +118,7 @@
         }
     }
 }
+
+
 
 
