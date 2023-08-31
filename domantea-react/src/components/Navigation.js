@@ -4,23 +4,26 @@ import Logo from "./Logo";
 import Icons from "./Icons";
 import Language from "./Language";
 import TeaInfusion from "./TeaInfusion";
+import BoiteSachets from "./BoiteSachets";
+import CoffretKdo from "./CoffretKdo";
 
 
 const Navigation = () => {
-  const [over, setOver] = useState(false)
-
+  const [overTeaIfusion, setOverTeaIfusion] = useState(false)
+  const [overBoitesSachets, setOverBoitesSachets] = useState(false)
+  const [overCoffretKdo, setOverCoffretKdo] = useState(false)
   return (
     <div className="navigation-container">
       <Logo/>
       <ul className='ul'>
         <NavLink to="/THES & INFUSIONS">
-          <li className="li" onClick={() => setOver((prev) => !prev)}>THÉS & INFUSIONS</li>           
+          <li className="li" onClick={() => setOverTeaIfusion((prev) => !prev)}>THÉS & INFUSIONS</li>           
         </NavLink>
         <NavLink to="/BOITES & SACHETS">
-          <li className="li">BOITES & SACHETS</li>
+          <li className="li" onClick={() =>  setOverBoitesSachets((prev) => !prev)}>BOITES & SACHETS</li>
         </NavLink>
         <NavLink to="/COFFRETS & CADEAUX">
-          <li className="li">COFFRETS & CADEAUX</li>
+          <li className="li" onClick={() => setOverCoffretKdo((prev) => !prev)}>COFFRETS & CADEAUX</li>
         </NavLink>
         <NavLink to="/ACCESSOIRES">
           <li className="li">ACCESSOIRES</li>
@@ -35,7 +38,13 @@ const Navigation = () => {
       <Language/>
       <Icons />
       {
-        over &&<TeaInfusion/>
+        overTeaIfusion &&<TeaInfusion/>
+      }
+      {
+        overBoitesSachets && <BoiteSachets/>
+      }
+      {
+        overCoffretKdo && <CoffretKdo/>
       }
     </div>
   );

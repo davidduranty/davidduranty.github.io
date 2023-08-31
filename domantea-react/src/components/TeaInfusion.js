@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const TeaInfusion = () => {
   return (
-    <div className="theInfusionContainer">
-      <div className="the-infusion-content">
-        <ul className="type-de-the">
+    <div className="boxContainer">
+      <div className="boxContent">
+        <ul className="content">
           <h1>Type de thé</h1>
           <NavLink>
             <li>Thé noir</li>
@@ -26,7 +26,7 @@ const TeaInfusion = () => {
             <li>Tous les thés</li>
           </NavLink>
         </ul>
-        <ul className="type-infusion">
+        <ul className="content">
           <h1>Type d'infusion</h1>
           <NavLink>
             <li>Maté</li>
@@ -50,7 +50,7 @@ const TeaInfusion = () => {
             <li>Toutes les infusions</li>
           </NavLink>
         </ul>
-        <ul className="aromatique">
+        <ul className="content">
           <h1>Familles aromatiques</h1>
           <NavLink>
             <li>Epicée/Boisée</li>
@@ -86,7 +86,7 @@ const TeaInfusion = () => {
             <li>Toutes les familles aromatiques</li>
           </NavLink>
         </ul>
-        <ul className="origine">
+        <ul className="content">
           <h1>Origines</h1>
           <NavLink>
             <li>Afrique</li>
@@ -119,7 +119,7 @@ const TeaInfusion = () => {
             <li>Tous nos thés d'origine</li>
           </NavLink>
         </ul>
-        <ul className="selection">
+        <ul className="content">
           <h1>Séléctions</h1>
           <NavLink>
             <li>Nos Grands crus</li>
