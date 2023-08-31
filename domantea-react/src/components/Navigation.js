@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import Icons from "./Icons";
 import Language from "./Language";
+import TeaInfusion from "./TeaInfusion";
 
 
 const Navigation = () => {
+  const [over, setOver] = useState(false)
+
   return (
     <div className="navigation-container">
       <Logo/>
       <ul className='ul'>
         <NavLink to="/THES & INFUSIONS">
-          <li className="li li-container ">THÉS & INFUSIONS</li>           
+          <li className="li" onClick={() => setOver((prev) => !prev)}>THÉS & INFUSIONS</li>           
         </NavLink>
         <NavLink to="/BOITES & SACHETS">
           <li className="li">BOITES & SACHETS</li>
@@ -30,7 +33,10 @@ const Navigation = () => {
         </NavLink>
       </ul>
       <Language/>
-      <Icons/>
+      <Icons />
+      {
+        over &&<TeaInfusion/>
+      }
     </div>
   );
 };

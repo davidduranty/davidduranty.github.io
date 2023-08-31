@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const TeaInfusion = () => {
   return (
-    <div className="the-infusion-container">
+    <div className="theInfusionContainer">
       <div className="the-infusion-content">
         <ul className="type-de-the">
           <h1>Type de thé</h1>

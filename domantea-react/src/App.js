@@ -6,7 +6,7 @@ import Coffret from "./pages/Coffret";
 import Gourmand from "./pages/Gourmand";
 import Familly from "./pages/Familly";
 import Accessoires from "./pages/Accessoires";
-import The from "./pages/The";
+
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/ACCESSOIRES" element={<Accessoires />} />
         <Route path="/GOURMANDISES" element={<Gourmand />} />
         <Route path="/FAMILLE DOMAN" element={<Familly />} />
-        <Route path="/THES & INFUSIONS" element={<The />} />
+        {/* <Route path="/THES & INFUSIONS" element={<The />} /> */}
       </Routes>
     </BrowserRouter>
   );
