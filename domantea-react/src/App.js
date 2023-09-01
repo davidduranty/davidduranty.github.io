@@ -12,7 +12,7 @@ const App = () => {
         {/* <Route path="/BOITES & SACHETS" element={<Boite />} /> */}
         {/* <Route path="/COFFRETS & CADEAUX" element={<Coffret />} /> */}
         {/* <Route path="/ACCESSOIRES" element={<Accessoires />} /> */}
-        <Route path="/GOURMANDISES" element={<Gourmand />} />
+        <Route path="/gourmandises" element={<Gourmand />} />
         {/* <Route path="/FAMILLE DOMAN" element={<Familly />} /> */}
         {/* <Route path="/THES & INFUSIONS" element={<The />} /> */}
       </Routes>

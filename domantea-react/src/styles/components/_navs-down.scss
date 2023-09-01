@@ -46,5 +46,70 @@
                 text-shadow: 2px 2px 2px rgba(76, 70, 70, 0.484);
             }
         }
-     }
+    }
+}
+
+.contentTea::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 19%;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    transform: rotate(45deg);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.contentBoite::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 29%;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    transform: rotate(45deg);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.contentCoffret::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 40%;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    transform: rotate(45deg);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.contentAccessoires::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    transform: rotate(45deg);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.contentDoman::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 69%;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    transform: rotate(45deg);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }

@@ -46,7 +46,7 @@ const Navigation = () => {
             ACCESSOIRES
           </li>
         </NavLink>
-        <NavLink>
+        <NavLink to="/gourmandises">
           <li className="li">GOURMANDISES</li>
         </NavLink>
         <NavLink>

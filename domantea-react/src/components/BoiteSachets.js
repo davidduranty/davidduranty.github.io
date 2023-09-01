@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const BoiteSachets = () => {
     return (
         <div className='boxContainer'>
-            <div className="boxContent">
+            <div className="boxContent contentBoite">
                 <ul className='content'>
                     <h1>Boîtes métal</h1>
                     <NavLink>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const CoffretKdo = () => {
     return (
         <div className='boxContainer'>
-            <div className="boxContent">
+            <div className="boxContent contentCoffret">
                 <ul className='content'>
                         <h1>Coffrets & cadeaux</h1>
                     <NavLink>

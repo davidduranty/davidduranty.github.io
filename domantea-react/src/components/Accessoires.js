@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Accessoires = () => {
   return (
     <div className="boxContainer">
-      <div className="boxContent">
+      <div className="boxContent contentAccessoires">
         <ul className="content">
           <h1>Théières</h1>
           <NavLink>
