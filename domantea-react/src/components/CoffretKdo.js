@@ -20,7 +20,7 @@ const CoffretKdo = () => {
                         <li>Petites attentions</li>
                     </NavLink>
                     <NavLink>
-                        <li>Tous les coffrets et cadeaux</li>
+                        <li className="bold">Tous les coffrets et cadeaux</li>
                     </NavLink>
                 </ul>
                 <ul className='content'>

@@ -23,7 +23,7 @@ const TeaInfusion = () => {
             <li>Thé jaune</li>
           </NavLink>
           <NavLink>
-            <li>Tous les thés</li>
+            <li className="bold">Tous les thés</li>
           </NavLink>
         </ul>
         <ul className="content">
@@ -47,7 +47,7 @@ const TeaInfusion = () => {
             <li>Rooibos</li>
           </NavLink>
           <NavLink>
-            <li>Toutes les infusions</li>
+            <li className="bold">Toutes les infusions</li>
           </NavLink>
         </ul>
         <ul className="content">
@@ -83,7 +83,7 @@ const TeaInfusion = () => {
             <li>Animale</li>
           </NavLink>
           <NavLink>
-            <li>Toutes les familles aromatiques</li>
+            <li className="bold">Toutes les familles aromatiques</li>
           </NavLink>
         </ul>
         <ul className="content">
@@ -116,7 +116,7 @@ const TeaInfusion = () => {
             <li>Taïwan</li>
           </NavLink>
           <NavLink>
-            <li>Tous nos thés d'origine</li>
+            <li className="bold">Tous nos thés d'origine</li>
           </NavLink>
         </ul>
         <ul className="content">

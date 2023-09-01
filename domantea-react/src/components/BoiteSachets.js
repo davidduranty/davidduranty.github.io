@@ -38,7 +38,7 @@ const BoiteSachets = () => {
                         <li>Maté</li>
                     </NavLink>
                     <NavLink>
-                        <li>Toutes nos boîtes de thés et infusions</li>
+                        <li className="bold">Toutes nos boîtes de thés et infusions</li>
                     </NavLink>
                 </ul>
                 <ul className='content'>
@@ -65,7 +65,7 @@ const BoiteSachets = () => {
                         <li>Carcadet</li>
                     </NavLink>
                     <NavLink>
-                        <li>Tous les thés et infusions en sachets</li>
+                        <li className="bold">Tous les thés et infusions en sachets</li>
                     </NavLink>
                 </ul>
                 <ul className='content'>
@@ -95,7 +95,7 @@ const BoiteSachets = () => {
                         <li>Carcadet</li>
                     </NavLink>
                     <NavLink>
-                        <li>Tous les thés et infusions en sachets enveloppés</li>
+                        <li className="bold">Tous les thés et infusions en sachets enveloppés</li>
                     </NavLink>
                 </ul>
             </div>
