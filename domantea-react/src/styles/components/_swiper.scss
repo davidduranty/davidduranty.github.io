@@ -1,0 +1,73 @@
+.caroussel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .caroussel-vente {
+        display: flex;
+        min-height: 400px;
+        margin: 50px 11%;
+        max-width: 1440px;
+        min-height: 400px;
+        overflow-x: hidden;
+        gap: 10px;
+    }
+    
+    .card-container {
+        min-width: 350px;
+        min-height: 400px;
+        cursor: pointer;
+        // margin-right: 10px;
+    
+        img {
+            width: 350px;
+            min-height: 400px;
+        }
+    
+        h1 {
+            font-family: "font1";
+            padding-top: 5px;
+            font-size: 1.1rem;
+        }
+    
+        h2 {
+            font-family: "font2";
+            padding: 5px 0;
+            font-size: 0.8rem;
+            height: 30px;
+        }
+    
+        p {
+            padding-top: 15px;
+            font-family: "font2";
+        }
+    }
+    .right {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 50%;
+        right: 100px;
+        @include center;
+        font-size: 5rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.647);
+        
+    }
+    .left {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 50%;
+        left: 100px;
+        @include center;
+        font-size: 5rem;
+        cursor: pointer;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.647);
+    }
+}
+
+

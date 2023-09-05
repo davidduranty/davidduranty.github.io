@@ -1,52 +1,60 @@
 {
     "thes": [
         {
-            "img": "jardin-bleu.webp",
+            "img": "jardinBleu.webp",
             "name": "JARDIN BLEU",
             "content": "Thé noir | Rhubarbe, Fraise",
-            "price": 6.50
+            "price": 6.50,
+            "id": 1
         },
         {
-            "img": "miss-doman.webp",
+            "img": "missDoman.webp",
             "name": "MISS DOMAN",
             "content": "Thé vert | Gingembre, Citron, Fruit de la passion",
-            "price": 8.50
+            "price": 8.50,
+            "id": 2
         },
         {
-            "img": "paul-virginie.webp",
+            "img": "paulVirginie.webp",
             "name": "PAUL & VIRGINIE",
             "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
-            "price": 7.00
+            "price": 7.00,
+            "id": 3
         },
         {
             "img": "bali.webp",
             "name": "BALI",
             "content": "Thé vert | Litchi, Pamplemousse, Pêche, Rose, Jasmin",
-            "price": 8.00
+            "price": 8.00,
+            "id": 4
         },
         {
             "img": "coquelicot.webp",
             "name": "COQUELICOT GOURMAND",
             "content": "Thé noir | Framboise, Cerise, Violette, Vanille, Amande, Biscuit",
-            "price": 8.50
+            "price": 8.50,
+            "id": 5
         },
         {
-            "img": "bali-sachets.webp",
+            "img": "baliSachets.webp",
             "name": "BALI",
             "content": "Thé noir | Cerise, Fraise, Framboise, Caramel, Vanille",
-            "price": 12.50
+            "price": 12.50,
+            "id": 6
         },
         {
-            "img": "nuit-versailles.webp",
+            "img": "nuitVersailles.webp",
             "name": "NUIT A VERSAILLES",
             "content": "Thé vert | Kiwi, Bergamote, Fleur d'oranger, Violette, Pêche",
-            "price": 7.00
+            "price": 7.00,
+            "id": 7
         },
         {
             "img": "menthe.webp",
             "name": "THE VERT A LA MENTHE AROMATISE",
             "content": "Thé vert | Menthe",
-            "price": 7.50
+            "price": 7.50,
+            "id": 8
         }
     ],
     "moment": [
@@ -75,19 +83,19 @@
             "price": 11.00
         },
         {
-            "img": "the-noir.webp",
+            "img": "theNoir.webp",
             "name": "THE NOIR - EARL GREY DES SEIGNEURS",
             "content": "Thé noir | Bergamote",
             "price": 13.50
         },
         {
-            "img": "the-inde.webp",
+            "img": "theInde.webp",
             "name": "THE D'INDE - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH",
             "content": "Thé noir",
             "price": 22.00
         },
         {
-            "img": "the-inde2.webp",
+            "img": "theInde2.webp",
             "name": "THE D'INDE - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH",
             "content": "Thé noir",
             "price": 30.00
@@ -110,7 +118,7 @@
             "content": "L'usage de parfumer le thé - formidable capteur de parfums - avec des fleurs fraîchements récoltées ou des fruits relève d'une tradition ancestrale. On emploie ..."
         },
         {
-            "img": "the-blanc.webp",
+            "img": "theBlanc.webp",
             "question": "COMMENT PREPARER UN THE BLANC ?",
             "content": "Pour infuser les thés blancs, nous recommandons une infusion comprise entre 4 et 8 min à 80°C."
         }
