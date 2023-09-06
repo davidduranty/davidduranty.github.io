@@ -1,10 +1,25 @@
+.title {
+    margin: 0 12%;
+    max-width: 100%;
+   
+}
+
+.swiper-magazine {
+    border: 1px solid red;
+    margin: 0 11%;
+    max-width: 100%;
+    min-height: 400px;
+}
+
 .caroussel-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
+    
 
-    .caroussel-vente {
+    .caroussel {
         display: flex;
         min-height: 400px;
         margin: 50px 11%;
@@ -26,6 +41,7 @@
         }
     
         h1 {
+            height: 45px;
             font-family: "font1";
             padding-top: 5px;
             font-size: 1.1rem;
@@ -41,6 +57,19 @@
         p {
             padding-top: 15px;
             font-family: "font2";
+        }
+
+        .contenance {
+            display: flex;
+            align-items: center;
+            
+            h4 {
+                display: flex;
+                align-items: center;
+                padding-top: 15px;
+                margin-left: 10px;
+                font-family: "font2";
+            }
         }
     }
     .right {

@@ -2,18 +2,19 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import ContentImg from "../components/ContentImg";
 import TheContainer from "../components/TheContainer";
-import StarsOfMonth from "../components/Swiper";
+import SwiperBest from "../components/SwiperBest";
 import MainFooter from "../components/MainFooter";
-// import TeaInfusion from "../components/TeaInfusion";
+import SwiperSelection from "../components/SwiperSelection";
+
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      
       <ContentImg />
       <TheContainer />
-      <StarsOfMonth />
+      <SwiperBest />
+      <SwiperSelection/>
       <MainFooter/>
     </div>
   );

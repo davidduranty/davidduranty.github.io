@@ -62,43 +62,57 @@
             "img": "breakfast.webp",
             "name": "BREAKFAST, 24 SACHETS CRISTAL ENVELOPPES",
             "content": "Thé noir",
-            "price": 14.00
+            "price": 14.00,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 9
         },
         {
             "img": "earl.webp",
-            "name": "EARL GREY YIN ZHEN? 24 SACHETS CRISTAL ENVELOPPES",
+            "name": "EARL GREY YIN ZHEN 24 SACHETS CRISTAL ENVELOPPES",
             "content": "Thé noir | Bergamote",
-            "price": 15.50
+            "price": 15.50,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 10
         },
         {
             "img": "darjeeling.webp",
-            "name": "DARJEELING? 24 SACHETS CRISTAL ENVEVOPPES",
+            "name": "DARJEELING 24 SACHETS CRISTAL ENVEVOPPES",
             "content": "Thé noir",
-            "price": 16.00
+            "price": 16.00,
+            "contenance": "/ Les 24 Sachets enveloppés",
+            "id": 11
         },
         {
             "img": "oolong.webp",
             "name": "THE OOLONG - MAISON DE FAMILLE",
             "content": "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
-            "price": 11.00
+            "price": 11.00,
+            "contenance": "/ Les 100 g",
+            "id": 12
         },
         {
             "img": "theNoir.webp",
             "name": "THE NOIR - EARL GREY DES SEIGNEURS",
             "content": "Thé noir | Bergamote",
-            "price": 13.50
+            "price": 13.50,
+            "contenance": "/ Les 100 g",
+            "id": 13
         },
         {
             "img": "theInde.webp",
             "name": "THE D'INDE - ASSAM MOKALBARI T.G.F.O.P. 2ND FLUSH",
             "content": "Thé noir",
-            "price": 22.00
+            "price": 22.00,
+            "contenance": "/ Les 100 g",
+            "id": 14
         },
         {
             "img": "theInde2.webp",
             "name": "THE D'INDE - DARJEELING OKAYTI T.G.F.O.P. 2ND FLUSH",
             "content": "Thé noir",
-            "price": 30.00
+            "price": 30.00,
+            "contenance": "/ Les 100 g",
+            "id": 15
         }
     ],
     "magazine": [
