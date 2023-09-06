@@ -55,10 +55,7 @@ const SwiperBest = () => {
           &#8680;
         </span>
       </div>
-      {/* <div className="magazine-title">
-        <h1>MAGAZINE</h1>
-      </div>
-      <div className="swiper-magazine"></div> */}
+      
     </div>
   );
 };

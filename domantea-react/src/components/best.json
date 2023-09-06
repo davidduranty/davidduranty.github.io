@@ -119,22 +119,26 @@
         {
             "img": "essentiel.webp",
             "question": "COMMENT CHOISIR SON THE DU MATIN ?",
-            "content": "Chez DAMMANN Frères, on préfère le thé au café bien sûr et pour vous réveiller, et vous lever du bon pied, il vous faut choisir le bon thé ! Certains ont le sommeil ..."
+            "content": "Chez DAMMANN Frères, on préfère le thé au café bien sûr et pour vous réveiller, et vous lever du bon pied, il vous faut choisir le bon thé ! Certains ont le sommeil ...",
+            "id": 1
         },
         {
             "img": "prepa.webp",
             "question": "COMMENT PREPARER UN THE NOIR ?",
-            "content": "Pour infuser les thés noirs, nous recommandons une infusion pendant 3 à 5 min dans une eau comprise entre 80°C et 90°C."
+            "content": "Pour infuser les thés noirs, nous recommandons une infusion pendant 3 à 5 min dans une eau comprise entre 80°C et 90°C.",
+            "id": 2
         },
         {
             "img": "jasmin.webp",
             "question": "QU'EST CE QU'UN THE AUX FLEURS ?",
-            "content": "L'usage de parfumer le thé - formidable capteur de parfums - avec des fleurs fraîchements récoltées ou des fruits relève d'une tradition ancestrale. On emploie ..."
+            "content": "L'usage de parfumer le thé - formidable capteur de parfums - avec des fleurs fraîchements récoltées ou des fruits relève d'une tradition ancestrale. On emploie ...",
+            "id": 3
         },
         {
             "img": "theBlanc.webp",
             "question": "COMMENT PREPARER UN THE BLANC ?",
-            "content": "Pour infuser les thés blancs, nous recommandons une infusion comprise entre 4 et 8 min à 80°C."
+            "content": "Pour infuser les thés blancs, nous recommandons une infusion comprise entre 4 et 8 min à 80°C.",
+            "id": 4
         }
     ]
 }
