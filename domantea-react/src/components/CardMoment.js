@@ -3,7 +3,7 @@ import React from "react";
 const CardMoment = ({ moment }) => {
   return (
     <div className="card-container">
-      <li>
+      <li key={moment.id}>
         <img src={moment.img} alt={"Photo" + moment.name} />
         <h1>{moment.name}</h1>
         <h2>{moment.content}</h2>

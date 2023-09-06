@@ -64,7 +64,7 @@
             "content": "Thé noir",
             "price": 14.00,
             "contenance": "/ Les 24 Sachets enveloppés",
-            "id": 9
+            "id": 0
         },
         {
             "img": "earl.webp",
@@ -72,7 +72,7 @@
             "content": "Thé noir | Bergamote",
             "price": 15.50,
             "contenance": "/ Les 24 Sachets enveloppés",
-            "id": 10
+            "id": 1
         },
         {
             "img": "darjeeling.webp",
@@ -80,7 +80,7 @@
             "content": "Thé noir",
             "price": 16.00,
             "contenance": "/ Les 24 Sachets enveloppés",
-            "id": 11
+            "id": 2
         },
         {
             "img": "oolong.webp",
@@ -88,7 +88,7 @@
             "content": "Oolong | Caramel, Vanille, Sarrazin, Clémentine",
             "price": 11.00,
             "contenance": "/ Les 100 g",
-            "id": 12
+            "id": 3
         },
         {
             "img": "theNoir.webp",
@@ -96,7 +96,7 @@
             "content": "Thé noir | Bergamote",
             "price": 13.50,
             "contenance": "/ Les 100 g",
-            "id": 13
+            "id": 4
         },
         {
             "img": "theInde.webp",
@@ -104,7 +104,7 @@
             "content": "Thé noir",
             "price": 22.00,
             "contenance": "/ Les 100 g",
-            "id": 14
+            "id": 5
         },
         {
             "img": "theInde2.webp",
@@ -112,7 +112,7 @@
             "content": "Thé noir",
             "price": 30.00,
             "contenance": "/ Les 100 g",
-            "id": 15
+            "id": 6
         }
     ],
     "magazine": [

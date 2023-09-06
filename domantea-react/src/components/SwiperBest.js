@@ -34,7 +34,7 @@ const SwiperBest = () => {
       if (!isLastSlide) {
         setCurrentIndex((current) => current + 1);
       }
-    } 
+    }
   };
 
   return (
