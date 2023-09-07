@@ -41,10 +41,12 @@ $color6:rgb(173, 50, 50, 0.75);
     text-decoration: none;
 }
 
+
 body {
     background: rgba(243, 237, 237, 0.721);
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -6,7 +7,9 @@ const Content = () => {
       <div className="img1">
         <div className="grid-1">
           <h1>L'&#201;T&#201; GLAC&#201;</h1>
-          <button type="submit">D&#201;COUVRIR</button>
+          <NavLink to="/glace">
+            <button type="submit">D&#201;COUVRIR</button>
+          </NavLink>
         </div>
       </div>
       <div className="img2">

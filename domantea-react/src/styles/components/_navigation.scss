@@ -15,7 +15,7 @@
         
 
         .li {
-            color: $color1;
+            color: black;
             cursor: pointer;
             transition: 0.5s ease-in-out;
             display: flex;
@@ -82,7 +82,7 @@
         border: none;
         margin-right: 10px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         font-family: "font2";
         cursor: pointer;
         height: 20px;
@@ -92,7 +92,7 @@
 
     .en {
         padding-left: 10px;
-        border-left: 3px solid white;
+        border-left: 3px solid black;
 
     }
 
