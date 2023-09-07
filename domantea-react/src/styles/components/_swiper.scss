@@ -9,13 +9,6 @@
    
 }
 
-.swiper-magazine {
-    border: 1px solid red;
-    margin: 0 11%;
-    max-width: 100%;
-    min-height: 400px;
-}
-
 .caroussel-container {
     position: relative;
     display: flex;
@@ -27,17 +20,16 @@
 
     .caroussel {
         display: flex;
-        min-height: 400px;
-        margin: 50px 11%;
+        min-height: 700px;
+        margin: 0px 11%;
         max-width: 1460px;
-        min-height: 400px;
         overflow-x: hidden;
         gap: 10px;
     }
     
     .card-container {
         min-width: 350px;
-        min-height: 420px;
+        max-height: 600px;
         cursor: pointer;
         margin-right: 10px;
         border: 1px solid rgba(221, 217, 217, 0.549);
