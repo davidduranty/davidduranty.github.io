@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
 import ContentImg from "../components/ContentImg";
 import TheContainer from "../components/TheContainer";
@@ -8,6 +8,16 @@ import SwiperSelection from "../components/SwiperSelection";
 import SwiperMagazine from "../components/SwiperMagazine";
 
 const Home = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        document.querySelector(".arrow-fixed").classList.add("active");
+      } else {
+        document.querySelector(".arrow-fixed").classList.remove("active");
+      }
+    });
+  }, []);
+
   return (
     <div>
       <Navigation />
@@ -17,7 +27,9 @@ const Home = () => {
       <SwiperSelection />
       <SwiperMagazine />
       <div className="arrow-fixed">
-        <span>&#8678;</span>
+        <span className="arrow-scroll" onClick={() => window.scrollTo(0, 0)}>
+          &#8678;
+        </span>
       </div>
       <MainFooter />
     </div>
