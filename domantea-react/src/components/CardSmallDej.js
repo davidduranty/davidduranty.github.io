@@ -14,7 +14,7 @@ const TassesSmallDej = () => {
       <img src="photo-dej.webp" alt="Petit dej" />
       <div className="tasse-map">
         {getTasse.map((tasse) => (
-          <ul key={tasse.id}>
+          <ul className="ul-settings" key={tasse.id}>
             <img src={tasse.img} alt="Tasse Doman" />
             <h1>{tasse.name}</h1>
             <h2>{tasse.content}</h2>

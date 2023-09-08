@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
-import TassesSmallDej from "../components/TassesSmallDej";
+import TassesSmallDej from "../components/CardSmallDej";
 import CardSelectionDej from "../components/CardSelectionDej";
 import MainFooter from "../components/MainFooter";
 
@@ -33,9 +33,9 @@ const Glace = () => {
           &#8678;
         </span>
       </div>
-          <TassesSmallDej />
-          <CardSelectionDej />
-          <MainFooter/>
+      <TassesSmallDej />
+      <CardSelectionDej />
+      <MainFooter />
     </div>
   );
 };

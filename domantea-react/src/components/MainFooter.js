@@ -67,7 +67,7 @@ const MainFooter = () => {
         {/* Deuxième container */}
 
         <div className="nous-trouver-container">
-          <div className="title">
+          <div className="title-container-footer">
             <h1>Nous Trouver</h1>
           </div>
           <NavLink to="/boutiques">
@@ -90,7 +90,7 @@ const MainFooter = () => {
         {/* Troisième container */}
 
         <div className="pro-container">
-          <div className="title">
+          <div className="title-container-footer">
             <h1>Professionnel</h1>
           </div>
           <div className="text">
@@ -102,7 +102,7 @@ const MainFooter = () => {
         {/* Quatrième container */}
 
         <div className="suivez-container">
-          <div className="title">
+          <div className="title-container-footer">
             <h1>Suivez-nous</h1>
           </div>
           <div className="text">
