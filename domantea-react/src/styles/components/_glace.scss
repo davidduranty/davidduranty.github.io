@@ -52,12 +52,14 @@
 
         .ul-settings {
             width: 100%;
+            max-width: 350px;
             min-height: 400px;
             border: 1px solid rgba(221, 217, 217, 0.549);
             border-radius: 10px;
             box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
             cursor: pointer;
             padding-left: 5px;
+            margin-bottom: 20px;
 
             img {
                 width: 100%;
@@ -75,13 +77,16 @@
             }
     
             h2 {
+                margin-top: 30px;
                 min-height: 10px;
                 font-size: 1rem;
+                height: 30px;
+                
             }
 
             p {
-                padding-top: 15px;
-            font-family: "font2";
+                padding-top: 10px;
+                font-family: "font2";
             }
         }
     }
@@ -96,7 +101,7 @@
     
 
     .ul-settings-select {
-        border: 1px solid teal;
+       
         max-width: 350px;
         border: 1px solid rgba(221, 217, 217, 0.549);
         border-radius: 10px;
@@ -126,10 +131,107 @@
         }
 
         p {
+            
             padding-top: 15px;
             font-family: "font2";
             padding-left: 5px;
         }
+    }
+    
+}
+.title-shop-container {
+    position: relative;
+    margin: 50px 0 20px 0;
+    text-align: center;
+
+    h1 {
+        font-family: "font1";
+    }
+    .right {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 50%;
+        top: 300px;
+        right: 200px;
+        @include center;
+        font-size: 5rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.647);
+        
+    }
+    .left {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 50%;
+        top: 300px;
+        left: 200px;
+        @include center;
+        font-size: 5rem;
+        cursor: pointer;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.647);
+    }
+}
+.card-shop-container {
+    
+    margin: 0 25%;
+    min-height: 550px;
+    display: flex;
+    overflow: hidden;
+    gap: 17px;
+
+    .ul-settings-shop {
+        max-height: 520px;
+        border: 1px solid rgba(221, 217, 217, 0.549);
+        border-radius: 10px;
+        box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
+
+        img {
+            max-width: 300px;
+            max-height: 400px;
+        }
+        h1 {
+            min-height: 45px;
+            padding-top: 5px;
+            font-size: 1.1rem;
+            padding-left: 5px;
+        }
+        h2 {
+            font-size: 0.8rem;
+            padding-left: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .price-bag {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "font2";
+            margin-top: 28px;
+
+            .price {
+                padding-left: 5px;
+
+            }
+            .bag {
+                padding-right: 5px;
+                cursor: pointer;
+                transition: 0.6s ease-in-out;
+                opacity: 0;
+                transform: translateY(-20px);
+
+                &:hover {
+                    opacity: 1;
+                    transition: 0.6s ease-in-out;
+                    transform: translateY(0);
+                }
+            }
+        }
+
     }
     
 }

@@ -145,13 +145,13 @@
         {
             "img": "tasse1.webp",
             "name": "MUG EN PORCELAINE BONE CHINA, DOMAN FRÈRES",
-            "content":"Bols/Tasses/Autres | Autres",
+            "content": "Bols/Tasses/Autres | Autres",
             "price": 13.50,
             "id": 1
         },
         {
-            "img":"tasse2.webp",
-            "name":"MUG DOMAN FRÈRES HÔTEL, PORCELAINE BLANCHE",
+            "img": "tasse2.webp",
+            "name": "MUG DOMAN FRÈRES HÔTEL, PORCELAINE BLANCHE",
             "content": "Bols/Tasses/Autres | Autres",
             "price": 8.00,
             "id": 2
@@ -159,89 +159,138 @@
     ],
     "selection-small-dej": [
         {
-            "img":"1.webp",
-            "name":"THÉ D'INDE - ASSAM HALMARI 2ND FLUSH T.G.F.O.P.",
-            "content":"Thé noir",
-            "price":25.00,
-            "id":1
+            "img": "1.webp",
+            "name": "THÉ D'INDE - ASSAM HALMARI 2ND FLUSH T.G.F.O.P.",
+            "content": "Thé noir",
+            "price": 25.00,
+            "id": 1
         },
         {
-            "img":"2.webp",
-            "name":"THÉ D'INDE - ASSAM SUPÉRIEUR G.F.O.P.",
-            "content":"Thé noir",
-            "price":8.50,
-            "id":2
+            "img": "2.webp",
+            "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.F.O.P.",
+            "content": "Thé noir",
+            "price": 8.50,
+            "id": 2
         },
         {
-            "img":"3.webp",
-            "name":"THÉ D'INDE - ASSAM SUPÉRIEUR G.B.O.P.",
-            "content":"Thé noir",
-            "price":8.00,
-            "id":3
+            "img": "3.webp",
+            "name": "THÉ D'INDE - ASSAM SUPÉRIEUR G.B.O.P.",
+            "content": "Thé noir",
+            "price": 8.00,
+            "id": 3
         },
         {
-            "img":"4.webp",
-            "name":"THÉ D'INDE - DARJEELING G.F.O.P. SUPÉRIEUR 2ND FLUSH",
-            "content":"Thé noir",
-            "price":10.00,
-            "id":4
+            "img": "4.webp",
+            "name": "THÉ D'INDE - DARJEELING G.F.O.P. SUPÉRIEUR 2ND FLUSH",
+            "content": "Thé noir",
+            "price": 10.00,
+            "id": 4
         },
         {
-            "img":"5.webp",
-            "name":"THÉ DE CEYLAN - CEYLAN F.O.P. SUPÉRIEUR",
-            "content":"Thé noir",
-            "price":7.50,
-            "id":5
+            "img": "5.webp",
+            "name": "THÉ DE CEYLAN - CEYLAN F.O.P. SUPÉRIEUR",
+            "content": "Thé noir",
+            "price": 7.50,
+            "id": 5
         },
         {
-            "img":"6.webp",
-            "name":"THÉ D'AFRIQUE - KENYA MILIMA G.B.O.P.",
-            "content":"Thé noir",
-            "price":8.50,
-            "id":6
+            "img": "6.webp",
+            "name": "THÉ D'AFRIQUE - KENYA MILIMA G.B.O.P.",
+            "content": "Thé noir",
+            "price": 8.50,
+            "id": 6
         },
         {
-            "img":"7.webp",
-            "name":"BLEND - AFRICAN BREAKFAST",
-            "content":"Thé noir",
-            "price":6.50,
-            "id":7
+            "img": "7.webp",
+            "name": "BLEND - AFRICAN BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.50,
+            "id": 7
         },
         {
-            "img":"8.webp",
-            "name":"THÉ NOIR - BRUNCH TEA",
-            "content":"Thé noir",
-            "price":9.00,
-            "id":8
+            "img": "8.webp",
+            "name": "THÉ NOIR - BRUNCH TEA",
+            "content": "Thé noir",
+            "price": 9.00,
+            "id": 8
         },
         {
-            "img":"9.webp",
-            "name":"THÉ NOIR - HIGHLANDS BREAKFAST",
-            "content":"Thé noir",
-            "price":6.00,
-            "id":9
+            "img": "9.webp",
+            "name": "THÉ NOIR - HIGHLANDS BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.00,
+            "id": 9
         },
         {
-            "img":"10.webp",
-            "name":"BLEND - TEA FOR TWO",
-            "content":"Thé noir",
-            "price":8.00,
-            "id":10
+            "img": "10.webp",
+            "name": "BLEND - TEA FOR TWO",
+            "content": "Thé noir",
+            "price": 8.00,
+            "id": 10
         },
         {
-            "img":"11.webp",
-            "name":"THÉ NOIR - ROYAL BREAKFAST",
-            "content":"Thé noir",
-            "price":6.00,
-            "id":11
+            "img": "11.webp",
+            "name": "THÉ NOIR - ROYAL BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.00,
+            "id": 11
         },
         {
-            "img":"12.webp",
-            "name":"BLEND - STRONG BREAKFAST",
-            "content":"Thé noir",
-            "price":6.50,
-            "id":12
+            "img": "12.webp",
+            "name": "BLEND - STRONG BREAKFAST",
+            "content": "Thé noir",
+            "price": 6.50,
+            "id": 12
         }
-        
+    ],
+    "shopping": [
+        {
+            "img": "boite.webp",
+            "name": "COFFRET BOIS NOIR - 48 SACHETS CRISTAL DE THÉS",
+            "content": "Coffrets cadeaux | Coffrets thés Sachets",
+            "price": 86.00,
+            "icon":"👜",
+            "id": 1
+        },
+        {
+            "img": "theiere.webp",
+            "name": "THÉIERE PARCELAINE - THÉIERE DOMAN FRERES 0.6L",
+            "content": "Théières | Porcelaine",
+            "price": 21.00,
+            "icon":"👜",
+            "id": 2
+        },
+        {
+            "img": "tasse.webp",
+            "name": "TASSE A THÉ ET SOUS-TASSE DOMAN FRERES",
+            "content": "Bols/Tasses/Autres | Tasses",
+            "price": 11.00,
+            "icon":"👜",
+            "id": 3
+        },
+        {
+            "img": "supportSachet.webp",
+            "name": "COUPELLE REPOSE-SACHET",
+            "content": "ACCESSOIRES",
+            "price": 5.00,
+            "icon":"👜",
+            "id": 4
+        },
+        {
+            "img": "boule.webp",
+            "name": "BOULE A THÉ INOX PERFORÉ - DIAM 4 CM",
+            "content": "Pour préparer votre thé",
+            "price": 5.50,
+            "icon":"👜",
+            "id": 5
+        },
+        {
+            "img": "cuillere.webp",
+            "name": "CUILLERE-MESURE INOX",
+            "content": "Pour préparer votre thé",
+            "price": 6.50,
+            "icon":"👜",
+            "id": 6
+        }
     ]
 }

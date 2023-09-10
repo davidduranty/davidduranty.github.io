@@ -3,6 +3,8 @@ import Navigation from "../components/Navigation";
 import TassesSmallDej from "../components/CardSmallDej";
 import CardSelectionDej from "../components/CardSelectionDej";
 import MainFooter from "../components/MainFooter";
+import CardShoppingBreakfast from "../components/CardShoppingBreakfast";
+
 
 const Glace = () => {
   useEffect(() => {
@@ -35,6 +37,7 @@ const Glace = () => {
       </div>
       <TassesSmallDej />
       <CardSelectionDej />
+      <CardShoppingBreakfast/>
       <MainFooter />
     </div>
   );
