@@ -16,8 +16,8 @@ const SwiperMagazine = () => {
       <div className="title">
         <h1>MAGAZINE</h1>
       </div>
-          <div className="caroussel-container">
-              <ul className="caroussel">
+          <div className="caroussel-container-bas">
+              <ul className="caroussel-bas">
                   {getMagazine.map((magazine) => (
                       <CardMagazine key={magazine.id} magazine={magazine} />
                   ))}
