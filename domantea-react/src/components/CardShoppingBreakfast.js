@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const CardShoppingBreakfast = ({breakfast}) => {
   return (
     <div className='card-container-breakfast'>
