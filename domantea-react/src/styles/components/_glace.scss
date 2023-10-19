@@ -189,47 +189,59 @@
         border-radius: 10px;
         box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
 
-        img {
-            max-width: 300px;
-            max-height: 400px;
-        }
-        h1 {
-            min-height: 45px;
-            padding-top: 5px;
-            font-size: 1.1rem;
-            padding-left: 5px;
-        }
-        h2 {
-            font-size: 0.8rem;
-            padding-left: 5px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-        }
-        .price-bag {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: "font2";
-            margin-top: 28px;
+        .card-container-breakfast {
+                    min-width: 350px;
+                    max-height: 600px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    border: 1px solid rgba(221, 217, 217, 0.549);
+                    border-radius: 10px;
+                    box-shadow: 2px 8px 5px rgba(92, 89, 89, 0.638);
 
-            .price {
-                padding-left: 5px;
-
-            }
-            .bag {
-                padding-right: 5px;
-                cursor: pointer;
-                transition: 0.6s ease-in-out;
-                opacity: 0;
-                transform: translateY(-20px);
-
-                &:hover {
-                    opacity: 1;
-                    transition: 0.6s ease-in-out;
-                    transform: translateY(0);
+                    img {
+                        max-width: 300px;
+                        max-height: 400px;
+                    }
+                    h1 {
+                        min-height: 45px;
+                        padding-top: 5px;
+                        font-size: 1.1rem;
+                        padding-left: 5px;
+                    }
+                    h2 {
+                        font-size: 0.8rem;
+                        padding-left: 5px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .price-bag {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: "font2";
+                        margin-top: 28px;
+            
+                        .price {
+                            padding-left: 5px;
+            
+                        }
+                        .bag {
+                            padding-right: 5px;
+                            cursor: pointer;
+                            transition: 0.6s ease-in-out;
+                            opacity: 0;
+                            transform: translateY(-20px);
+            
+                            &:hover {
+                                opacity: 1;
+                                transition: 0.6s ease-in-out;
+                                transform: translateY(0);
+                            }
+                        }
                 }
-            }
+        
+
         }
 
     }

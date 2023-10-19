@@ -6,6 +6,7 @@ import SwiperBest from "../components/SwiperBest";
 import MainFooter from "../components/MainFooter";
 import SwiperSelection from "../components/SwiperSelection";
 import SwiperMagazine from "../components/SwiperMagazine";
+import ArrowFixed from "./ArrowFixed";
 
 const Home = () => {
   useEffect(() => {
@@ -26,11 +27,7 @@ const Home = () => {
       <SwiperBest />
       <SwiperSelection />
       <SwiperMagazine />
-      <div className="arrow-fixed">
-        <span className="arrow-scroll" onClick={() => window.scrollTo(0, 0)}>
-          &#8678;
-        </span>
-      </div>
+      <ArrowFixed/>
       <MainFooter />
     </div>
   );

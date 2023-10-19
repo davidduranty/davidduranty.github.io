@@ -2,9 +2,9 @@ import React from 'react';
 
 const CardShoppingBreakfast = ({breakfast}) => {
   return (
-    <div className='card-container'>
+    <div className='card-container-breakfast'>
       <li key={breakfast.id}>
-        <img src="breakfast.img" alt={"Photo" + breakfast.name} />
+        <img src={breakfast.img} alt={"Photo" + breakfast.name} />
         <h1>{breakfast.name}</h1>
         <h2>{breakfast.content}</h2>
         <p>{ breakfast.price.toFixed(2)}</p>
