@@ -26,11 +26,9 @@ const SwiperShoppingBreakFast = () => {
         </span> */}
       </div>
       <div className="card-shop-container">
-        <ul className="ul-settings-shop">
-          {getDataShopBreak.map((breakfast) => (
-            <CardShoppingBreakfast key={breakfast.id} breakfast={breakfast} />
-          ))}
-        </ul>
+        {getDataShopBreak.map((breakfast) => (
+          <CardShoppingBreakfast key={breakfast.id} breakfast={breakfast} />
+        ))}
       </div>
     </div>
   );
